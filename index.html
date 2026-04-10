@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Cesar A. Gonzalez | Financial Data Scientist · Quantitative Analyst · Machine Learning</title>
-<meta name="description" content="Cesar A. Gonzalez — Financial Data Scientist, Quantitative Analyst & Machine Learning Engineer. Expert in financial modeling, portfolio optimization, Python, R, Bloomberg, and AI-driven business intelligence across 5 countries."/>
-<meta name="keywords" content="financial data scientist, quantitative analyst, machine learning, financial modeling, portfolio optimization, Python, R, Bloomberg, business intelligence, CFA, fintech, investment analyst, data science finance, quant, algorithmic trading, NLP finance"/>
+<title>Cesar A. Gonzalez | Strategic Finance · M&A · Portfolio Optimization · Decision Systems</title>
+<meta name="description" content="Cesar A. Gonzalez — Strategic Finance & Decision Systems. M&A, portfolio optimization, financial modeling, and data-driven capital allocation across global markets."/>
+<meta name="keywords" content="strategic finance, financial modeling, M&A, portfolio optimization, decision systems, quantitative finance, capital allocation, risk management, investment analysis, fintech, Bloomberg, Python, financial data science"/>
 <meta name="author" content="Cesar A. Gonzalez"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://cesargonzalez.netlify.app/"/>
@@ -19,7 +22,7 @@
   "@context":"https://schema.org",
   "@type":"Person",
   "name":"Cesar A. Gonzalez",
-  "jobTitle":"Financial Data Scientist & Quantitative Analyst",
+  "jobTitle":"Strategic Finance & Decision Systems Advisor",
   "description":"Financial Data Scientist and Quantitative Analyst specializing in machine learning, portfolio optimization, and data-driven financial strategy.",
   "url":"https://cesargonzalez.netlify.app/",
   "image":"IMG_9994.JPG",
@@ -48,7 +51,7 @@
 </noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#fafafa;--surface:#fff;--border:#e8e8e8;--text:#1a1a1a;--muted:#6b7280;--accent:#1e3a5f;--accent2:#2563eb;--accent-light:#e8eef5;--green:#166534;--green-light:#f0fdf4;--radius:12px}
+:root{--bg:#f8f7f4;--surface:#ffffff;--border:#ddd9cf;--text:#0B1F3A;--muted:#43474A;--accent:#0B1F3A;--gold:#BE9F56;--gold-light:#f5eddb;--accent2:#BE9F56;--accent-light:#eee8d8;--green:#166534;--green-light:#f0fdf4;--radius:12px}
 html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 
@@ -57,52 +60,54 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 .fade-in.visible{opacity:1;transform:none}
 
 /* NAV */
-nav{position:fixed;top:0;width:100%;background:rgba(250,250,250,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:200;padding:0 2rem;display:flex;justify-content:space-between;align-items:center;height:62px}
-.nav-logo{font-weight:700;font-size:1.05rem;color:var(--accent);letter-spacing:-.5px;text-decoration:none}
+nav{position:fixed;top:0;width:100%;background:rgba(11,31,58,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(190,159,86,.3);z-index:200;padding:0 2rem;display:flex;justify-content:space-between;align-items:center;height:62px}
+.nav-logo{font-weight:700;font-size:1.1rem;color:var(--gold);letter-spacing:.5px;text-decoration:none;font-family:"Cormorant Garamond","Georgia",serif;text-transform:uppercase}
 .nav-right{display:flex;align-items:center;gap:1.5rem}
 .nav-links{display:flex;gap:1.5rem;list-style:none}
-.nav-links a{text-decoration:none;color:var(--muted);font-size:.86rem;transition:color .2s}
-.nav-links a:hover{color:var(--accent)}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,.7);font-size:.86rem;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
 .lang-switcher{display:flex;gap:.3rem}
-.lang-btn{background:none;border:1px solid var(--border);border-radius:5px;padding:.2rem .45rem;font-size:.73rem;cursor:pointer;color:var(--muted);transition:all .15s;font-weight:600}
-.lang-btn:hover,.lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.lang-btn{background:none;border:1px solid rgba(190,159,86,.5);border-radius:5px;padding:.2rem .45rem;font-size:.73rem;cursor:pointer;color:rgba(255,255,255,.7);transition:all .15s;font-weight:600}
+.lang-btn:hover,.lang-btn.active{background:var(--gold);color:#fff;border-color:var(--gold)}
 
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
-.hamburger span{display:block;width:22px;height:2px;background:var(--accent);border-radius:2px;transition:all .3s}
+.hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
 .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-.mobile-menu{display:none;position:fixed;top:96px;left:0;width:100%;background:var(--surface);border-bottom:1px solid var(--border);z-index:199;padding:1rem 2rem;flex-direction:column;gap:1rem}
-.mobile-menu a{text-decoration:none;color:var(--text);font-weight:500;font-size:.95rem}
+.mobile-menu{display:none;position:fixed;top:96px;left:0;width:100%;background:#0B1F3A;border-bottom:1px solid rgba(190,159,86,.3);z-index:199;padding:1rem 2rem;flex-direction:column;gap:1rem}
+.mobile-menu a{text-decoration:none;color:rgba(255,255,255,.85);font-weight:500;font-size:.95rem}
 .mobile-menu.open{display:flex}
 
 /* SECTIONS */
 section{padding:5.5rem 4rem;width:100%}
 .divider{border:none;border-top:1px solid var(--border);width:100%;margin:0}
-.section-label{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
+.section-label{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
 h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.8px;margin-bottom:1.5rem}
 
 /* BUTTONS */
 .btn{padding:.7rem 1.5rem;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;text-decoration:none;border:none;display:inline-block;transition:all .2s;position:relative;overflow:hidden}
-.btn-primary{background:var(--accent);color:#fff;animation:pulse-glow 3s infinite}
-.btn-primary:hover{background:#162d4a;transform:translateY(-2px);box-shadow:0 6px 20px rgba(30,58,95,.3);animation:none}
-.btn-outline{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
-.btn-outline:hover{background:var(--accent-light);transform:translateY(-2px)}
-.btn-calendly{background:linear-gradient(135deg,#006bff,#0052cc);color:#fff}
-.btn-calendly:hover{opacity:.9;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,107,255,.3)}
-@keyframes pulse-glow{0%,100%{box-shadow:0 0 0 0 rgba(30,58,95,.3)}50%{box-shadow:0 0 0 8px rgba(30,58,95,0)}}
+.btn-primary{background:var(--gold);color:#0B1F3A;font-weight:700;animation:pulse-glow 3s infinite}
+.btn-primary:hover{background:#a8893d;transform:translateY(-2px);box-shadow:0 6px 20px rgba(190,159,86,.4);animation:none}
+.btn-outline{background:transparent;color:#0B1F3A;border:1.5px solid #0B1F3A}
+.btn-outline:hover{background:#eee8d8;transform:translateY(-2px)}
+.btn-calendly{background:#0B1F3A;color:var(--gold);border:1.5px solid var(--gold)}
+.btn-calendly:hover{background:#162d4a;transform:translateY(-2px);box-shadow:0 6px 20px rgba(190,159,86,.25)}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 0 0 rgba(190,159,86,.4)}50%{box-shadow:0 0 0 8px rgba(190,159,86,0)}}
 
 /* HERO */
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0;position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:#0d1b2e url('head.jpeg') center center/cover no-repeat;z-index:0}
 .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,20,40,.35) 0%,rgba(10,20,40,.15) 40%,rgba(10,20,40,.55) 100%)}
-.hero-card{position:relative;z-index:1;margin:0 4rem 4rem;background:rgba(255,255,255,0.93);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:20px;padding:2.5rem 3rem;max-width:720px;box-shadow:0 20px 60px rgba(0,0,0,.18),0 0 0 1px rgba(255,255,255,.6)}
-.hero-name{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-1.2px;color:var(--accent);line-height:1.1;margin-bottom:.5rem}
-.hero-title-line{font-size:clamp(.85rem,1.4vw,1rem);font-weight:600;color:var(--muted);letter-spacing:.3px;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--border)}
+.hero-card{position:relative;z-index:1;margin:0 4rem 4rem;background:rgba(255,255,255,0.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:20px;padding:2.5rem 3rem;max-width:720px;box-shadow:0 20px 60px rgba(0,0,0,.25),0 0 0 1px rgba(190,159,86,.3);border-top:3px solid var(--gold)}
+.hero-name{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;letter-spacing:1px;color:var(--accent);line-height:1.1;margin-bottom:.5rem;font-family:"Cormorant Garamond","Georgia",serif;text-transform:uppercase}
+.hero-title-line{font-size:clamp(.85rem,1.4vw,1rem);font-weight:600;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid rgba(190,159,86,.4)}
 .hero-pitch{font-size:clamp(.95rem,1.5vw,1.05rem);color:var(--text);line-height:1.7;margin-bottom:1.8rem}
-.hero-pitch strong{color:var(--accent)}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-pitch strong{color:var(--gold)}
+.hero-btns{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;max-width:480px}
+.hero-btns .btn{width:100%;text-align:center;justify-content:center;display:flex;align-items:center;gap:.4rem}
+@media(max-width:640px){.hero-btns{grid-template-columns:1fr}}
 @media(max-width:640px){
   .hero-card{margin:0 1rem 2rem;padding:1.8rem 1.4rem;border-radius:16px}
   .hero-name{font-size:1.7rem}
@@ -131,7 +136,7 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.8px;margin-
 .pill{background:var(--accent-light);color:var(--accent);padding:.3rem .85rem;border-radius:20px;font-size:.79rem;font-weight:500}
 .about-stats{display:flex;flex-direction:column;gap:1.2rem}
 .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem}
-.stat-num{font-size:1.9rem;font-weight:700;color:var(--accent);letter-spacing:-1px}
+.stat-num{font-size:1.9rem;font-weight:700;color:var(--gold);letter-spacing:-1px;font-family:"Cormorant Garamond","Georgia",serif}
 .stat-desc{font-size:.82rem;color:var(--muted);margin-top:.2rem}
 
 /* QUOTE */
@@ -232,15 +237,15 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   .quote-block{padding:3rem 1.5rem}
 }
 /* MARKET TICKER STRIP */
-.ticker-strip{position:fixed;top:62px;left:0;width:100%;height:34px;background:#0d1b2e;border-bottom:1px solid #1e3a5f;z-index:198;display:flex;align-items:center;overflow:hidden;font-family:'Segoe UI',system-ui,sans-serif}
-.ticker-label{flex-shrink:0;padding:0 1rem;font-size:.65rem;font-weight:700;letter-spacing:1.5px;color:#4a9eff;text-transform:uppercase;border-right:1px solid #1e3a5f;height:100%;display:flex;align-items:center;background:#0d1b2e;z-index:2}
+.ticker-strip{position:fixed;top:62px;left:0;width:100%;height:34px;background:#0B1F3A;border-bottom:1px solid rgba(190,159,86,.25);z-index:198;display:flex;align-items:center;overflow:hidden;font-family:'Segoe UI',system-ui,sans-serif}
+.ticker-label{flex-shrink:0;padding:0 1rem;font-size:.65rem;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;border-right:1px solid rgba(190,159,86,.3);height:100%;display:flex;align-items:center;background:#0B1F3A;z-index:2}
 .ticker-track-wrap{flex:1;overflow:hidden;position:relative}
-.ticker-track{display:flex;gap:0;white-space:nowrap;animation:tickerScroll 4.5s linear infinite}
+.ticker-track{display:flex;gap:0;white-space:nowrap;animation:tickerScroll 2.25s linear infinite}
 .ticker-track:hover{animation-play-state:paused}
-.ticker-item{display:inline-flex;align-items:center;gap:.45rem;padding:0 1.4rem;height:34px;border-right:1px solid #1a2d45;cursor:default;transition:background .15s;flex-shrink:0}
-.ticker-item:hover{background:#1a2d45}
-.ticker-sym{font-size:.72rem;font-weight:700;color:#e2e8f0;letter-spacing:.5px}
-.ticker-price{font-size:.72rem;color:#94a3b8}
+.ticker-item{display:inline-flex;align-items:center;gap:.45rem;padding:0 1.4rem;height:34px;border-right:1px solid rgba(190,159,86,.15);cursor:default;transition:background .15s;flex-shrink:0}
+.ticker-item:hover{background:rgba(190,159,86,.08)}
+.ticker-sym{font-size:.72rem;font-weight:700;color:#f5f0e8;letter-spacing:.5px}
+.ticker-price{font-size:.72rem;color:rgba(245,240,232,.65)}
 .ticker-chg.up{color:#22c55e;font-size:.68rem;font-weight:600}
 .ticker-chg.down{color:#ef4444;font-size:.68rem;font-weight:600}
 .ticker-chg.flat{color:#94a3b8;font-size:.68rem}
@@ -259,14 +264,10 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <div class="nav-right">
     <ul class="nav-links">
       <li><a href="#about" data-i18n="nav_about">About</a></li>
-      <li><a href="#flagship" data-i18n="nav_flagship">Projects</a></li>
-      <li><a href="#education" data-i18n="nav_edu">Education</a></li>
       <li><a href="#services" data-i18n="nav_services">Services</a></li>
-      <li><a href="#projects" data-i18n="nav_client">Client Outcomes</a></li>
-      <li><a href="#calculator" data-i18n="nav_tools">Tools</a></li>
-      <li><a href="#optimizer" data-i18n="nav_optimizer">Optimizer</a></li>
+      <li><a href="#flagship" data-i18n="nav_work">Selected Work</a></li>
+      <li><a href="#education" data-i18n="nav_edu">Education</a></li>
       <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-      <li><a href="#now" data-i18n="nav_now">Now</a></li>
     </ul>
     <div class="lang-switcher">
       <button class="lang-btn active" onclick="setLang('en')">EN</button>
@@ -282,14 +283,10 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()" data-i18n="nav_about">About</a>
-  <a href="#flagship" onclick="closeMenu()" data-i18n="nav_flagship">Projects</a>
-  <a href="#education" onclick="closeMenu()" data-i18n="nav_edu">Education</a>
   <a href="#services" onclick="closeMenu()" data-i18n="nav_services">Services</a>
-  <a href="#projects" onclick="closeMenu()" data-i18n="nav_client">Client Outcomes</a>
-  <a href="#calculator" onclick="closeMenu()" data-i18n="nav_tools">Tools</a>
-  <a href="#optimizer" onclick="closeMenu()" data-i18n="nav_optimizer">Optimizer</a>
+  <a href="#flagship" onclick="closeMenu()" data-i18n="nav_work">Selected Work</a>
+  <a href="#education" onclick="closeMenu()" data-i18n="nav_edu">Education</a>
   <a href="#contact" onclick="closeMenu()" data-i18n="nav_contact">Contact</a>
-  <a href="#now" onclick="closeMenu()" data-i18n="nav_now">Now</a>
 </div>
 
 <!-- MARKET TICKER STRIP -->
@@ -306,7 +303,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 <script>
 (function(){
   // ── CONFIG — paste your Finnhub key here ─────────────────────────────
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  var FINNHUB_KEY = 'YOUR_FINNHUB_KEY';
 
   // Finnhub symbols (stocks & forex)
   var FINNHUB = [
@@ -366,7 +363,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
     }
     track.innerHTML = items;
     var totalPx = track.scrollWidth/2;
-    track.style.animationDuration = Math.max(4.5, totalPx/88)+'s';
+    track.style.animationDuration = Math.max(2.25, totalPx/176)+'s';
   }
 
   // ── Finnhub: fetch each symbol quote ────────────────────────────────
@@ -426,13 +423,91 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <div class="hero-bg"></div>
   <div class="hero-card fade-in">
     <div class="hero-name" data-i18n="hero_h1">Cesar A. Gonzalez</div>
-    <div class="hero-title-line" data-i18n="hero_tagline">Financial Data Scientist · Quantitative Analyst · Machine Learning</div>
-    <p class="hero-pitch" data-i18n="hero_pitch">Turning complex data into <strong>clear decisions.</strong><br>I work at the intersection of finance, strategy, and AI — building models and tools that drive smarter business outcomes.</p>
+    <div class="hero-title-line" data-i18n="hero_tagline">Strategic Finance · M&A · Portfolio Optimization · Decision Systems</div>
+    <p class="hero-pitch" data-i18n="hero_pitch">I design and build <strong>financial decision systems</strong> that improve capital allocation, risk management, and operational performance — across global markets.</p>
     <div class="hero-btns">
       <a href="#flagship" class="btn btn-primary" data-i18n="hero_cta1">Explore My Work</a>
       <a href="https://calendly.com/cesar-glezpro" target="_blank" class="btn btn-calendly" data-i18n="hero_cta_cal">📅 Schedule a Call</a>
       <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2">Get in Touch</a>
       <a id="resumeBtn" href="resume_en.pdf" download class="btn btn-resume" data-i18n="hero_cta_resume">📄 Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="fade-in">
+  <div class="section-label" data-i18n="about_label">About Me</div>
+  <h2 data-i18n="about_title">Bio & Background</h2>
+  <div class="about-grid">
+    <div class="about-photo">
+      <img id="profilePhoto" src="IMG_9994.JPG" alt="Cesar A. Gonzalez">
+      <div class="photo-name">Cesar A. Gonzalez</div>
+    </div>
+    <div class="about-text">
+      <p data-i18n="about_p1">Meticulous Financial Analyst who undertakes complex assignments, meets tight deadlines, and delivers superior performance — with practical knowledge in corporate finance and financial markets.</p>
+      <p data-i18n="about_p2">Always leading with an ethical and responsible approach, with a vision oriented to results. I thrive in fast-paced environments, tracing clear objectives for my team and myself while fostering healthy competition and collaboration.</p>
+      <p data-i18n="about_p3">Native Spanish and English speaker, fluent in French, and intermediate Chinese. Passionate about continuously expanding my skillset and finding new opportunities to grow.</p>
+      <div class="about-pills">
+        <span class="pill">Financial Analysis</span><span class="pill">Financial Modeling</span>
+        <span class="pill">Portfolio Management</span><span class="pill">Data Science & AI</span>
+        <span class="pill">Corporate Finance</span><span class="pill">Strategic Planning</span>
+        <span class="pill">Risk Analysis</span><span class="pill">Business Intelligence</span>
+        <span class="pill">Market Analysis</span><span class="pill">Client Relations</span>
+      </div>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card"><div class="stat-num">4</div><div class="stat-desc" data-i18n="stat1">Languages: Spanish, English, French, Chinese</div></div>
+      <div class="stat-card"><div class="stat-num">78.6%</div><div class="stat-desc" data-i18n="stat2">Benchmark outperformance rate in portfolio management</div></div>
+      <div class="stat-card"><div class="stat-num">3</div><div class="stat-desc" data-i18n="stat3">Core domains: Finance, Data Science & Consulting</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+<hr class="divider"/>
+
+<!-- IMPACT BLOCK -->
+<style>
+#impact{padding:3.5rem 4rem;background:#0B1F3A}
+.impact-inner{display:flex;flex-direction:column;gap:1rem}
+.impact-label{font-size:.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.impact-title{font-size:clamp(1.3rem,2.5vw,1.8rem);font-weight:700;color:#fff;letter-spacing:-.5px;margin-bottom:2rem;font-family:"Cormorant Garamond","Georgia",serif}
+.impact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+.impact-card{border-left:2px solid var(--gold);padding-left:1.2rem}
+.impact-num{font-size:2rem;font-weight:800;color:var(--gold);letter-spacing:-1px;line-height:1;font-family:"Cormorant Garamond","Georgia",serif}
+.impact-desc{font-size:.82rem;color:rgba(255,255,255,.7);margin-top:.3rem;line-height:1.5}
+@media(max-width:640px){#impact{padding:3rem 1.5rem}.impact-grid{grid-template-columns:1fr 1fr}}
+</style>
+
+<section id="impact" class="fade-in">
+  <div class="impact-inner">
+    <div class="impact-label" data-i18n="impact_label">Selected Impact</div>
+    <div class="impact-title" data-i18n="impact_title">Results that speak for themselves</div>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-num">78.6%</div>
+        <div class="impact-desc" data-i18n="impact_1">Benchmark outperformance rate in active portfolio management</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">91%</div>
+        <div class="impact-desc" data-i18n="impact_2">Model accuracy in real estate profitability prediction</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">4h→30m</div>
+        <div class="impact-desc" data-i18n="impact_3">Portfolio allocation time reduced through automation</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">+27.6%</div>
+        <div class="impact-desc" data-i18n="impact_4">Profit improvement vs. original developer estimate</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">9</div>
+        <div class="impact-desc" data-i18n="impact_5">Cities & jurisdictions of active financial market experience</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">3</div>
+        <div class="impact-desc" data-i18n="impact_6">Core domains: Finance · Data Science · Strategy</div>
+      </div>
     </div>
   </div>
 </section>
@@ -445,16 +520,16 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 .flagship-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:1.5rem;margin-top:2rem}
 .flagship-main{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s}
 .flagship-main:hover{box-shadow:0 12px 40px rgba(30,58,95,.12);transform:translateY(-3px)}
-.flagship-main::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1e3a5f,#2563eb)}
-.flagship-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;background:var(--accent);color:#fff;padding:.25rem .7rem;border-radius:4px;margin-bottom:1rem}
+.flagship-main::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#BE9F56,#d4b87a)}
+.flagship-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;background:var(--gold);color:#0B1F3A;padding:.25rem .7rem;border-radius:4px;margin-bottom:1rem}
 .flagship-title{font-size:1.25rem;font-weight:800;color:var(--text);letter-spacing:-.5px;margin-bottom:.5rem;line-height:1.2}
 .flagship-desc{font-size:.9rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem}
 .flagship-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.4rem}
-.flagship-tag{font-size:.72rem;background:var(--accent-light);color:var(--accent);padding:.2rem .6rem;border-radius:4px;font-weight:600}
+.flagship-tag{font-size:.72rem;background:var(--gold-light);color:#6b4f0f;padding:.2rem .6rem;border-radius:4px;font-weight:600}
 .flagship-links{display:flex;gap:.75rem;flex-wrap:wrap}
 .flagship-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;padding:.5rem 1rem;border-radius:7px;text-decoration:none;transition:all .2s}
-.flagship-link-primary{background:var(--accent);color:#fff}
-.flagship-link-primary:hover{background:#162d4a;transform:translateY(-1px)}
+.flagship-link-primary{background:var(--gold);color:#0B1F3A;font-weight:700}
+.flagship-link-primary:hover{background:#a8893d;transform:translateY(-1px)}
 .flagship-link-outline{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
 .flagship-link-outline:hover{background:var(--accent-light);transform:translateY(-1px)}
 .flagship-link-demo{background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff}
@@ -462,7 +537,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 .flagship-side{display:flex;flex-direction:column;gap:1.5rem}
 .flagship-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;transition:box-shadow .2s,transform .2s;position:relative;overflow:hidden}
 .flagship-card:hover{box-shadow:0 8px 24px rgba(30,58,95,.10);transform:translateY(-2px)}
-.flagship-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#1e3a5f,#2563eb)}
+.flagship-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#BE9F56,#d4b87a)}
 .flagship-card-title{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.35rem}
 .flagship-card-desc{font-size:.81rem;color:var(--muted);line-height:1.55;margin-bottom:.9rem}
 .flagship-card-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.9rem}
@@ -546,33 +621,6 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-<section id="about" class="fade-in">
-  <div class="section-label" data-i18n="about_label">About Me</div>
-  <h2 data-i18n="about_title">Bio & Background</h2>
-  <div class="about-grid">
-    <div class="about-photo">
-      <img id="profilePhoto" src="IMG_9994.JPG" alt="Cesar A. Gonzalez">
-      <div class="photo-name">Cesar A. Gonzalez</div>
-    </div>
-    <div class="about-text">
-      <p data-i18n="about_p1">Meticulous Financial Analyst who undertakes complex assignments, meets tight deadlines, and delivers superior performance — with practical knowledge in corporate finance and financial markets.</p>
-      <p data-i18n="about_p2">Always leading with an ethical and responsible approach, with a vision oriented to results. I thrive in fast-paced environments, tracing clear objectives for my team and myself while fostering healthy competition and collaboration.</p>
-      <p data-i18n="about_p3">Native Spanish and English speaker, fluent in French, and intermediate Chinese. Passionate about continuously expanding my skillset and finding new opportunities to grow.</p>
-      <div class="about-pills">
-        <span class="pill">Financial Analysis</span><span class="pill">Financial Modeling</span>
-        <span class="pill">Portfolio Management</span><span class="pill">Data Science & AI</span>
-        <span class="pill">Corporate Finance</span><span class="pill">Strategic Planning</span>
-        <span class="pill">Risk Analysis</span><span class="pill">Business Intelligence</span>
-        <span class="pill">Market Analysis</span><span class="pill">Client Relations</span>
-      </div>
-    </div>
-    <div class="about-stats">
-      <div class="stat-card"><div class="stat-num">4</div><div class="stat-desc" data-i18n="stat1">Languages: Spanish, English, French, Chinese</div></div>
-      <div class="stat-card"><div class="stat-num">78.6%</div><div class="stat-desc" data-i18n="stat2">Benchmark outperformance rate in portfolio management</div></div>
-      <div class="stat-card"><div class="stat-num">3</div><div class="stat-desc" data-i18n="stat3">Core domains: Finance, Data Science & Consulting</div></div>
     </div>
   </div>
 </section>
@@ -1485,6 +1533,75 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 
 <hr class="divider"/>
 
+<!-- GLEZ ADVISORY -->
+<style>
+#glez-section{padding:5rem 4rem;background:#0B1F3A;position:relative;overflow:hidden}
+#glez-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 70% 50%,rgba(190,159,86,.07) 0%,transparent 65%);pointer-events:none}
+.glez-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.glez-left{}
+.glez-logo-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.glez-logo-img{height:52px;width:auto}
+.glez-wordmark{font-family:'Cormorant Garamond','Georgia',serif;font-size:2rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#fff;line-height:1}
+.glez-wordmark span{color:var(--gold)}
+.glez-tagline{font-size:.68rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.glez-rule{width:48px;height:1px;background:var(--gold);margin:1rem 0 1.2rem}
+.glez-desc{font-size:.92rem;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:2rem;font-weight:300}
+.glez-btn{display:inline-block;background:var(--gold);color:#0B1F3A;padding:.7rem 1.8rem;font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .2s}
+.glez-btn:hover{background:#D4B878;transform:translateY(-2px);box-shadow:0 6px 20px rgba(190,159,86,.3)}
+.glez-right{}
+.glez-pillars{display:flex;flex-direction:column;gap:1px}
+.glez-pillar{background:rgba(255,255,255,.04);border:1px solid rgba(190,159,86,.15);padding:1.2rem 1.5rem;display:flex;align-items:flex-start;gap:1rem;transition:background .2s}
+.glez-pillar:hover{background:rgba(190,159,86,.07)}
+.glez-pillar-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem}
+.glez-pillar-title{font-size:.85rem;font-weight:600;color:#fff;margin-bottom:.2rem}
+.glez-pillar-desc{font-size:.76rem;color:rgba(255,255,255,.5);line-height:1.5;font-weight:300}
+.glez-metrics{display:flex;gap:2rem;margin-top:2rem;flex-wrap:wrap}
+.glez-metric-num{font-family:'Cormorant Garamond','Georgia',serif;font-size:1.6rem;font-weight:600;color:var(--gold);line-height:1}
+.glez-metric-lbl{font-size:.65rem;color:rgba(255,255,255,.4);letter-spacing:.5px;margin-top:.1rem}
+@media(max-width:800px){
+  .glez-inner{grid-template-columns:1fr;gap:3rem}
+  #glez-section{padding:4rem 1.5rem}
+}
+</style>
+
+<section id="glez-section" class="fade-in">
+  <div class="glez-inner">
+    <div class="glez-left">
+      <div class="glez-logo-row">
+        <img src="1000049634.png" alt="GLEZ" class="glez-logo-img" onerror="this.style.display='none'">
+        <div class="glez-wordmark">GLEZ<span>.</span></div>
+      </div>
+      <div class="glez-tagline" data-i18n="glez_tagline">Strategic Finance & Data Science</div>
+      <div class="glez-rule"></div>
+      <div class="glez-desc" data-i18n="glez_desc">Boutique advisory combining M&amp;A, portfolio optimization, and financial decision systems for institutions, family offices, and growth-stage companies.</div>
+      <a href="glez.html" class="glez-btn" data-i18n="glez_cta">Visit GLEZ Advisory →</a>
+      <div class="glez-metrics">
+        <div><div class="glez-metric-num">78.6%</div><div class="glez-metric-lbl">Benchmark outperformance</div></div>
+        <div><div class="glez-metric-num">91%</div><div class="glez-metric-lbl">Model accuracy</div></div>
+        <div><div class="glez-metric-num">9</div><div class="glez-metric-lbl">Global jurisdictions</div></div>
+      </div>
+    </div>
+    <div class="glez-right">
+      <div class="glez-pillars">
+        <div class="glez-pillar">
+          <div class="glez-pillar-icon">📊</div>
+          <div><div class="glez-pillar-title" data-i18n="glez_p1_title">M&amp;A &amp; Strategic Finance</div><div class="glez-pillar-desc" data-i18n="glez_p1_desc">Transaction advisory, financial due diligence, and valuation across sectors and jurisdictions.</div></div>
+        </div>
+        <div class="glez-pillar">
+          <div class="glez-pillar-icon">⚡</div>
+          <div><div class="glez-pillar-title" data-i18n="glez_p2_title">Portfolio Optimization &amp; Risk Modeling</div><div class="glez-pillar-desc" data-i18n="glez_p2_desc">Factor-based allocation, mean-variance optimization, and risk-adjusted benchmarking.</div></div>
+        </div>
+        <div class="glez-pillar">
+          <div class="glez-pillar-icon">🏗️</div>
+          <div><div class="glez-pillar-title" data-i18n="glez_p3_title">Data Science &amp; Decision Systems</div><div class="glez-pillar-desc" data-i18n="glez_p3_desc">Custom decision-support platforms that replace manual workflows with scalable analytics infrastructure.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
 <!-- CONTACT -->
 <section id="contact" class="fade-in">
   <div class="section-label" data-i18n="contact_label">Contact</div>
@@ -1508,7 +1625,8 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 // ── TRANSLATIONS ────────────────────────────────────────────────────
 const T={
 en:{
-  flagship_label:"Open Source Work",flagship_title:"Highlighted Projects",flagship_sub:"Selected repositories combining quantitative finance, machine learning, and data engineering. All open source on GitHub.",flag1_title:"Quant Research Framework",flag1_desc:"Framework for developing and backtesting algorithmic trading strategies with risk-adjusted performance metrics.",flag2_title:"Corporate Distress Model",flag2_desc:"Predictive model for corporate bankruptcy risk using financial ratios and machine learning.",flag3_title:"Market Prediction System",flag3_desc:"ML pipeline for financial time-series prediction and trading signal generation with backtesting.",flag4_title:"Portfolio Optimizer",flag4_desc:"Markowitz optimization framework with risk-adjusted performance metrics.",flag_github:"View on GitHub",flag_live_demo:"Live Demo ↓",flag_demo:"Demo",nav_flagship:"Projects",ticker_label:"Markets",global_label:"Global Reach",global_title:"Experience Across Multiple Jurisdictions",global_cities:"Cities & Regions",global_countries:"Countries",global_continents:"Continents",global_sub:"I've worked across diverse financial markets, legal frameworks, and business cultures — from offshore jurisdictions to emerging markets — bringing a truly international perspective to every engagement.",opt_asset_a:"Asset A — Equity",opt_asset_b:"Asset B — Growth",opt_asset_c:"Asset C — Bond",opt_asset_a_lbl:"Asset A",opt_asset_b_lbl:"Asset B",opt_asset_c_lbl:"Asset C",opt_rf:"Risk-free Rate (%)",opt_btn_sharpe:"⚡ Max Sharpe Ratio",opt_btn_minvar:"📉 Min Variance",nav_about:"About",nav_edu:"Education",nav_services:"Services",nav_client:"Projects",nav_tools:"Tools",nav_contact:"Contact",nav_now:"Now",
+  flagship_label:"Open Source Work",flagship_title:"Highlighted Projects",flagship_sub:"Selected repositories combining quantitative finance, machine learning, and data engineering. All open source on GitHub.",flag1_title:"Quant Research Framework",flag1_desc:"Framework for developing and backtesting algorithmic trading strategies with risk-adjusted performance metrics.",flag2_title:"Corporate Distress Model",flag2_desc:"Predictive model for corporate bankruptcy risk using financial ratios and machine learning.",flag3_title:"Market Prediction System",flag3_desc:"ML pipeline for financial time-series prediction and trading signal generation with backtesting.",flag4_title:"Portfolio Optimizer",flag4_desc:"Markowitz optimization framework with risk-adjusted performance metrics.",flag_github:"View on GitHub",flag_live_demo:"Live Demo ↓",flag_demo:"Demo",nav_flagship:"Projects",ticker_label:"Markets",global_label:"Global Reach",global_title:"Experience Across Multiple Jurisdictions",global_cities:"Cities & Regions",global_countries:"Countries",global_continents:"Continents",global_sub:"I've worked across diverse financial markets, legal frameworks, and business cultures — from offshore jurisdictions to emerging markets — bringing a truly international perspective to every engagement.",opt_asset_a:"Asset A — Equity",opt_asset_b:"Asset B — Growth",opt_asset_c:"Asset C — Bond",opt_asset_a_lbl:"Asset A",opt_asset_b_lbl:"Asset B",opt_asset_c_lbl:"Asset C",opt_rf:"Risk-free Rate (%)",opt_btn_sharpe:"⚡ Max Sharpe Ratio",opt_btn_minvar:"📉 Min Variance",nav_advisory:"Advisory",glez_tagline:"Strategic Finance & Data Science",glez_desc:"Boutique advisory combining M&A, portfolio optimization, and financial decision systems for institutions, family offices, and growth-stage companies.",glez_cta:"Visit GLEZ Advisory →",glez_p1_title:"M&A & Strategic Finance",glez_p1_desc:"Transaction advisory, financial due diligence, and valuation across sectors and jurisdictions.",glez_p2_title:"Portfolio Optimization & Risk Modeling",glez_p2_desc:"Factor-based allocation, mean-variance optimization, and risk-adjusted benchmarking.",glez_p3_title:"Data Science & Decision Systems",glez_p3_desc:"Custom decision-support platforms that replace manual workflows with scalable analytics infrastructure.",
+  impact_label:"Selected Impact",impact_title:"Results that speak for themselves",impact_1:"Benchmark outperformance rate in active portfolio management",impact_2:"Model accuracy in real estate profitability prediction",impact_3:"Portfolio allocation time reduced through automation",impact_4:"Profit improvement vs. original developer estimate",impact_5:"Cities & jurisdictions of active financial market experience",impact_6:"Core domains: Finance · Data Science · Strategy",advisory_sub:"Strategic Finance & Data Science",advisory_tagline:"Global Leadership in Economic & Financial Strategy",advisory_desc:"Senior-level financial advisory and quantitative analysis for institutions, family offices, and growth-stage companies — combining rigorous financial modeling with data-driven decision systems.",advisory_label:"What We Do",adv1_title:"M&A & Transaction Advisory",adv1_desc:"Financial due diligence, valuation modeling, deal structuring, and post-merger integration for cross-border transactions.",adv2_title:"Portfolio Optimization & Risk",adv2_desc:"Quantitative portfolio construction, factor-based allocation, and risk-adjusted performance benchmarking.",adv3_title:"Financial Decision Systems",adv3_desc:"Custom decision-support tools, automated financial models, and analytics platforms that replace manual workflows.",adv4_title:"Market Intelligence & Strategy",adv4_desc:"Competitive analysis, sector research, macroeconomic scenario modeling, and strategic planning across global markets.",adv_step1_title:"Diagnose",adv_step1_desc:"Identify the core financial or operational problem with precision",adv_step2_title:"Model",adv_step2_desc:"Build rigorous quantitative frameworks tailored to the specific context",adv_step3_title:"Execute",adv_step3_desc:"Deliver actionable recommendations and implementation-ready systems",nav_work:"Selected Work",nav_about:"About",nav_edu:"Education",nav_services:"Services",nav_client:"Projects",nav_tools:"Tools",nav_contact:"Contact",nav_now:"Now",
   edu_label:"Academic Background",edu_title:"Education & Credentials",edu_formal:"Formal Degrees",edu_exec:"Executive Education",edu_honors:"Honors",
   edu_badge_phd:"PhD",edu_badge_msc:"MSc",edu_badge_bsc:"Bachelor's",
   edu_phd_school:"UNAM",edu_phd_prog:"Applied Economics",edu_phd_fields:"Research: Artificial Intelligence · Data Science · Public Policy",
@@ -1529,10 +1647,10 @@ en:{
   now_updated:"Last updated: March 2026",
   hero_tag:"Financial Data Science · Quantitative Analysis · Machine Learning",
   hero_h1:`Cesar A. Gonzalez`,
-  hero_tagline:"Financial Data Scientist · Quantitative Analyst · Machine Learning",
-  hero_pitch:`Turning complex data into <strong>clear decisions.</strong><br>I work at the intersection of finance, strategy, and AI — building models and tools that drive smarter business outcomes.`,
+  hero_tagline:"Strategic Finance · M&A · Portfolio Optimization · Decision Systems",
+  hero_pitch:`I design and build <strong>financial decision systems</strong> that improve capital allocation, risk management, and operational performance — across global markets.`,
   hero_sub:"I work at the intersection of finance, strategy, and AI — building models and tools that drive smarter business outcomes.",
-  hero_cta_resume:"📄 Download CV",hero_cta1:"Explore My Work",hero_cta_cal:"📅 Schedule a Call",hero_cta2:"Get in Touch",
+  hero_cta_resume:"📄 Download CV",hero_cta1:"Selected Work",hero_cta_cal:"📅 Schedule a Call",hero_cta2:"Get in Touch",
   about_label:"About Me",about_title:"Bio & Background",
   about_p1:"Meticulous Financial Analyst who undertakes complex assignments, meets tight deadlines, and delivers superior performance — with practical knowledge in corporate finance and financial markets.",
   about_p2:"Always leading with an ethical and responsible approach, with a vision oriented to results. I thrive in fast-paced environments, tracing clear objectives for my team and myself while fostering healthy competition and collaboration.",
@@ -1597,7 +1715,8 @@ en:{
   footer_disclaimer:"Information presented is for educational purposes only and does not constitute financial advice."
 },
 es:{
-  flagship_label:"Proyectos Open Source",flagship_title:"Proyectos Destacados",flagship_sub:"Repositorios seleccionados que combinan finanzas cuantitativas, machine learning e ingeniería de datos. Todo open source en GitHub.",flag1_title:"Framework de Investigación Cuantitativa",flag1_desc:"Framework para desarrollar y backtestear estrategias de trading algorítmico con métricas de rendimiento ajustadas al riesgo.",flag2_title:"Modelo de Distress Corporativo",flag2_desc:"Modelo predictivo de riesgo de quiebra corporativa usando ratios financieros y machine learning.",flag3_title:"Sistema de Predicción de Mercados",flag3_desc:"Pipeline de ML para predicción de series temporales financieras y generación de señales de trading con backtesting.",flag4_title:"Optimizador de Carteras",flag4_desc:"Framework de optimización Markowitz con métricas de rendimiento ajustadas al riesgo.",flag_github:"Ver en GitHub",flag_live_demo:"Demo en Vivo ↓",flag_demo:"Demo",nav_flagship:"Proyectos",ticker_label:"Mercados",global_label:"Alcance Global",global_title:"Experiencia en Múltiples Jurisdicciones",global_cities:"Ciudades y Regiones",global_countries:"Países",global_continents:"Continentes",global_sub:"He trabajado en diversos mercados financieros, marcos legales y culturas empresariales — desde jurisdicciones offshore hasta mercados emergentes — aportando una perspectiva verdaderamente internacional.",opt_asset_a:"Activo A — Renta Variable",opt_asset_b:"Activo B — Crecimiento",opt_asset_c:"Activo C — Bono",opt_asset_a_lbl:"Activo A",opt_asset_b_lbl:"Activo B",opt_asset_c_lbl:"Activo C",opt_rf:"Tasa libre de riesgo (%)",opt_btn_sharpe:"⚡ Máx. Sharpe",opt_btn_minvar:"📉 Mín. Varianza",nav_about:"Sobre mí",nav_edu:"Educación",nav_services:"Servicios",nav_client:"Proyectos",nav_tools:"Herramientas",nav_contact:"Contacto",nav_now:"Ahora",
+  flagship_label:"Proyectos Open Source",flagship_title:"Proyectos Destacados",flagship_sub:"Repositorios seleccionados que combinan finanzas cuantitativas, machine learning e ingeniería de datos. Todo open source en GitHub.",flag1_title:"Framework de Investigación Cuantitativa",flag1_desc:"Framework para desarrollar y backtestear estrategias de trading algorítmico con métricas de rendimiento ajustadas al riesgo.",flag2_title:"Modelo de Distress Corporativo",flag2_desc:"Modelo predictivo de riesgo de quiebra corporativa usando ratios financieros y machine learning.",flag3_title:"Sistema de Predicción de Mercados",flag3_desc:"Pipeline de ML para predicción de series temporales financieras y generación de señales de trading con backtesting.",flag4_title:"Optimizador de Carteras",flag4_desc:"Framework de optimización Markowitz con métricas de rendimiento ajustadas al riesgo.",flag_github:"Ver en GitHub",flag_live_demo:"Demo en Vivo ↓",flag_demo:"Demo",nav_flagship:"Proyectos",ticker_label:"Mercados",global_label:"Alcance Global",global_title:"Experiencia en Múltiples Jurisdicciones",global_cities:"Ciudades y Regiones",global_countries:"Países",global_continents:"Continentes",global_sub:"He trabajado en diversos mercados financieros, marcos legales y culturas empresariales — desde jurisdicciones offshore hasta mercados emergentes — aportando una perspectiva verdaderamente internacional.",opt_asset_a:"Activo A — Renta Variable",opt_asset_b:"Activo B — Crecimiento",opt_asset_c:"Activo C — Bono",opt_asset_a_lbl:"Activo A",opt_asset_b_lbl:"Activo B",opt_asset_c_lbl:"Activo C",opt_rf:"Tasa libre de riesgo (%)",opt_btn_sharpe:"⚡ Máx. Sharpe",opt_btn_minvar:"📉 Mín. Varianza",nav_advisory:"Asesoría",glez_tagline:"Finanzas Estratégicas y Ciencia de Datos",glez_desc:"Asesoría boutique que combina M&A, optimización de carteras y sistemas de decisión financiera para instituciones, family offices y empresas en crecimiento.",glez_cta:"Visitar GLEZ Advisory →",glez_p1_title:"M&A y Finanzas Estratégicas",glez_p1_desc:"Asesoría en transacciones, due diligence financiero y valoración en distintos sectores y jurisdicciones.",glez_p2_title:"Optimización de Cartera y Riesgo",glez_p2_desc:"Asignación basada en factores, optimización media-varianza y benchmarking ajustado al riesgo.",glez_p3_title:"Ciencia de Datos y Sistemas de Decisión",glez_p3_desc:"Plataformas de soporte de decisiones personalizadas que reemplazan flujos manuales con infraestructura analítica escalable.",
+  impact_label:"Impacto Seleccionado",impact_title:"Resultados que hablan por sí solos",impact_1:"Tasa de superación del benchmark en gestión activa de carteras",impact_2:"Precisión del modelo en predicción de rentabilidad inmobiliaria",impact_3:"Tiempo de asignación de cartera reducido mediante automatización",impact_4:"Mejora de beneficio vs. estimación original del promotor",impact_5:"Ciudades y jurisdicciones con experiencia activa en mercados financieros",impact_6:"Áreas clave: Finanzas · Ciencia de Datos · Estrategia",advisory_sub:"Finanzas Estratégicas & Ciencia de Datos",advisory_tagline:"Liderazgo Global en Estrategia Económica y Financiera",advisory_desc:"Asesoría financiera senior y análisis cuantitativo para instituciones, family offices y empresas en crecimiento — combinando modelado financiero riguroso con sistemas de decisión basados en datos.",advisory_label:"Lo que hacemos",adv1_title:"M&A y Asesoría de Transacciones",adv1_desc:"Due diligence financiero, modelado de valoración, estructuración de operaciones e integración post-fusión en transacciones transfronterizas.",adv2_title:"Optimización de Cartera y Riesgo",adv2_desc:"Construcción cuantitativa de carteras, asignación basada en factores y benchmarking de rendimiento ajustado al riesgo.",adv3_title:"Sistemas de Decisión Financiera",adv3_desc:"Herramientas de soporte de decisiones, modelos financieros automatizados y plataformas analíticas que reemplazan flujos manuales.",adv4_title:"Inteligencia de Mercado y Estrategia",adv4_desc:"Análisis competitivo, investigación sectorial, modelado de escenarios macroeconómicos y planificación estratégica en mercados globales.",adv_step1_title:"Diagnosticar",adv_step1_desc:"Identificar el problema financiero u operativo central con precisión",adv_step2_title:"Modelar",adv_step2_desc:"Construir marcos cuantitativos rigurosos adaptados al contexto específico",adv_step3_title:"Ejecutar",adv_step3_desc:"Entregar recomendaciones accionables y sistemas listos para implementar",nav_work:"Proyectos Seleccionados",nav_about:"Sobre mí",nav_edu:"Educación",nav_services:"Servicios",nav_client:"Proyectos",nav_tools:"Herramientas",nav_contact:"Contacto",nav_now:"Ahora",
   edu_label:"Formación Académica",edu_title:"Educación y Credenciales",edu_formal:"Títulos Académicos",edu_exec:"Formación Ejecutiva",edu_honors:"Con Honores",
   edu_badge_phd:"Doctorado",edu_badge_msc:"Máster",edu_badge_bsc:"Licenciatura",
   edu_phd_school:"UNAM",edu_phd_prog:"Economía Aplicada",edu_phd_fields:"Investigación: Inteligencia Artificial · Ciencia de Datos · Política Pública",
@@ -1618,10 +1737,10 @@ es:{
   now_updated:"Última actualización: marzo 2026",
   hero_tag:"Ciencia de Datos Financiera · Análisis Cuantitativo · Machine Learning",
   hero_h1:`César A. González`,
-  hero_tagline:"Científico de Datos Financiero · Analista Cuantitativo · Machine Learning",
-  hero_pitch:`Convirtiendo datos complejos en <strong>decisiones claras.</strong><br>Trabajo en la intersección de las finanzas, la estrategia y la IA — creando modelos y herramientas que impulsan mejores decisiones de negocio.`,
+  hero_tagline:"Finanzas Estratégicas · M&A · Optimización de Carteras · Sistemas de Decisión",
+  hero_pitch:`Diseño y construyo <strong>sistemas de decisión financiera</strong> que mejoran la asignación de capital, la gestión de riesgos y el rendimiento operativo — en mercados globales.`,
   hero_sub:"Trabajo en la intersección de las finanzas, la estrategia y la IA — creando modelos y herramientas que impulsan mejores decisiones de negocio.",
-  hero_cta_resume:"📄 Descargar CV",hero_cta1:"Ver mis proyectos",hero_cta_cal:"📅 Agendar una llamada",hero_cta2:"Contáctame",
+  hero_cta_resume:"📄 Descargar CV",hero_cta1:"Proyectos Seleccionados",hero_cta_cal:"📅 Agendar una llamada",hero_cta2:"Contáctame",
   about_label:"Sobre mí",about_title:"Biografía y Trayectoria",
   about_p1:"Analista Financiero meticuloso que asume tareas complejas, cumple plazos ajustados y ofrece un rendimiento superior, con conocimiento práctico en finanzas corporativas y mercados financieros.",
   about_p2:"Siempre con un enfoque ético y responsable, orientado a resultados. Prospero en entornos dinámicos, trazando objetivos claros para mi equipo y para mí, fomentando la sana competencia y la colaboración.",
@@ -1685,7 +1804,8 @@ es:{
   footer_disclaimer:"La información presentada es solo para fines educativos y no constituye asesoramiento financiero."
 },
 fr:{
-  flagship_label:"Projets Open Source",flagship_title:"Projets Mis en Avant",flagship_sub:"Dépôts sélectionnés combinant finance quantitative, machine learning et ingénierie des données. Tout open source sur GitHub.",flag1_title:"Framework de Recherche Quantitative",flag1_desc:"Framework pour développer et backtester des stratégies de trading algorithmique avec des métriques de performance ajustées au risque.",flag2_title:"Modèle de Détresse Corporative",flag2_desc:"Modèle prédictif du risque de faillite d'entreprise utilisant des ratios financiers et le machine learning.",flag3_title:"Système de Prédiction de Marché",flag3_desc:"Pipeline ML pour la prédiction de séries temporelles financières et la génération de signaux de trading avec backtesting.",flag4_title:"Optimiseur de Portefeuille",flag4_desc:"Framework d'optimisation Markowitz avec métriques de performance ajustées au risque.",flag_github:"Voir sur GitHub",flag_live_demo:"Démo Live ↓",flag_demo:"Démo",nav_flagship:"Projets",ticker_label:"Marchés",global_label:"Présence Mondiale",global_title:"Expérience dans Plusieurs Juridictions",global_cities:"Villes & Régions",global_countries:"Pays",global_continents:"Continents",global_sub:"J'ai travaillé sur divers marchés financiers, cadres juridiques et cultures d'affaires — des juridictions offshore aux marchés émergents — apportant une perspective véritablement internationale.",opt_asset_a:"Actif A — Actions",opt_asset_b:"Actif B — Croissance",opt_asset_c:"Actif C — Obligation",opt_asset_a_lbl:"Actif A",opt_asset_b_lbl:"Actif B",opt_asset_c_lbl:"Actif C",opt_rf:"Taux sans risque (%)",opt_btn_sharpe:"⚡ Max Sharpe",opt_btn_minvar:"📉 Min Variance",nav_about:"À propos",nav_edu:"Formation",nav_services:"Services",nav_client:"Projets",nav_tools:"Outils",nav_contact:"Contact",nav_now:"Maintenant",
+  flagship_label:"Projets Open Source",flagship_title:"Projets Mis en Avant",flagship_sub:"Dépôts sélectionnés combinant finance quantitative, machine learning et ingénierie des données. Tout open source sur GitHub.",flag1_title:"Framework de Recherche Quantitative",flag1_desc:"Framework pour développer et backtester des stratégies de trading algorithmique avec des métriques de performance ajustées au risque.",flag2_title:"Modèle de Détresse Corporative",flag2_desc:"Modèle prédictif du risque de faillite d'entreprise utilisant des ratios financiers et le machine learning.",flag3_title:"Système de Prédiction de Marché",flag3_desc:"Pipeline ML pour la prédiction de séries temporelles financières et la génération de signaux de trading avec backtesting.",flag4_title:"Optimiseur de Portefeuille",flag4_desc:"Framework d'optimisation Markowitz avec métriques de performance ajustées au risque.",flag_github:"Voir sur GitHub",flag_live_demo:"Démo Live ↓",flag_demo:"Démo",nav_flagship:"Projets",ticker_label:"Marchés",global_label:"Présence Mondiale",global_title:"Expérience dans Plusieurs Juridictions",global_cities:"Villes & Régions",global_countries:"Pays",global_continents:"Continents",global_sub:"J'ai travaillé sur divers marchés financiers, cadres juridiques et cultures d'affaires — des juridictions offshore aux marchés émergents — apportant une perspective véritablement internationale.",opt_asset_a:"Actif A — Actions",opt_asset_b:"Actif B — Croissance",opt_asset_c:"Actif C — Obligation",opt_asset_a_lbl:"Actif A",opt_asset_b_lbl:"Actif B",opt_asset_c_lbl:"Actif C",opt_rf:"Taux sans risque (%)",opt_btn_sharpe:"⚡ Max Sharpe",opt_btn_minvar:"📉 Min Variance",nav_advisory:"Conseil",glez_tagline:"Finance Stratégique & Science des Données",glez_desc:"Conseil boutique combinant M&A, optimisation de portefeuille et systèmes de décision financière pour institutions, family offices et entreprises en croissance.",glez_cta:"Visiter GLEZ Advisory →",glez_p1_title:"M&A & Finance Stratégique",glez_p1_desc:"Conseil en transactions, due diligence financière et valorisation dans différents secteurs et juridictions.",glez_p2_title:"Optimisation de Portefeuille & Risque",glez_p2_desc:"Allocation factorielle, optimisation moyenne-variance et benchmarking ajusté au risque.",glez_p3_title:"Science des Données & Systèmes de Décision",glez_p3_desc:"Plateformes d'aide à la décision personnalisées remplaçant les flux manuels par une infrastructure analytique évolutive.",
+  impact_label:"Impact Sélectionné",impact_title:"Des résultats qui parlent d'eux-mêmes",impact_1:"Taux de surperformance du benchmark en gestion de portefeuille active",impact_2:"Précision du modèle dans la prédiction de rentabilité immobilière",impact_3:"Temps d'allocation de portefeuille réduit par l'automatisation",impact_4:"Amélioration du bénéfice vs. estimation initiale du promoteur",impact_5:"Villes et juridictions avec expérience active sur les marchés financiers",impact_6:"Domaines clés : Finance · Data Science · Stratégie",advisory_sub:"Finance Stratégique & Science des Données",advisory_tagline:"Leadership Mondial en Stratégie Économique et Financière",advisory_desc:"Conseil financier de haut niveau et analyse quantitative pour institutions, family offices et entreprises en croissance — combinant modélisation financière rigoureuse et systèmes de décision basés sur les données.",advisory_label:"Ce que nous faisons",adv1_title:"M&A & Conseil en Transactions",adv1_desc:"Due diligence financière, modélisation de valorisation, structuration d'opérations et intégration post-fusion pour transactions transfrontalières.",adv2_title:"Optimisation de Portefeuille & Risque",adv2_desc:"Construction quantitative de portefeuilles, allocation factorielle et benchmarking de performance ajustée au risque.",adv3_title:"Systèmes de Décision Financière",adv3_desc:"Outils d'aide à la décision, modèles financiers automatisés et plateformes analytiques remplaçant les flux manuels.",adv4_title:"Intelligence de Marché & Stratégie",adv4_desc:"Analyse concurrentielle, recherche sectorielle, modélisation de scénarios macroéconomiques et planification stratégique sur marchés mondiaux.",adv_step1_title:"Diagnostiquer",adv_step1_desc:"Identifier le problème financier ou opérationnel central avec précision",adv_step2_title:"Modéliser",adv_step2_desc:"Construire des cadres quantitatifs rigoureux adaptés au contexte spécifique",adv_step3_title:"Exécuter",adv_step3_desc:"Livrer des recommandations actionnables et des systèmes prêts à implémenter",nav_work:"Travaux Sélectionnés",nav_about:"À propos",nav_edu:"Formation",nav_services:"Services",nav_client:"Projets",nav_tools:"Outils",nav_contact:"Contact",nav_now:"Maintenant",
   edu_label:"Parcours Académique",edu_title:"Formation & Diplômes",edu_formal:"Diplômes Officiels",edu_exec:"Formation Continue",edu_honors:"Avec Mention",
   edu_badge_phd:"Doctorat",edu_badge_msc:"Master",edu_badge_bsc:"Licence",
   edu_phd_school:"UNAM",edu_phd_prog:"Économie Appliquée",edu_phd_fields:"Recherche : Intelligence Artificielle · Science des Données · Politiques Publiques",
@@ -1706,10 +1826,10 @@ fr:{
   now_updated:"Dernière mise à jour : mars 2026",
   hero_tag:"Science des Données Financières · Analyse Quantitative · Machine Learning",
   hero_h1:`César A. González`,
-  hero_tagline:"Data Scientist Financier · Analyste Quantitatif · Machine Learning",
-  hero_pitch:`Transformer des données complexes en <strong>décisions claires.</strong><br>Je travaille à l'intersection de la finance, de la stratégie et de l'IA — en construisant des modèles et des outils qui génèrent de meilleures décisions d'affaires.`,
+  hero_tagline:"Finance Stratégique · M&A · Optimisation de Portefeuille · Systèmes de Décision",
+  hero_pitch:`Je conçois et construis des <strong>systèmes de décision financière</strong> qui améliorent l'allocation du capital, la gestion des risques et la performance opérationnelle — sur les marchés mondiaux.`,
   hero_sub:"Je travaille à l'intersection de la finance, de la stratégie et de l'IA — en construisant des modèles et des outils qui génèrent de meilleures décisions d'affaires.",
-  hero_cta_resume:"📄 Télécharger CV",hero_cta1:"Voir mes projets",hero_cta_cal:"📅 Planifier un appel",hero_cta2:"Me contacter",
+  hero_cta_resume:"📄 Télécharger CV",hero_cta1:"Travaux Sélectionnés",hero_cta_cal:"📅 Planifier un appel",hero_cta2:"Me contacter",
   about_label:"À propos",about_title:"Biographie & Parcours",
   about_p1:"Analyste financier méticuleux qui prend en charge des missions complexes, respecte des délais serrés et délivre des performances supérieures, avec une connaissance pratique de la finance d'entreprise.",
   about_p2:"Toujours guidé par une approche éthique et responsable, orienté vers les résultats. Je m'épanouis dans des environnements dynamiques en fixant des objectifs clairs pour mon équipe et moi-même.",
@@ -1773,7 +1893,8 @@ fr:{
   footer_disclaimer:"Les informations présentées sont à titre éducatif uniquement et ne constituent pas un conseil financier."
 },
 zh:{
-  flagship_label:"开源项目",flagship_title:"精选项目",flagship_sub:"精选结合量化金融、机器学习和数据工程的代码库，全部在GitHub上开源。",flag1_title:"量化研究框架",flag1_desc:"用于开发和回测算法交易策略的框架，具有风险调整后的绩效指标。",flag2_title:"企业困境预测模型",flag2_desc:"使用财务比率和机器学习预测企业破产风险的模型。",flag3_title:"市场预测系统",flag3_desc:"用于金融时间序列预测和交易信号生成的机器学习管道，含回测功能。",flag4_title:"投资组合优化器",flag4_desc:"具有风险调整后绩效指标的马科维茨优化框架。",flag_github:"在GitHub查看",flag_live_demo:"实时演示 ↓",flag_demo:"演示",nav_flagship:"项目",ticker_label:"市场",global_label:"全球影响力",global_title:"跨多个司法管辖区的经验",global_cities:"城市与地区",global_countries:"国家",global_continents:"大洲",global_sub:"我曾在不同的金融市场、法律框架和商业文化中工作——从离岸司法管辖区到新兴市场——为每次合作带来真正的国际化视角。",opt_asset_a:"资产A — 股票",opt_asset_b:"资产B — 成长",opt_asset_c:"资产C — 债券",opt_asset_a_lbl:"资产A",opt_asset_b_lbl:"资产B",opt_asset_c_lbl:"资产C",opt_rf:"无风险利率 (%)",opt_btn_sharpe:"⚡ 最大夏普",opt_btn_minvar:"📉 最小方差",nav_about:"关于我",nav_edu:"教育背景",nav_services:"服务",nav_client:"项目",nav_tools:"工具",nav_contact:"联系",nav_now:"近况",
+  flagship_label:"开源项目",flagship_title:"精选项目",flagship_sub:"精选结合量化金融、机器学习和数据工程的代码库，全部在GitHub上开源。",flag1_title:"量化研究框架",flag1_desc:"用于开发和回测算法交易策略的框架，具有风险调整后的绩效指标。",flag2_title:"企业困境预测模型",flag2_desc:"使用财务比率和机器学习预测企业破产风险的模型。",flag3_title:"市场预测系统",flag3_desc:"用于金融时间序列预测和交易信号生成的机器学习管道，含回测功能。",flag4_title:"投资组合优化器",flag4_desc:"具有风险调整后绩效指标的马科维茨优化框架。",flag_github:"在GitHub查看",flag_live_demo:"实时演示 ↓",flag_demo:"演示",nav_flagship:"项目",ticker_label:"市场",global_label:"全球影响力",global_title:"跨多个司法管辖区的经验",global_cities:"城市与地区",global_countries:"国家",global_continents:"大洲",global_sub:"我曾在不同的金融市场、法律框架和商业文化中工作——从离岸司法管辖区到新兴市场——为每次合作带来真正的国际化视角。",opt_asset_a:"资产A — 股票",opt_asset_b:"资产B — 成长",opt_asset_c:"资产C — 债券",opt_asset_a_lbl:"资产A",opt_asset_b_lbl:"资产B",opt_asset_c_lbl:"资产C",opt_rf:"无风险利率 (%)",opt_btn_sharpe:"⚡ 最大夏普",opt_btn_minvar:"📉 最小方差",nav_advisory:"顾问服务",glez_tagline:"战略金融与数据科学",glez_desc:"精品顾问服务，结合并购、投资组合优化和金融决策系统，服务机构、家族办公室和成长型企业。",glez_cta:"访问GLEZ咨询 →",glez_p1_title:"并购与战略金融",glez_p1_desc:"跨行业和司法管辖区的交易顾问、财务尽职调查和估值服务。",glez_p2_title:"投资组合优化与风险建模",glez_p2_desc:"因子配置、均值-方差优化和风险调整后基准分析。",glez_p3_title:"数据科学与决策系统",glez_p3_desc:"定制决策支持平台，以可扩展的分析基础设施替代手动工作流程。",
+  impact_label:"精选成果",impact_title:"用结果说话",impact_1:"主动组合管理中超越基准的比率",impact_2:"房地产盈利预测模型准确率",impact_3:"通过自动化缩短的投资组合配置时间",impact_4:"相比开发商原始估算的利润提升",impact_5:"活跃金融市场经验的城市与司法管辖区",impact_6:"核心领域：金融 · 数据科学 · 战略",advisory_sub:"战略金融与数据科学",advisory_tagline:"经济与金融战略的全球领导力",advisory_desc:"为机构、家族办公室和成长型企业提供高级金融顾问和量化分析服务——将严格的金融建模与数据驱动的决策系统相结合。",advisory_label:"我们的服务",adv1_title:"并购与交易顾问",adv1_desc:"跨境交易的财务尽职调查、估值建模、交易结构设计和并购后整合分析。",adv2_title:"投资组合优化与风险管理",adv2_desc:"量化投资组合构建、因子配置和风险调整后绩效基准分析。",adv3_title:"金融决策系统",adv3_desc:"定制决策支持工具、自动化财务模型和替代手动工作流的分析平台。",adv4_title:"市场情报与战略",adv4_desc:"竞争分析、行业研究、宏观经济情景建模以及全球市场战略规划。",adv_step1_title:"诊断",adv_step1_desc:"精确识别核心财务或运营问题",adv_step2_title:"建模",adv_step2_desc:"构建针对特定情境的严格量化框架",adv_step3_title:"执行",adv_step3_desc:"交付可执行的建议和即时可用的实施系统",nav_work:"精选项目",nav_about:"关于我",nav_edu:"教育背景",nav_services:"服务",nav_client:"项目",nav_tools:"工具",nav_contact:"联系",nav_now:"近况",
   edu_label:"学术背景",edu_title:"教育经历与资质",edu_formal:"正式学位",edu_exec:"高管教育",edu_honors:"荣誉",
   edu_badge_phd:"博士",edu_badge_msc:"硕士",edu_badge_bsc:"学士",
   edu_phd_school:"墨西哥国立自治大学",edu_phd_prog:"应用经济学",edu_phd_fields:"研究方向：人工智能 · 数据科学 · 公共政策",
@@ -1794,10 +1915,10 @@ zh:{
   now_updated:"最后更新：2026年3月",
   hero_tag:"金融数据科学 · 量化分析 · 机器学习",
   hero_h1:`César A. González`,
-  hero_tagline:"金融数据科学家 · 量化分析师 · 机器学习",
-  hero_pitch:`将复杂数据转化为<strong>清晰决策。</strong><br>我在金融、战略与人工智能的交汇处工作——构建模型与工具，推动更明智的商业决策。`,
+  hero_tagline:"战略金融 · 并购 · 投资组合优化 · 决策系统",
+  hero_pitch:`我设计和构建<strong>金融决策系统</strong>，改善资本配置、风险管理和运营绩效——覆盖全球市场。`,
   hero_sub:"我在金融、战略与人工智能的交汇处工作——构建模型与工具，推动更明智的商业决策。",
-  hero_cta_resume:"📄 下载简历",hero_cta1:"探索我的工作",hero_cta_cal:"📅 预约通话",hero_cta2:"联系我",
+  hero_cta_resume:"📄 下载简历",hero_cta1:"精选项目",hero_cta_cal:"📅 预约通话",hero_cta2:"联系我",
   about_label:"关于我",about_title:"个人简介与背景",
   about_p1:"严谨的金融分析师，能够承担复杂任务、在紧迫截止日期内交付卓越成果，具备企业金融和金融市场的实践知识。",
   about_p2:"始终以负责任的道德方式行事，以结果为导向。我在快节奏的环境中茁壮成长，为团队和自己制定明确目标，营造健康竞争与协作的氛围。",
