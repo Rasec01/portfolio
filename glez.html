@@ -276,10 +276,10 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
 .email-modal-cancel{background:transparent;color:var(--gray);padding:.65rem 1rem;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;border:1px solid rgba(11,31,58,.15);cursor:pointer}
 .email-modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--gray)}
 /* PILLAR IMAGES */
-.pillar-img-wrap{width:100%;height:200px;overflow:hidden;margin-bottom:1.2rem;flex-shrink:0}
-.pillar-img-wrap img{width:100%;height:100%;object-fit:fill;display:block;filter:brightness(.88);transition:filter .3s}
+.pillar-img-wrap{width:100%;height:auto;overflow:hidden;margin-bottom:1.2rem;flex-shrink:0}
+.pillar-img-wrap img{width:100%;height:auto;display:block;filter:brightness(.9);transition:filter .3s;aspect-ratio:16/10;object-fit:cover;object-position:center center}
 .pillar:hover .pillar-img-wrap img{filter:brightness(1)}
-@media(max-width:800px){.pillar-img-wrap{height:160px}}
+@media(max-width:800px){.pillar-img-wrap img{aspect-ratio:16/9}}
 
 /* LANG SWITCHER */
 .lang-switcher{display:flex;gap:.3rem}
@@ -333,7 +333,7 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
   <div class="hero-bg"></div>
   <div class="hero-body">
     <div class="eyebrow-row reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="hero_eyebrow">Strategic Finance & Data Science</div></div>
-    <div class="reveal delay1" style="margin-bottom:1.2rem"><img src="1000049634.png" alt="GLEZ" style="height:clamp(60px,8vw,90px);width:auto;filter:brightness(1.1)" onerror="this.style.display='none'"><h1 class="hero-firm" style="display:none">GLEZ</h1></div>
+    <div class="reveal delay1" style="margin-bottom:1.5rem;display:inline-block;background:rgba(255,255,255,0.10);backdrop-filter:blur(8px);border:1px solid rgba(190,159,86,0.3);border-radius:12px;padding:.6rem 1.2rem"><img src="1000049634.png" alt="GLEZ Strategic Finance & Data Science" style="height:clamp(52px,7vw,80px);width:auto;display:block" onerror="this.style.display='none'"><h1 class="hero-firm" style="display:none">GLEZ</h1></div>
     <p class="hero-sub-title reveal delay2" data-i18n="hero_tagline">M&amp;A · Portfolio Optimization · Financial Modeling · Decision Systems</p>
     <p class="reveal delay2" style="font-size:.82rem;color:rgba(255,255,255,.4);letter-spacing:.5px;font-weight:300;margin-bottom:2rem;line-height:1.7;max-width:520px;font-family:var(--font-display);font-style:italic" data-i18n="hero_position">Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.</p>
     <div class="hero-rule reveal delay2"></div>
@@ -707,7 +707,7 @@ window.addEventListener('scroll',()=>{
 
 <script>
 (function(){
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  var FINNHUB_KEY = 'YOUR_FINNHUB_KEY';
   var FINNHUB = [
     {sym:'S&P 500',fh:'SPY'},{sym:'NASDAQ',fh:'QQQ'},{sym:'DOW',fh:'DIA'},
     {sym:'AAPL',fh:'AAPL'},{sym:'MSFT',fh:'MSFT'},{sym:'NVDA',fh:'NVDA'},
@@ -817,7 +817,7 @@ en:{
   cta_title:"Ready to start a conversation?",
   cta_sub:"Schedule a 30-minute discovery call to discuss your goals, challenges, and how GLEZ can help drive better financial decisions.",
   cta_btn:"Schedule a Call →",
-  now_working:"⚙️ Currently Working On",,
+  now_working:"⚙️ Currently Working On",
   svc_eyebrow:"How We Engage",
   svc_title:"Two Lanes, <em>One Standard</em>",
   svc_sub:"We work with capital partners and institutions, and with firms seeking quantitative and analytical capabilities.",
@@ -875,7 +875,7 @@ en:{
   now_ts:"Last updated: April 2026",
   work_eyebrow:"Case Studies",
   work_title:"Selected <em>Engagements</em>",
-  work_sub:"Five flagship engagements across portfolio management, risk modeling, market prediction, real estate, and operational strategy."
+  work_sub:"Five flagship engagements across portfolio management, risk modeling, market prediction, real estate, and operational strategy.",
   ticker_label:"Markets"
 },
 es:{
@@ -905,7 +905,7 @@ es:{
   cta_title:"¿Listo para iniciar una conversación?",
   cta_sub:"Agenda una llamada de 30 minutos para hablar sobre tus objetivos, desafíos y cómo GLEZ puede ayudarte a tomar mejores decisiones financieras.",
   cta_btn:"Agendar una Llamada →",
-  now_working:"⚙️ Actualmente Trabajando En",,
+  now_working:"⚙️ Actualmente Trabajando En",
   svc_eyebrow:"Cómo Trabajamos",
   svc_title:"Dos Líneas, <em>Un Estándar</em>",
   svc_sub:"Trabajamos con socios de capital e instituciones, y con empresas que buscan capacidades cuantitativas y analíticas.",
@@ -963,7 +963,7 @@ es:{
   now_ts:"Última actualización: Abril 2026",
   work_eyebrow:"Estudios de Caso",
   work_title:"Proyectos <em>Seleccionados</em>",
-  work_sub:"Cinco compromisos destacados en gestión de carteras, modelado de riesgo, predicción de mercados, inmobiliario y estrategia operativa."
+  work_sub:"Cinco compromisos destacados en gestión de carteras, modelado de riesgo, predicción de mercados, inmobiliario y estrategia operativa.",
   ticker_label:"Mercados"
 },
 fr:{
@@ -993,7 +993,7 @@ fr:{
   cta_title:"Prêt à démarrer une conversation ?",
   cta_sub:"Planifiez un appel de 30 minutes pour discuter de vos objectifs, défis et de la façon dont GLEZ peut vous aider à prendre de meilleures décisions financières.",
   cta_btn:"Planifier un appel →",
-  now_working:"⚙️ En cours de travail",,
+  now_working:"⚙️ En cours de travail",
   svc_eyebrow:"Notre Approche",
   svc_title:"Deux Voies, <em>Un Standard</em>",
   svc_sub:"Nous travaillons avec des partenaires en capital et des institutions, ainsi qu'avec des entreprises recherchant des capacités quantitatives et analytiques.",
@@ -1051,7 +1051,7 @@ fr:{
   now_ts:"Dernière mise à jour : Avril 2026",
   work_eyebrow:"Études de Cas",
   work_title:"Missions <em>Sélectionnées</em>",
-  work_sub:"Cinq missions phares en gestion de portefeuille, modélisation des risques, prédiction de marché, immobilier et stratégie opérationnelle."
+  work_sub:"Cinq missions phares en gestion de portefeuille, modélisation des risques, prédiction de marché, immobilier et stratégie opérationnelle.",
   ticker_label:"Marchés"
 },
 zh:{
@@ -1081,7 +1081,7 @@ zh:{
   cta_title:"准备好开始对话了吗？",
   cta_sub:"预约30分钟探索通话，讨论您的目标、挑战以及GLEZ如何帮助您做出更好的财务决策。",
   cta_btn:"预约通话 →",
-  now_working:"⚙️ 目前正在进行",,
+  now_working:"⚙️ 目前正在进行",
   svc_eyebrow:"服务方式",
   svc_title:"两条路线，<em>同一标准</em>",
   svc_sub:"我们服务于资本合作伙伴和机构，以及寻求量化和分析能力的企业。",
@@ -1139,7 +1139,7 @@ zh:{
   now_ts:"最后更新：2026年4月",
   work_eyebrow:"案例研究",
   work_title:"精选<em>项目</em>",
-  work_sub:"涵盖投资组合管理、风险建模、市场预测、房地产和运营策略的五个旗舰项目。"
+  work_sub:"涵盖投资组合管理、风险建模、市场预测、房地产和运营策略的五个旗舰项目。",
   ticker_label:"市场"
 }
 };
@@ -1161,29 +1161,26 @@ function setLang(lang){
   localStorage.setItem('glez_lang',lang);
 }
 // Init
-(function(){
+document.addEventListener('DOMContentLoaded',function(){
   const saved=localStorage.getItem('glez_lang')||'en';
   setLang(saved);
-})();
+});
 </script>
 
 
 <script>
 function showEmailModal(){document.getElementById('emailModal').classList.add('open')}
 function hideEmailModal(){document.getElementById('emailModal').classList.remove('open')}
-document.getElementById('emailModal').addEventListener('click',function(e){if(e.target===this)hideEmailModal()})
+document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('emailModal');if(m)m.addEventListener('click',function(e){if(e.target===this)hideEmailModal();});})
 function sendEmail(){
   var name=document.getElementById('emailName').value.trim();
   var msg=document.getElementById('emailMsg').value.trim();
   if(!name||!msg){alert('Please fill in your name and message.');return;}
-  // Encode email parts — address assembled at runtime only
   var p1='cesar.glez';var p2='pro';var p3='@gmail.com';
-  var sub=encodeURIComponent('GLEZ Advisory Inquiry — '+name);
-  var body=encodeURIComponent(document.getElementById('emailMsg').value+'
-
-—'+name+'
-'+(document.getElementById('emailOrg').value||''));
-  window.location.href='mailto:'+p1+p2+p3+'?subject='+sub+'&body='+body;
+  var org=document.getElementById('emailOrg').value||'';
+  var sub=encodeURIComponent('GLEZ Advisory Inquiry - '+name);
+  var body=encodeURIComponent(msg+'\n\n- '+name+(org?' ('+org+')':''));
+  window.open('mailto:'+p1+p2+p3+'?subject='+sub+'&body='+body,'_blank');
   hideEmailModal();
 }
 </script>
