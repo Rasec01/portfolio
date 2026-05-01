@@ -8,16 +8,16 @@
 <meta name="keywords" content="GLEZ, strategic finance, M&A advisory, portfolio optimization, financial decision systems, capital allocation, quantitative finance, risk management, boutique advisory"/>
 <meta name="author" content="Cesar A. Gonzalez"/>
 <meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://cesargonzalez.netlify.app/glez"/>
-<link rel="alternate" hreflang="en" href="https://cesargonzalez.netlify.app/glez"/>
-<link rel="alternate" hreflang="es" href="https://cesargonzalez.netlify.app/glez?lang=es"/>
-<link rel="alternate" hreflang="fr" href="https://cesargonzalez.netlify.app/glez?lang=fr"/>
-<link rel="alternate" hreflang="zh" href="https://cesargonzalez.netlify.app/glez?lang=zh"/>
-<link rel="alternate" hreflang="x-default" href="https://cesargonzalez.netlify.app/glez"/>
+<link rel="canonical" href="https://cesarglez.com/glez"/>
+<link rel="alternate" hreflang="en" href="https://cesarglez.com/glez"/>
+<link rel="alternate" hreflang="es" href="https://cesarglez.com/glez?lang=es"/>
+<link rel="alternate" hreflang="fr" href="https://cesarglez.com/glez?lang=fr"/>
+<link rel="alternate" hreflang="zh" href="https://cesarglez.com/glez?lang=zh"/>
+<link rel="alternate" hreflang="x-default" href="https://cesarglez.com/glez"/>
 <meta property="og:title" content="GLEZ Strategic Finance & Data Science | M&A · Portfolio Optimization · Decision Systems"/>
 <meta property="og:description" content="Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://cesargonzalez.netlify.app/glez"/>
+<meta property="og:url" content="https://cesarglez.com/glez"/>
 <meta property="og:image" content="1000049635.png"/>
 <meta property="og:site_name" content="GLEZ Strategic Finance & Data Science"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -29,12 +29,12 @@
   "@type": "ProfessionalService",
   "name": "GLEZ Strategic Finance & Data Science",
   "description": "Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.",
-  "url": "https://cesargonzalez.netlify.app/glez",
-  "logo": "https://cesargonzalez.netlify.app/1000049634.png",
+  "url": "https://cesarglez.com/glez",
+  "logo": "https://cesarglez.com/1000049634.png",
   "founder": {
     "@type": "Person",
     "name": "Cesar A. Gonzalez",
-    "url": "https://cesargonzalez.netlify.app",
+    "url": "https://cesarglez.com",
     "sameAs": [
       "https://www.linkedin.com/in/cesar-gonzalez-01/",
       "https://www.linkedin.com/company/glez-strategic-finance-data-science",
@@ -290,8 +290,10 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
 <body>
 
 <nav id="mainNav">
-  <a class="nav-brand" href="glez.html">
-    <img src="1000049634.png" alt="GLEZ Strategic Finance & Data Science" class="nav-logo-img" style="height:40px;width:auto" onerror="this.src='1000049635.png'">
+  <a class="nav-brand" href="/glez">
+    <span style="display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(190,159,86,0.35);border-radius:8px;padding:.3rem .55rem">
+      <img src="1000049634.png" alt="GLEZ Strategic Finance & Data Science" class="nav-logo-img" style="height:34px;width:auto" onerror="this.src='1000049635.png'">
+    </span>
   </a>
   <ul class="nav-links">
     <li><a href="#what" data-i18n="nav_what">What We Do</a></li>
@@ -305,7 +307,7 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
     <div class="lang-switcher"><button class="lang-btn active" onclick="setLang('en')">EN</button><button class="lang-btn" onclick="setLang('es')">ES</button><button class="lang-btn" onclick="setLang('fr')">FR</button><button class="lang-btn" onclick="setLang('zh')">中文</button></div>
     <a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank" class="btn-nav" style="border-color:rgba(255,255,255,.25);color:rgba(255,255,255,.6)" data-i18n="nav_linkedin">LinkedIn</a>
     <a href="https://calendly.com/cesar-glezpro" target="_blank" class="btn-nav" data-i18n="nav_schedule">Schedule a Call</a>
-    <a href="index.html" class="nav-back">← Portfolio</a>
+    <a href="/" class="nav-back">← Portfolio</a>
     <button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -319,13 +321,13 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
   </div>
 </div>
 <div class="mob-menu" id="mobNav">
-  <a href="#what" onclick="closeMob()">What We Do</a>
-  <a href="#work" onclick="closeMob()">Selected Work</a>
-  <a href="#services" onclick="closeMob()">Services</a>
-  <a href="#clients" onclick="closeMob()">Who We Work With</a>
-  <a href="#about" onclick="closeMob()">About</a>
-  <a href="#contact" onclick="closeMob()">Contact</a>
-  <a href="https://calendly.com/cesar-glezpro" target="_blank" onclick="closeMob()">Schedule a Call →</a>
+  <a href="#what" onclick="closeMob()" data-i18n="nav_what">What We Do</a>
+  <a href="#work" onclick="closeMob()" data-i18n="nav_work">Selected Work</a>
+  <a href="#services" onclick="closeMob()" data-i18n="nav_services">Services</a>
+  <a href="#clients" onclick="closeMob()" data-i18n="nav_clients">Who We Work With</a>
+  <a href="#about" onclick="closeMob()" data-i18n="nav_about">About</a>
+  <a href="#contact" onclick="closeMob()" data-i18n="nav_contact">Contact</a>
+  <a href="https://calendly.com/cesar-glezpro" target="_blank" onclick="closeMob()" data-i18n="nav_schedule">Schedule a Call →</a>
 </div>
 
 <!-- HERO -->
@@ -354,16 +356,16 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
     <p class="sec-sub reveal" data-i18n="what_sub">Rigorous financial thinking combined with quantitative methods and data engineering — applied to the problems that move capital and grow firms.</p>
     <div class="pillars reveal">
       <div class="pillar">
-        <div class="pillar-img-wrap"><img src="pillar1.png" alt="M&A Strategic Finance" loading="lazy"></div>
+        <div class="pillar-img-wrap"><img src="pillar1.jpg" alt="M&A Strategic Finance" loading="lazy"></div>
         <div class="pillar-n">01</div>
         <div class="pillar-title" data-i18n="pillar1_title">M&amp;A &amp; Strategic Finance</div>
         <div class="pillar-desc" data-i18n="pillar1_desc">Financial modeling, valuation, due diligence, and capital structuring — across sectors and cross-border jurisdictions.</div>
         <ul class="pillar-list">
-          <li>Financial due diligence &amp; modeling</li>
-          <li>Buy-side &amp; sell-side valuation</li>
-          <li>Deal structuring &amp; risk assessment</li>
-          <li>Post-merger integration analysis</li>
-          <li>Cross-border transaction support</li>
+          <li data-i18n="p1_li1">Financial due diligence &amp; modeling</li>
+          <li data-i18n="p1_li2">Buy-side &amp; sell-side valuation</li>
+          <li data-i18n="p1_li3">Deal structuring &amp; risk assessment</li>
+          <li data-i18n="p1_li4">Post-merger integration analysis</li>
+          <li data-i18n="p1_li5">Cross-border transaction support</li>
         </ul>
       </div>
       <div class="pillar">
@@ -372,11 +374,11 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
         <div class="pillar-title" data-i18n="pillar2_title">Portfolio Optimization &amp; Risk Modeling</div>
         <div class="pillar-desc" data-i18n="pillar2_desc">Portfolio optimization, risk modeling, and investment strategy built on quantitative methods and factor frameworks.</div>
         <ul class="pillar-list">
-          <li>Fama-French factor modeling</li>
-          <li>Mean-variance optimization</li>
-          <li>Downside risk &amp; drawdown control</li>
-          <li>Backtesting &amp; performance attribution</li>
-          <li>Financial distress prediction</li>
+          <li data-i18n="p2_li1">Fama-French factor modeling</li>
+          <li data-i18n="p2_li2">Mean-variance optimization</li>
+          <li data-i18n="p2_li3">Downside risk &amp; drawdown control</li>
+          <li data-i18n="p2_li4">Backtesting &amp; performance attribution</li>
+          <li data-i18n="p2_li5">Financial distress prediction</li>
         </ul>
       </div>
       <div class="pillar">
@@ -386,10 +388,10 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
         <div class="pillar-desc" data-i18n="pillar3_desc">Financial forecasting, machine learning models, and process automation that transform operational workflows into decision advantage.</div>
         <ul class="pillar-list">
           <li data-i18n="svc2_2">ML model development &amp; deployment</li>
-          <li>Automated financial reporting</li>
-          <li>BI dashboards (Power BI, Tableau)</li>
+          <li data-i18n="p3_li1">Automated financial reporting</li>
+          <li data-i18n="p3_li2">BI dashboards (Power BI, Tableau)</li>
           <li data-i18n="svc2_5">Predictive analytics &amp; forecasting</li>
-          <li>NLP &amp; market signal extraction</li>
+          <li data-i18n="p3_li5">NLP &amp; market signal extraction</li>
         </ul>
       </div>
     </div>
@@ -403,12 +405,12 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
     <h2 class="sec-title reveal" data-i18n="proof_title">Results that <em>speak for themselves</em></h2>
     <p class="sec-sub reveal" data-i18n="proof_sub">Quantifiable outcomes across active portfolio management, predictive modeling, automation, and operational improvement.</p>
     <div class="metrics-grid reveal">
-      <div class="metric-card"><div class="metric-n">78.6<small>%</small></div><div class="metric-lbl">Benchmark outperformance rate<br>in active portfolio management</div></div>
-      <div class="metric-card"><div class="metric-n">91<small>%</small></div><div class="metric-lbl">Model accuracy in real estate<br>profitability prediction</div></div>
-      <div class="metric-card"><div class="metric-n">4h→30<small>m</small></div><div class="metric-lbl">Portfolio allocation time reduced<br>per client through automation</div></div>
-      <div class="metric-card"><div class="metric-n">+27.6<small>%</small></div><div class="metric-lbl">Profit improvement vs.<br>original developer estimate</div></div>
-      <div class="metric-card"><div class="metric-n">+250<small>%</small></div><div class="metric-lbl">Sales growth achieved<br>in Year 1 via strategy &amp; automation</div></div>
-      <div class="metric-card"><div class="metric-n">9</div><div class="metric-lbl">Cities &amp; jurisdictions of active<br>financial market experience</div></div>
+      <div class="metric-card"><div class="metric-n">78.6<small>%</small></div><div class="metric-lbl" data-i18n="m1_lbl">Benchmark outperformance rate in active portfolio management</div></div>
+      <div class="metric-card"><div class="metric-n">91<small>%</small></div><div class="metric-lbl" data-i18n="m2_lbl">Model accuracy in real estate profitability prediction</div></div>
+      <div class="metric-card"><div class="metric-n">4h→30<small>m</small></div><div class="metric-lbl" data-i18n="m3_lbl">Portfolio allocation time reduced per client through automation</div></div>
+      <div class="metric-card"><div class="metric-n">+27.6<small>%</small></div><div class="metric-lbl" data-i18n="m4_lbl">Profit improvement vs. original developer estimate</div></div>
+      <div class="metric-card"><div class="metric-n">+250<small>%</small></div><div class="metric-lbl" data-i18n="m5_lbl">Sales growth achieved in Year 1 via strategy &amp; automation</div></div>
+      <div class="metric-card"><div class="metric-n">9</div><div class="metric-lbl" data-i18n="m6_lbl">Cities &amp; jurisdictions of active financial market experience</div></div>
     </div>
   </div>
 </section>
@@ -423,61 +425,61 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
 
       <div class="case-item" onclick="toggleCase(this)">
         <div class="case-header">
-          <div class="case-left"><div class="case-n">01</div><div class="case-info"><div class="case-cat">Portfolio Optimization</div><div class="case-name">Portfolio Management Platform</div><div class="case-res">⏱ 4h → 30min per client · Firm-wide deployment</div></div></div>
-          <div class="case-toggle"><span class="case-toggle-txt">Details</span><div class="case-toggle-btn">+</div></div>
+          <div class="case-left"><div class="case-n">01</div><div class="case-info"><div class="case-cat" data-i18n="cat1">Portfolio Optimization</div><div class="case-name" data-i18n="cn1">Portfolio Management Platform</div><div class="case-res" data-i18n="cr1">⏱ 4h → 30min per client · Firm-wide deployment</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
         </div>
         <div class="case-body">
-          <div class="case-section"><h4>Challenge</h4><p>Advisors were spending 4+ hours per client manually computing optimal portfolio allocations, creating bottlenecks and limiting the firm's ability to scale without adding headcount.</p></div>
-          <div class="case-section"><h4>Approach</h4><p>Applied Bloomberg Terminal data with Fama-French 5-factor model and Efficient Portfolio Theory. Automated selection using graph theory and log regression — first in R, then refactored to Python for performance.</p><div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">R</span><span class="tech-tag">Bloomberg</span><span class="tech-tag">Fama-French</span><span class="tech-tag">Graph Theory</span></div></div>
-          <div class="case-section"><h4>Impact</h4><p>Reduced advisor time per client from 4+ hours to under 30 minutes. Enabled the firm to serve significantly more clients with the same headcount — directly improving revenue per advisor.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>Advisors were spending 4+ hours per client manually computing optimal portfolio allocations, creating bottlenecks and limiting the firm's ability to scale without adding headcount.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Applied Bloomberg Terminal data with Fama-French 5-factor model and Efficient Portfolio Theory. Automated selection using graph theory and log regression — first in R, then refactored to Python for performance.</p><div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">R</span><span class="tech-tag">Bloomberg</span><span class="tech-tag">Fama-French</span><span class="tech-tag">Graph Theory</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>Reduced advisor time per client from 4+ hours to under 30 minutes. Enabled the firm to serve significantly more clients with the same headcount — directly improving revenue per advisor.</p></div>
         </div>
       </div>
 
       <div class="case-item" onclick="toggleCase(this)">
         <div class="case-header">
-          <div class="case-left"><div class="case-n">02</div><div class="case-info"><div class="case-cat">Credit Risk · Machine Learning</div><div class="case-name">Corporate Financial Distress Model</div><div class="case-res">🎯 ML-powered bankruptcy risk detection for M&amp;A due diligence</div></div></div>
-          <div class="case-toggle"><span class="case-toggle-txt">Details</span><div class="case-toggle-btn">+</div></div>
+          <div class="case-left"><div class="case-n">02</div><div class="case-info"><div class="case-cat" data-i18n="cat2">Credit Risk · Machine Learning</div><div class="case-name" data-i18n="cn2">Corporate Financial Distress Model</div><div class="case-res" data-i18n="cr2">🎯 ML-powered bankruptcy risk detection for M&amp;A due diligence</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
         </div>
         <div class="case-body">
-          <div class="case-section"><h4>Challenge</h4><p>M&amp;A processes require rapid, reliable assessment of counterparty financial health. Manual Altman Z-score analysis was slow, subjective, and limited in predictive power for modern balance sheets.</p></div>
-          <div class="case-section"><h4>Approach</h4><p>Combined classical Altman Z-score variants with gradient boosting classifiers trained on financial ratios. Feature engineering incorporated leverage, liquidity, profitability, and market signals.</p><div class="tech-tags"><span class="tech-tag">XGBoost</span><span class="tech-tag">Python</span><span class="tech-tag">Financial Ratios</span><span class="tech-tag">Altman Z-Score</span></div></div>
-          <div class="case-section"><h4>Impact</h4><p>Produced a robust, interpretable distress prediction model applicable to M&amp;A screening, credit analysis, and portfolio risk management. Significantly reduced time-to-signal on counterparty risk assessments.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>M&amp;A processes require rapid, reliable assessment of counterparty financial health. Manual Altman Z-score analysis was slow, subjective, and limited in predictive power for modern balance sheets.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Combined classical Altman Z-score variants with gradient boosting classifiers trained on financial ratios. Feature engineering incorporated leverage, liquidity, profitability, and market signals.</p><div class="tech-tags"><span class="tech-tag">XGBoost</span><span class="tech-tag">Python</span><span class="tech-tag">Financial Ratios</span><span class="tech-tag">Altman Z-Score</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>Produced a robust, interpretable distress prediction model applicable to M&amp;A screening, credit analysis, and portfolio risk management. Significantly reduced time-to-signal on counterparty risk assessments.</p></div>
         </div>
       </div>
 
       <div class="case-item" onclick="toggleCase(this)">
         <div class="case-header">
-          <div class="case-left"><div class="case-n">03</div><div class="case-info"><div class="case-cat">Quantitative Trading · Forecasting</div><div class="case-name">Market Prediction &amp; Backtesting System</div><div class="case-res">📈 Multi-horizon signal generation with full backtesting infrastructure</div></div></div>
-          <div class="case-toggle"><span class="case-toggle-txt">Details</span><div class="case-toggle-btn">+</div></div>
+          <div class="case-left"><div class="case-n">03</div><div class="case-info"><div class="case-cat" data-i18n="cat3">Quantitative Trading · Forecasting</div><div class="case-name" data-i18n="cn3">Market Prediction &amp; Backtesting System</div><div class="case-res" data-i18n="cr3">📈 Multi-horizon signal generation with full backtesting infrastructure</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
         </div>
         <div class="case-body">
-          <div class="case-section"><h4>Challenge</h4><p>Systematic signal generation required a reproducible pipeline from raw data ingestion to strategy evaluation — with rigorous out-of-sample validation.</p></div>
-          <div class="case-section"><h4>Approach</h4><p>Built end-to-end ML pipeline for financial time-series prediction. Implemented LSTM and transformer architectures for multi-horizon forecasting, combined with technical factor signals and a full backtesting engine.</p><div class="tech-tags"><span class="tech-tag">LSTM</span><span class="tech-tag">Python</span><span class="tech-tag">Backtesting</span><span class="tech-tag">Signal Generation</span><span class="tech-tag">Time Series</span></div></div>
-          <div class="case-section"><h4>Impact</h4><p>Delivered a modular research framework supporting strategy development, walk-forward testing, and performance attribution — the quantitative foundation for systematic trading decisions.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>Systematic signal generation required a reproducible pipeline from raw data ingestion to strategy evaluation — with rigorous out-of-sample validation.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Built end-to-end ML pipeline for financial time-series prediction. Implemented LSTM and transformer architectures for multi-horizon forecasting, combined with technical factor signals and a full backtesting engine.</p><div class="tech-tags"><span class="tech-tag">LSTM</span><span class="tech-tag">Python</span><span class="tech-tag">Backtesting</span><span class="tech-tag">Signal Generation</span><span class="tech-tag">Time Series</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>Delivered a modular research framework supporting strategy development, walk-forward testing, and performance attribution — the quantitative foundation for systematic trading decisions.</p></div>
         </div>
       </div>
 
       <div class="case-item" onclick="toggleCase(this)">
         <div class="case-header">
-          <div class="case-left"><div class="case-n">04</div><div class="case-info"><div class="case-cat">Real Estate · Data Science</div><div class="case-name">Real Estate Development Optimization</div><div class="case-res">💰 +27.65% profit vs. original developer estimate</div></div></div>
-          <div class="case-toggle"><span class="case-toggle-txt">Details</span><div class="case-toggle-btn">+</div></div>
+          <div class="case-left"><div class="case-n">04</div><div class="case-info"><div class="case-cat" data-i18n="cat4">Real Estate · Data Science</div><div class="case-name" data-i18n="cn4">Real Estate Development Optimization</div><div class="case-res" data-i18n="cr4">💰 +27.65% profit vs. original developer estimate</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
         </div>
         <div class="case-body">
-          <div class="case-section"><h4>Challenge</h4><p>A developer needed to determine the optimal ratio of luxury vs. standard units in a new residential complex to maximize profitability — without reliable local demand data.</p></div>
-          <div class="case-section"><h4>Approach</h4><p>Scraped and analyzed comparable sales data using MySQL. Applied EDA and Log-Linear Regression in R to quantify price drivers and predict demand elasticity by unit type.</p><div class="tech-tags"><span class="tech-tag">R Studio</span><span class="tech-tag">MySQL</span><span class="tech-tag">Log-Linear Regression</span><span class="tech-tag">EDA</span></div></div>
-          <div class="case-section"><h4>Impact</h4><p>The 91% accurate model identified the optimal unit mix and key price-influencing variables. Implementing the recommendation generated 27.65% more profit than the developer's original estimate.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>A developer needed to determine the optimal ratio of luxury vs. standard units in a new residential complex to maximize profitability — without reliable local demand data.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Scraped and analyzed comparable sales data using MySQL. Applied EDA and Log-Linear Regression in R to quantify price drivers and predict demand elasticity by unit type.</p><div class="tech-tags"><span class="tech-tag">R Studio</span><span class="tech-tag">MySQL</span><span class="tech-tag">Log-Linear Regression</span><span class="tech-tag">EDA</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>The 91% accurate model identified the optimal unit mix and key price-influencing variables. Implementing the recommendation generated 27.65% more profit than the developer's original estimate.</p></div>
         </div>
       </div>
 
       <div class="case-item" onclick="toggleCase(this)">
         <div class="case-header">
-          <div class="case-left"><div class="case-n">05</div><div class="case-info"><div class="case-cat">Operations · Decision Systems</div><div class="case-name">Client Portfolio Advisory &amp; Automation</div><div class="case-res">📊 78.6% benchmark outperformance · Behavioral finance integration</div></div></div>
-          <div class="case-toggle"><span class="case-toggle-txt">Details</span><div class="case-toggle-btn">+</div></div>
+          <div class="case-left"><div class="case-n">05</div><div class="case-info"><div class="case-cat" data-i18n="cat5">Operations · Decision Systems</div><div class="case-name" data-i18n="cn5">Client Portfolio Advisory &amp; Automation</div><div class="case-res" data-i18n="cr5">📊 78.6% benchmark outperformance · Behavioral finance integration</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
         </div>
         <div class="case-body">
-          <div class="case-section"><h4>Challenge</h4><p>Individual clients required personalized investment strategies balancing risk tolerance, liquidity needs, and return expectations — while remaining competitive against market benchmarks across volatile periods.</p></div>
-          <div class="case-section"><h4>Approach</h4><p>Deployed proprietary portfolio software alongside Excel and Power BI. Applied Fama-French 3 and 5-factor models combined with behavioral finance principles to tailor each portfolio to the client's unique risk-return profile.</p><div class="tech-tags"><span class="tech-tag">Fama-French</span><span class="tech-tag">Power BI</span><span class="tech-tag">Excel</span><span class="tech-tag">Behavioral Finance</span></div></div>
-          <div class="case-section"><h4>Impact</h4><p>Achieved benchmark outperformance in 78.6% of cases. Integrating quantitative models with behavioral insights helped clients maintain strategic discipline during volatile periods — significantly reducing costly emotional decisions.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>Individual clients required personalized investment strategies balancing risk tolerance, liquidity needs, and return expectations — while remaining competitive against market benchmarks across volatile periods.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Deployed proprietary portfolio software alongside Excel and Power BI. Applied Fama-French 3 and 5-factor models combined with behavioral finance principles to tailor each portfolio to the client's unique risk-return profile.</p><div class="tech-tags"><span class="tech-tag">Fama-French</span><span class="tech-tag">Power BI</span><span class="tech-tag">Excel</span><span class="tech-tag">Behavioral Finance</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>Achieved benchmark outperformance in 78.6% of cases. Integrating quantitative models with behavioral insights helped clients maintain strategic discipline during volatile periods — significantly reducing costly emotional decisions.</p></div>
         </div>
       </div>
 
@@ -511,10 +513,10 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
         <div class="svc-sub" data-i18n="svc2_sub">Technical expertise and strategic thinking for organizations that need to build or upgrade their quantitative and data infrastructure.</div>
         <ul class="svc-list">
           <li data-i18n="svc2_1">Financial decision system design &amp; build</li>
-          <li>ML model development &amp; deployment</li>
+          <li data-i18n="p3_li3">ML model development &amp; deployment</li>
           <li data-i18n="svc2_3">Data pipeline architecture &amp; automation</li>
           <li data-i18n="svc2_4">BI dashboard creation (Power BI, Tableau)</li>
-          <li>Predictive analytics &amp; forecasting</li>
+          <li data-i18n="p3_li4">Predictive analytics &amp; forecasting</li>
           <li data-i18n="svc2_6">NLP &amp; alternative data integration</li>
         </ul>
       </div>
@@ -611,7 +613,7 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
           <img src="IMG_9994.JPG" alt="Cesar A. Gonzalez" onerror="this.parentElement.style.minHeight='400px';this.parentElement.style.background='#e8eef5';this.style.display='none'">
           <div class="about-badge">
             <div class="about-badge-name">Cesar A. Gonzalez</div>
-            <div class="about-badge-role">Founder · GLEZ</div>
+            <div class="about-badge-role" data-i18n="about_badge_role">Founder · GLEZ</div>
           </div>
         </div>
       </div>
@@ -662,9 +664,9 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
         <h2 class="sec-title reveal" data-i18n="contact_title">Let's discuss <em>your challenge</em></h2>
         <p class="sec-sub reveal" style="margin-bottom:1.5rem" data-i18n="contact_sub">Open to advisory engagements, full-time roles, and strategic partnerships. We respond within 24 hours.</p>
         <ul class="contact-list reveal">
-          <li class="contact-row" id="glezEmailRow" style="cursor:pointer"><a href="javascript:void(0)" onclick="showEmailModal()"><span>Send a message →</span><span class="contact-row-label">Email</span></a></li>
+          <li class="contact-row" id="glezEmailRow" style="cursor:pointer"><a href="javascript:void(0)" onclick="showEmailModal()"><span data-i18n="contact_send_btn">Send a message →</span><span class="contact-row-label">Email</span></a></li>
           <li class="contact-row"><a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank"><span>GLEZ Strategic Finance & Data Science</span><span class="contact-row-label">LinkedIn</span></a></li>
-          <li class="contact-row"><a href="index.html"><span>Personal Portfolio →</span><span class="contact-row-label">Portfolio</span></a></li>
+          <li class="contact-row"><a href="/"><span>Personal Portfolio →</span><span class="contact-row-label">Portfolio</span></a></li>
         </ul>
       </div>
       <div class="reveal delay2">
@@ -684,7 +686,7 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
     <a href="#what">What We Do</a>
     <a href="#work">Selected Work</a>
     <a href="#contact">Contact</a>
-    <a href="index.html">← Portfolio</a>
+    <a href="/">← Portfolio</a>
   </div>
   <div class="footer-fine">© 2026 GLEZ Strategic Finance & Data Science · Information presented is for educational purposes only and does not constitute financial advice.</div>
 </footer>
@@ -707,7 +709,7 @@ window.addEventListener('scroll',()=>{
 
 <script>
 (function(){
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  var FINNHUB_KEY = 'YOUR_FINNHUB_KEY';
   var FINNHUB = [
     {sym:'S&P 500',fh:'SPY'},{sym:'NASDAQ',fh:'QQQ'},{sym:'DOW',fh:'DIA'},
     {sym:'AAPL',fh:'AAPL'},{sym:'MSFT',fh:'MSFT'},{sym:'NVDA',fh:'NVDA'},
@@ -775,17 +777,26 @@ window.addEventListener('scroll',()=>{
 <div class="email-modal-bg" id="emailModal">
   <div class="email-modal">
     <button class="email-modal-close" onclick="hideEmailModal()">✕</button>
-    <h3>Get in Touch</h3>
-    <p>Send a message and we'll respond within 24 hours.</p>
-    <input type="text" id="emailName" placeholder="Your name" autocomplete="name">
-    <input type="text" id="emailOrg" placeholder="Company / Organization (optional)">
-    <textarea id="emailMsg" placeholder="Tell us about your inquiry or challenge..."></textarea>
-    <div class="email-modal-btns">
-      <button class="email-modal-send" onclick="sendEmail()">Send Message</button>
-      <button class="email-modal-cancel" onclick="hideEmailModal()">Cancel</button>
+    <h3 data-i18n="modal_title">Get in Touch</h3>
+    <p data-i18n="modal_sub">Send a message and we'll respond within 24 hours.</p>
+    <div id="emailFormWrap">
+      <input type="text" id="emailName" placeholder="Your name" autocomplete="name">
+      <input type="email" id="emailEmail" placeholder="Your email address" autocomplete="email">
+      <input type="text" id="emailOrg" placeholder="Company / Organization (optional)">
+      <textarea id="emailMsg" placeholder="Tell us about your inquiry or challenge..."></textarea>
+      <div class="email-modal-btns">
+        <button class="email-modal-send" onclick="sendEmail()">Send Message</button>
+        <button class="email-modal-cancel" onclick="hideEmailModal()" data-i18n="modal_cancel">Cancel</button>
+      </div>
     </div>
+    <div id="emailSuccess" style="display:none;text-align:center;padding:2rem 0">
+      <div style="font-size:2rem;margin-bottom:.8rem">✓</div>
+      <div style="font-weight:600;color:var(--navy);margin-bottom:.4rem" data-i18n="modal_sent">Message sent</div>
+      <div style="font-size:.84rem;color:var(--gray)" data-i18n="modal_sent_sub">We'll get back to you within 24 hours.</div>
+    </div>
+    <div id="emailError" style="display:none;color:#dc2626;font-size:.82rem;margin-top:.5rem;padding:.5rem;background:#fef2f2;border-radius:4px"></div>
   </div>
-</div>
+</div>>
 
 <script>
 // ── GLEZ TRANSLATIONS ─────────────────────────────────────────────
@@ -876,6 +887,50 @@ en:{
   work_eyebrow:"Case Studies",
   work_title:"Selected <em>Engagements</em>",
   work_sub:"Five flagship engagements across portfolio management, risk modeling, market prediction, real estate, and operational strategy.",
+  p1_li1:"Financial due diligence & modeling",
+  p1_li2:"Buy-side & sell-side valuation",
+  p1_li3:"Deal structuring & risk assessment",
+  p1_li4:"Post-merger integration analysis",
+  p1_li5:"Cross-border transaction support",
+  p2_li1:"Fama-French factor modeling",
+  p2_li2:"Mean-variance optimization",
+  p2_li3:"Downside risk & drawdown control",
+  p2_li4:"Backtesting & performance attribution",
+  p2_li5:"Financial distress prediction",
+  p3_li1:"Automated financial reporting",
+  p3_li2:"BI dashboards (Power BI, Tableau)",
+  p3_li3:"ML model development & deployment",
+  p3_li4:"Predictive analytics & forecasting",
+  p3_li5:"NLP & market signal extraction",
+  m1_lbl:"Benchmark outperformance rate in active portfolio management",
+  m2_lbl:"Model accuracy in real estate profitability prediction",
+  m3_lbl:"Portfolio allocation time reduced per client through automation",
+  m4_lbl:"Profit improvement vs. original developer estimate",
+  m5_lbl:"Sales growth achieved in Year 1 via strategy & automation",
+  m6_lbl:"Cities & jurisdictions of active financial market experience",
+  cs_challenge:"Challenge",
+  cs_approach:"Approach",
+  cs_impact:"Impact",
+  cs_details:"Details",
+  cat1:"Portfolio Optimization",
+  cat2:"Credit Risk · Machine Learning",
+  cat3:"Quantitative Trading · Forecasting",
+  cat4:"Real Estate · Data Science",
+  cat5:"Operations · Decision Systems",
+  cn1:"Portfolio Management Platform",
+  cn2:"Corporate Financial Distress Model",
+  cn3:"Market Prediction & Backtesting System",
+  cn4:"Real Estate Development Optimization",
+  cn5:"Client Portfolio Advisory & Automation",
+  cr1:"⏱ 4h → 30min per client · Firm-wide deployment",
+  cr2:"🎯 ML-powered bankruptcy risk detection for M&A due diligence",
+  cr3:"📈 Multi-horizon signal generation with full backtesting infrastructure",
+  cr4:"💰 +27.65% profit vs. original developer estimate",
+  cr5:"📊 78.6% benchmark outperformance · Behavioral finance integration",
+  modal_title:"Get in Touch",
+  modal_sub:"Send a message and we'll respond within 24 hours.",
+  contact_send_btn:"Send a message →",
+  about_badge_role:"Founder · GLEZ",
   ticker_label:"Markets"
 },
 es:{
@@ -964,6 +1019,50 @@ es:{
   work_eyebrow:"Estudios de Caso",
   work_title:"Proyectos <em>Seleccionados</em>",
   work_sub:"Cinco compromisos destacados en gestión de carteras, modelado de riesgo, predicción de mercados, inmobiliario y estrategia operativa.",
+  p1_li1:"Due diligence financiero y modelado",
+  p1_li2:"Valoración buy-side y sell-side",
+  p1_li3:"Estructuración de operaciones y evaluación de riesgos",
+  p1_li4:"Análisis de integración post-fusión",
+  p1_li5:"Apoyo en transacciones transfronterizas",
+  p2_li1:"Modelado de factores Fama-French",
+  p2_li2:"Optimización media-varianza",
+  p2_li3:"Control de riesgo a la baja y drawdown",
+  p2_li4:"Backtesting y atribución de rendimiento",
+  p2_li5:"Predicción de distress financiero",
+  p3_li1:"Reportes financieros automatizados",
+  p3_li2:"Dashboards BI (Power BI, Tableau)",
+  p3_li3:"Desarrollo y despliegue de modelos ML",
+  p3_li4:"Analítica predictiva y pronósticos",
+  p3_li5:"PLN y extracción de señales de mercado",
+  m1_lbl:"Tasa de superación del benchmark en gestión activa de carteras",
+  m2_lbl:"Precisión del modelo en predicción de rentabilidad inmobiliaria",
+  m3_lbl:"Tiempo de asignación de cartera reducido por cliente mediante automatización",
+  m4_lbl:"Mejora de beneficio vs. estimación original del promotor",
+  m5_lbl:"Crecimiento de ventas logrado en el Año 1 mediante estrategia y automatización",
+  m6_lbl:"Ciudades y jurisdicciones con experiencia activa en mercados financieros",
+  cs_challenge:"Desafío",
+  cs_approach:"Enfoque",
+  cs_impact:"Impacto",
+  cs_details:"Detalles",
+  cat1:"Optimización de Cartera",
+  cat2:"Riesgo de Crédito · Machine Learning",
+  cat3:"Trading Cuantitativo · Pronósticos",
+  cat4:"Inmobiliario · Ciencia de Datos",
+  cat5:"Operaciones · Sistemas de Decisión",
+  cn1:"Plataforma de Gestión de Carteras",
+  cn2:"Modelo de Distress Financiero Corporativo",
+  cn3:"Sistema de Predicción de Mercados y Backtesting",
+  cn4:"Optimización de Desarrollo Inmobiliario",
+  cn5:"Asesoría de Cartera y Automatización para Clientes",
+  cr1:"⏱ 4h → 30min por cliente · Despliegue en toda la empresa",
+  cr2:"🎯 Detección de riesgo de quiebra con ML para due diligence M&A",
+  cr3:"📈 Generación de señales multi-horizonte con infraestructura completa de backtesting",
+  cr4:"💰 +27.65% de beneficio vs. estimación original del promotor",
+  cr5:"📊 78.6% de superación del benchmark · Integración de finanzas conductuales",
+  modal_title:"Ponerse en Contacto",
+  modal_sub:"Envía un mensaje y responderemos en 24 horas.",
+  contact_send_btn:"Enviar un mensaje →",
+  about_badge_role:"Fundador · GLEZ",
   ticker_label:"Mercados"
 },
 fr:{
@@ -1052,6 +1151,50 @@ fr:{
   work_eyebrow:"Études de Cas",
   work_title:"Missions <em>Sélectionnées</em>",
   work_sub:"Cinq missions phares en gestion de portefeuille, modélisation des risques, prédiction de marché, immobilier et stratégie opérationnelle.",
+  p1_li1:"Due diligence financière et modélisation",
+  p1_li2:"Valorisation buy-side et sell-side",
+  p1_li3:"Structuration d'opérations et évaluation des risques",
+  p1_li4:"Analyse d'intégration post-fusion",
+  p1_li5:"Support aux transactions transfrontalières",
+  p2_li1:"Modélisation factorielle Fama-French",
+  p2_li2:"Optimisation moyenne-variance",
+  p2_li3:"Contrôle du risque baissier et du drawdown",
+  p2_li4:"Backtesting et attribution de performance",
+  p2_li5:"Prédiction de détresse financière",
+  p3_li1:"Reporting financier automatisé",
+  p3_li2:"Tableaux de bord BI (Power BI, Tableau)",
+  p3_li3:"Développement et déploiement de modèles ML",
+  p3_li4:"Analytique prédictive et prévisions",
+  p3_li5:"NLP et extraction de signaux de marché",
+  m1_lbl:"Taux de surperformance du benchmark en gestion active de portefeuille",
+  m2_lbl:"Précision du modèle dans la prédiction de rentabilité immobilière",
+  m3_lbl:"Temps d'allocation de portefeuille réduit par client grâce à l'automatisation",
+  m4_lbl:"Amélioration du bénéfice vs. estimation initiale du promoteur",
+  m5_lbl:"Croissance des ventes en Année 1 via stratégie et automatisation",
+  m6_lbl:"Villes et juridictions avec expérience active sur les marchés financiers",
+  cs_challenge:"Défi",
+  cs_approach:"Approche",
+  cs_impact:"Impact",
+  cs_details:"Détails",
+  cat1:"Optimisation de Portefeuille",
+  cat2:"Risque de Crédit · Machine Learning",
+  cat3:"Trading Quantitatif · Prévisions",
+  cat4:"Immobilier · Science des Données",
+  cat5:"Opérations · Systèmes de Décision",
+  cn1:"Plateforme de Gestion de Portefeuille",
+  cn2:"Modèle de Détresse Financière Corporate",
+  cn3:"Système de Prédiction de Marché et Backtesting",
+  cn4:"Optimisation de Développement Immobilier",
+  cn5:"Conseil de Portefeuille et Automatisation Client",
+  cr1:"⏱ 4h → 30min par client · Déploiement à l'échelle de l'entreprise",
+  cr2:"🎯 Détection de risque de faillite par ML pour due diligence M&A",
+  cr3:"📈 Génération de signaux multi-horizons avec infrastructure de backtesting complète",
+  cr4:"💰 +27.65% de bénéfice vs. estimation initiale du promoteur",
+  cr5:"📊 78.6% de surperformance du benchmark · Intégration des finances comportementales",
+  modal_title:"Nous Contacter",
+  modal_sub:"Envoyez un message et nous répondrons dans les 24 heures.",
+  contact_send_btn:"Envoyer un message →",
+  about_badge_role:"Fondateur · GLEZ",
   ticker_label:"Marchés"
 },
 zh:{
@@ -1140,6 +1283,50 @@ zh:{
   work_eyebrow:"案例研究",
   work_title:"精选<em>项目</em>",
   work_sub:"涵盖投资组合管理、风险建模、市场预测、房地产和运营策略的五个旗舰项目。",
+  p1_li1:"财务尽职调查与建模",
+  p1_li2:"买方与卖方估值",
+  p1_li3:"交易结构设计与风险评估",
+  p1_li4:"并购后整合分析",
+  p1_li5:"跨境交易支持",
+  p2_li1:"Fama-French因子建模",
+  p2_li2:"均值-方差优化",
+  p2_li3:"下行风险与回撤控制",
+  p2_li4:"回测与绩效归因",
+  p2_li5:"财务困境预测",
+  p3_li1:"自动化财务报告",
+  p3_li2:"商业智能仪表盘（Power BI、Tableau）",
+  p3_li3:"机器学习模型开发与部署",
+  p3_li4:"预测分析与预报",
+  p3_li5:"自然语言处理与市场信号提取",
+  m1_lbl:"主动组合管理中超越基准的比率",
+  m2_lbl:"房地产盈利预测模型准确率",
+  m3_lbl:"通过自动化每位客户节省的投资组合配置时间",
+  m4_lbl:"相比开发商原始估算的利润提升",
+  m5_lbl:"第1年通过战略与自动化实现的销售增长",
+  m6_lbl:"活跃金融市场经验的城市与司法管辖区",
+  cs_challenge:"挑战",
+  cs_approach:"方法",
+  cs_impact:"成果",
+  cs_details:"详情",
+  cat1:"投资组合优化",
+  cat2:"信用风险 · 机器学习",
+  cat3:"量化交易 · 预测",
+  cat4:"房地产 · 数据科学",
+  cat5:"运营 · 决策系统",
+  cn1:"投资组合管理平台",
+  cn2:"企业财务困境模型",
+  cn3:"市场预测与回测系统",
+  cn4:"房地产开发优化",
+  cn5:"客户投资组合顾问与自动化",
+  cr1:"⏱ 每位客户从4小时降至30分钟 · 全公司部署",
+  cr2:"🎯 基于机器学习的破产风险检测，用于并购尽职调查",
+  cr3:"📈 全回测基础设施的多期信号生成",
+  cr4:"💰 相比开发商原始估算利润提升+27.65%",
+  cr5:"📊 78.6%超越基准 · 行为金融整合",
+  modal_title:"联系我们",
+  modal_sub:"发送消息，我们将在24小时内回复。",
+  contact_send_btn:"发送消息 →",
+  about_badge_role:"创始人 · GLEZ",
   ticker_label:"市场"
 }
 };
@@ -1169,19 +1356,63 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 <script>
-function showEmailModal(){document.getElementById('emailModal').classList.add('open')}
-function hideEmailModal(){document.getElementById('emailModal').classList.remove('open')}
-document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('emailModal');if(m)m.addEventListener('click',function(e){if(e.target===this)hideEmailModal();});})
+function showEmailModal(){document.getElementById('emailModal').classList.add('open');}
+function hideEmailModal(){
+  document.getElementById('emailModal').classList.remove('open');
+  // Reset form state
+  document.getElementById('emailFormWrap').style.display='';
+  document.getElementById('emailSuccess').style.display='none';
+  document.getElementById('emailError').style.display='none';
+  ['emailName','emailEmail','emailOrg','emailMsg'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var m=document.getElementById('emailModal');
+  if(m) m.addEventListener('click',function(e){if(e.target===this)hideEmailModal();});
+});
 function sendEmail(){
   var name=document.getElementById('emailName').value.trim();
+  var email=document.getElementById('emailEmail').value.trim();
   var msg=document.getElementById('emailMsg').value.trim();
-  if(!name||!msg){alert('Please fill in your name and message.');return;}
-  var p1='cesar.glez';var p2='pro';var p3='@gmail.com';
+  var errEl=document.getElementById('emailError');
+  errEl.style.display='none';
+  if(!name||!email||!msg){
+    errEl.textContent='Please fill in your name, email, and message.';
+    errEl.style.display='block';
+    return;
+  }
+  if(!/^[^@]+@[^@]+\.[^@]+$/.test(email)){
+    errEl.textContent='Please enter a valid email address.';
+    errEl.style.display='block';
+    return;
+  }
   var org=document.getElementById('emailOrg').value||'';
-  var sub=encodeURIComponent('GLEZ Advisory Inquiry - '+name);
-  var body=encodeURIComponent(msg+'\n\n- '+name+(org?' ('+org+')':''));
-  window.open('mailto:'+p1+p2+p3+'?subject='+sub+'&body='+body,'_blank');
-  hideEmailModal();
+  var btn=document.querySelector('.email-modal-send');
+  btn.disabled=true; btn.textContent='Sending...';
+  fetch('https://formspree.io/f/YOUR_FORMSPREE_ID',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({
+      name:name, email:email,
+      organization:org, message:msg,
+      _subject:'GLEZ Advisory Inquiry from '+name
+    })
+  }).then(function(r){return r.json().then(function(d){return{ok:r.ok,data:d};});})
+  .then(function(res){
+    if(res.ok){
+      document.getElementById('emailFormWrap').style.display='none';
+      document.getElementById('emailSuccess').style.display='block';
+    } else {
+      errEl.textContent=(res.data&&res.data.error)||'Something went wrong. Please try again.';
+      errEl.style.display='block';
+      btn.disabled=false; btn.textContent='Send Message';
+    }
+  }).catch(function(){
+    errEl.textContent='Network error. Please try again or email us directly.';
+    errEl.style.display='block';
+    btn.disabled=false; btn.textContent='Send Message';
+  });
 }
 </script>
 

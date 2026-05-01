@@ -11,7 +11,12 @@
 <meta name="keywords" content="strategic finance, financial modeling, M&A, portfolio optimization, decision systems, quantitative finance, capital allocation, risk management, investment analysis, fintech, Bloomberg, Python, financial data science"/>
 <meta name="author" content="Cesar A. Gonzalez"/>
 <meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://cesargonzalez.netlify.app/"/>
+<link rel="canonical" href="https://cesarglez.com/"/>
+<link rel="alternate" hreflang="en" href="https://cesarglez.com"/>
+<link rel="alternate" hreflang="es" href="https://cesarglez.com?lang=es"/>
+<link rel="alternate" hreflang="fr" href="https://cesarglez.com?lang=fr"/>
+<link rel="alternate" hreflang="zh" href="https://cesarglez.com?lang=zh"/>
+<link rel="alternate" hreflang="x-default" href="https://cesarglez.com"/>
 <meta property="og:title" content="Cesar A. Gonzalez | Strategic Finance · M&A · Portfolio Optimization · Decision Systems"/>
 <meta property="og:description" content="Strategic Finance advisor and financial decision systems builder. M&A, portfolio optimization, capital allocation, and quantitative modeling across global markets."/>
 <meta property="og:type" content="website"/>
@@ -24,7 +29,7 @@
   "name":"Cesar A. Gonzalez",
   "jobTitle":"Strategic Finance & Decision Systems Advisor",
   "description":"Strategic Finance advisor and financial decision systems builder — M&A, portfolio optimization, and capital allocation across global markets.",
-  "url":"https://cesargonzalez.netlify.app/",
+  "url":"https://cesarglez.com/",
   "image":"IMG_9994.JPG",
   "sameAs":[
     "https://www.linkedin.com/in/cesar-gonzalez",
@@ -114,9 +119,9 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.8px;margin-
 }
 
 /* QUOTE VISUAL */
-.quote-visual{position:relative;width:100%;height:auto;overflow:hidden;background: #0a1520; border-top:1px solid var(--border);border-bottom:1px solid var(--border);flex-shrink:0}
+.quote-visual{position:relative;width:100%;overflow:hidden;background:#0a1520;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .quote-img{width:100%;height:auto;object-fit:contain;display:block;filter:brightness(.75);position:relative}
-.quote-overlay{position:absolute;top:50%;right:6%;transform:translateY(-50%);max-width:480px;text-align:right}
+.quote-overlay{position:absolute;top:50%;right:6%;transform:translateY(-50%);max-width:420px;text-align:right}
 .quote-text-overlay{font-size:clamp(1rem,1.8vw,1.3rem);font-style:italic;color:#ffffff;line-height:1.75;margin-bottom:.75rem;font-weight:400;text-shadow:0 2px 12px rgba(0,0,0,.5)}
 .quote-author-overlay{font-size:.88rem;font-weight:700;color:#f0c060;letter-spacing:.5px;text-shadow:0 1px 6px rgba(0,0,0,.4)}
 @media(max-width:640px){
@@ -303,7 +308,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 <script>
 (function(){
   // ── CONFIG — paste your Finnhub key here ─────────────────────────────
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  var FINNHUB_KEY = 'YOUR_FINNHUB_KEY';
 
   // Finnhub symbols (stocks & forex)
   var FINNHUB = [
@@ -1550,7 +1555,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
       <div class="glez-tagline" data-i18n="glez_tagline">Strategic Finance & Data Science</div>
       <div class="glez-rule"></div>
       <div class="glez-desc" data-i18n="glez_desc">Boutique advisory combining M&amp;A, portfolio optimization, and financial decision systems for institutions, family offices, and growth-stage companies.</div>
-      <a href="glez.html" class="glez-btn" data-i18n="glez_cta">Visit GLEZ Advisory →</a>
+      <a href="/glez" class="glez-btn" data-i18n="glez_cta">Visit GLEZ Advisory →</a>
       <div class="glez-metrics">
         <div><div class="glez-metric-num">78.6%</div><div class="glez-metric-lbl">Benchmark outperformance</div></div>
         <div><div class="glez-metric-num">91%</div><div class="glez-metric-lbl">Model accuracy</div></div>
@@ -1584,7 +1589,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <h2 data-i18n="contact_title">Get In Touch</h2>
   <p data-i18n="contact_sub">Open to consulting engagements, full-time roles, and interesting collaborations.<br>Feel free to reach out.</p>
   <div class="contact-links">
-    <a href="/cdn-cgi/l/email-protection#6102041200134f060d041b11130e21060c00080d4f020e0c" class="contact-link">✉️ <span class="__cf_email__" data-cfemail="82e1e7f1e3f0ace5eee7f8f2f0edc2e5efe3ebeeace1edef">[email&#160;protected]</span></a>
+    <a href="javascript:void(0)" onclick="showPortEmailModal()" class="contact-link">✉️ <span data-i18n="contact_email_btn">Send a Message</span></a>
     <a href="https://www.linkedin.com/in/cesar-gonzalez-01/" target="_blank" class="contact-link">💼 Personal LinkedIn</a>
     <a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank" class="contact-link">🏢 GLEZ LinkedIn</a>
   </div>
@@ -1598,7 +1603,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <span data-i18n="footer_disclaimer">Information presented is for educational purposes only and does not constitute financial advice.</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ── TRANSLATIONS ────────────────────────────────────────────────────
 const T={
 en:{
@@ -1688,7 +1693,7 @@ en:{
   testi2_text:"The real estate analysis Cesar provided was eye-opening. His model identified opportunities we had completely missed, and the outcome exceeded our projections significantly.",
   testi2_name:"Real Estate Developer",testi2_role:"Property Development Group",
   testi_placeholder:`More client stories coming soon — <a href="#contact" style="color:var(--accent);font-weight:600">contact me</a> to be featured here.`,
-  contact_label:"Contact",contact_title:"Get In Touch",contact_sub:"Open to strategic finance, investment, and data-driven roles across Europe and global markets.",
+  contact_email_btn:"Send a Message",modal_title:"Get in Touch",modal_sub:"Send a message and I'll respond within 24 hours.",modal_send:"Send Message",modal_cancel:"Cancel",contact_label:"Contact",contact_title:"Get In Touch",contact_sub:"Open to strategic finance, investment, and data-driven roles across Europe and global markets.",
   footer_disclaimer:"Information presented is for educational purposes only and does not constitute financial advice."
 },
 es:{
@@ -1777,7 +1782,7 @@ es:{
   testi2_text:"El análisis inmobiliario de Cesar fue revelador. Su modelo identificó oportunidades que habíamos pasado completamente por alto, y el resultado superó significativamente nuestras proyecciones.",
   testi2_name:"Promotor Inmobiliario",testi2_role:"Grupo de Desarrollo Inmobiliario",
   testi_placeholder:`Más historias de clientes próximamente — <a href="#contact" style="color:var(--accent);font-weight:600">contáctame</a> para aparecer aquí.`,
-  contact_label:"Contacto",contact_title:"Ponte en Contacto",contact_sub:"Abierto a roles de finanzas estratégicas, inversión y datos en Europa y mercados globales.",
+  contact_email_btn:"Enviar Mensaje",modal_title:"Contáctame",modal_sub:"Envía un mensaje y responderé en 24 horas.",modal_send:"Enviar",modal_cancel:"Cancelar",contact_label:"Contacto",contact_title:"Ponte en Contacto",contact_sub:"Abierto a roles de finanzas estratégicas, inversión y datos en Europa y mercados globales.",
   footer_disclaimer:"La información presentada es solo para fines educativos y no constituye asesoramiento financiero."
 },
 fr:{
@@ -1962,6 +1967,7 @@ zh:{
 // ── LANG SWITCHER ────────────────────────────────────────────────────
 function setLang(lang){
   document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.textContent===lang.toUpperCase()||(lang==='zh'&&b.textContent==='中文')));
+  localStorage.setItem('portfolio_lang',lang);
   const t=T[lang];
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const k=el.getAttribute('data-i18n');
@@ -1973,7 +1979,7 @@ function setLang(lang){
   const btn=document.getElementById('resumeBtn');
   if(btn) btn.href=resumeMap[lang]||'resume_en.pdf';
 }
-setLang('en');
+(function(){var saved=localStorage.getItem('portfolio_lang')||'en';setLang(saved);})();
 calcRetirement();
 
 // ── HAMBURGER ────────────────────────────────────────────────────────
@@ -2085,5 +2091,89 @@ function loadPhoto(input){
   reader.readAsDataURL(file);
 }
 </script>
+
+<!-- PORTFOLIO EMAIL MODAL -->
+<div class="port-email-modal-bg" id="portEmailModal">
+  <div class="port-email-modal">
+    <button class="port-email-close" onclick="hidePortEmailModal()">✕</button>
+    <h3 data-i18n="modal_title">Get in Touch</h3>
+    <p data-i18n="modal_sub">Send a message and I'll respond within 24 hours.</p>
+    <div id="portEmailFormWrap">
+      <input type="text" id="portEmailName" placeholder="Your name" autocomplete="name">
+      <input type="email" id="portEmailAddr" placeholder="Your email address" autocomplete="email">
+      <input type="text" id="portEmailOrg" placeholder="Company / Organization (optional)">
+      <textarea id="portEmailMsg" placeholder="Tell me about your inquiry..."></textarea>
+      <div class="port-email-modal-btns">
+        <button class="port-email-send" onclick="sendPortEmail()" data-i18n="modal_send">Send Message</button>
+        <button class="port-email-cancel" onclick="hidePortEmailModal()" data-i18n="modal_cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="portEmailSuccess" style="display:none;text-align:center;padding:2rem 0">
+      <div style="font-size:2rem;margin-bottom:.8rem">✓</div>
+      <div style="font-weight:600;color:var(--accent);margin-bottom:.4rem">Message sent</div>
+      <div style="font-size:.84rem;color:var(--muted)">I'll get back to you within 24 hours.</div>
+    </div>
+    <div id="portEmailError" style="display:none;color:#dc2626;font-size:.82rem;margin-top:.5rem;padding:.5rem;background:#fef2f2;border-radius:4px"></div>
+  </div>
+</div>
+
+<script>
+function showPortEmailModal(){document.getElementById('portEmailModal').classList.add('open');}
+function hidePortEmailModal(){
+  document.getElementById('portEmailModal').classList.remove('open');
+  document.getElementById('portEmailFormWrap').style.display='';
+  document.getElementById('portEmailSuccess').style.display='none';
+  document.getElementById('portEmailError').style.display='none';
+  ['portEmailName','portEmailAddr','portEmailOrg','portEmailMsg'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var m=document.getElementById('portEmailModal');
+  if(m) m.addEventListener('click',function(e){if(e.target===this)hidePortEmailModal();});
+});
+function sendPortEmail(){
+  var name=document.getElementById('portEmailName').value.trim();
+  var email=document.getElementById('portEmailAddr').value.trim();
+  var msg=document.getElementById('portEmailMsg').value.trim();
+  var errEl=document.getElementById('portEmailError');
+  errEl.style.display='none';
+  if(!name||!email||!msg){
+    errEl.textContent='Please fill in your name, email, and message.';
+    errEl.style.display='block'; return;
+  }
+  if(!/^[^@]+@[^@]+\.[^@]+$/.test(email)){
+    errEl.textContent='Please enter a valid email address.';
+    errEl.style.display='block'; return;
+  }
+  var org=document.getElementById('portEmailOrg').value||'';
+  var btn=document.querySelector('.port-email-send');
+  btn.disabled=true; btn.textContent='Sending...';
+  fetch('https://formspree.io/f/YOUR_FORMSPREE_ID',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({
+      name:name, email:email,
+      organization:org, message:msg,
+      _subject:'Portfolio Inquiry from '+name
+    })
+  }).then(function(r){return r.json().then(function(d){return{ok:r.ok,data:d};});})
+  .then(function(res){
+    if(res.ok){
+      document.getElementById('portEmailFormWrap').style.display='none';
+      document.getElementById('portEmailSuccess').style.display='block';
+    } else {
+      errEl.textContent=(res.data&&res.data.error)||'Something went wrong. Please try again.';
+      errEl.style.display='block';
+      btn.disabled=false; btn.textContent='Send Message';
+    }
+  }).catch(function(){
+    errEl.textContent='Network error. Please try again.';
+    errEl.style.display='block';
+    btn.disabled=false; btn.textContent='Send Message';
+  });
+}
+</script>
+
 </body>
 </html>
