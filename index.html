@@ -262,6 +262,24 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   .ticker-sym,.ticker-price,.ticker-chg{font-size:.62rem}
 }
 </style>
+<style>
+/* ── EMAIL MODAL ─────────────────────────────────────────────────── */
+.port-email-modal-bg{display:none;position:fixed;inset:0;background:rgba(7,22,42,.82);z-index:9999;align-items:center;justify-content:center}
+.port-email-modal-bg.open{display:flex}
+.port-email-modal{background:var(--surface);padding:2.5rem;max-width:460px;width:90%;border-top:3px solid var(--gold);position:relative;border-radius:var(--radius);box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.port-email-modal h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--accent);margin-bottom:.4rem;font-weight:600}
+.port-email-modal p{font-size:.84rem;color:var(--muted);margin-bottom:1.2rem;line-height:1.6}
+.port-email-modal input,.port-email-modal textarea{width:100%;border:1px solid var(--border);padding:.65rem 1rem;font-family:inherit;font-size:.84rem;color:var(--text);margin-bottom:.7rem;outline:none;border-radius:4px;transition:border-color .2s;background:var(--surface)}
+.port-email-modal input:focus,.port-email-modal textarea:focus{border-color:var(--gold)}
+.port-email-modal textarea{height:110px;resize:vertical}
+.port-email-modal-btns{display:flex;gap:.7rem;margin-top:.3rem}
+.port-email-send{background:var(--gold);color:#0B1F3A;padding:.6rem 1.4rem;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;border-radius:4px;transition:all .2s}
+.port-email-send:hover{background:#a8893d}
+.port-email-send:disabled{opacity:.6;cursor:not-allowed}
+.port-email-cancel{background:transparent;color:var(--muted);padding:.6rem 1rem;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--border);cursor:pointer;border-radius:4px}
+.port-email-close{position:absolute;top:.9rem;right:1rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--muted);line-height:1}
+.port-email-close:hover{color:var(--text)}
+</style>
 <body>
 
 <nav>
@@ -308,7 +326,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 <script>
 (function(){
   // ── CONFIG — paste your Finnhub key here ─────────────────────────────
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  var FINNHUB_KEY = 'YOUR_FINNHUB_KEY';
 
   // Finnhub symbols (stocks & forex)
   var FINNHUB = [
@@ -1549,13 +1567,13 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <div class="glez-inner">
     <div class="glez-left">
       <div class="glez-logo-row">
-        <img src="1000049634.png" alt="GLEZ" class="glez-logo-img" onerror="this.style.display='none'">
+        <span style="display:inline-flex;align-items:center;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(190,159,86,.35);border-radius:8px;padding:.3rem .6rem"><img src="1000049634.png" alt="GLEZ" class="glez-logo-img" onerror="this.style.display='none'"></span>
         <div class="glez-wordmark">GLEZ<span>.</span></div>
       </div>
       <div class="glez-tagline" data-i18n="glez_tagline">Strategic Finance & Data Science</div>
       <div class="glez-rule"></div>
       <div class="glez-desc" data-i18n="glez_desc">Boutique advisory combining M&amp;A, portfolio optimization, and financial decision systems for institutions, family offices, and growth-stage companies.</div>
-      <a href="/glez" class="glez-btn" data-i18n="glez_cta">Visit GLEZ Advisory →</a>
+      <a href="https://cesarglez.com/glez" class="glez-btn" data-i18n="glez_cta">Visit GLEZ Advisory →</a>
       <div class="glez-metrics">
         <div><div class="glez-metric-num">78.6%</div><div class="glez-metric-lbl">Benchmark outperformance</div></div>
         <div><div class="glez-metric-num">91%</div><div class="glez-metric-lbl">Model accuracy</div></div>
@@ -2149,7 +2167,7 @@ function sendPortEmail(){
   var org=document.getElementById('portEmailOrg').value||'';
   var btn=document.querySelector('.port-email-send');
   btn.disabled=true; btn.textContent='Sending...';
-  fetch('https://formspree.io/f/xbdwjvvq',{
+  fetch('https://formspree.io/f/YOUR_FORMSPREE_ID',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
