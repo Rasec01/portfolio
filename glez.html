@@ -709,7 +709,7 @@ window.addEventListener('scroll',()=>{
 
 <script>
 (function(){
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  var FINNHUB_KEY = 'YOUR_FINNHUB_KEY';
   var FINNHUB = [
     {sym:'S&P 500',fh:'SPY'},{sym:'NASDAQ',fh:'QQQ'},{sym:'DOW',fh:'DIA'},
     {sym:'AAPL',fh:'AAPL'},{sym:'MSFT',fh:'MSFT'},{sym:'NVDA',fh:'NVDA'},
@@ -1390,7 +1390,7 @@ function sendEmail(){
   var org=document.getElementById('emailOrg').value||'';
   var btn=document.querySelector('.email-modal-send');
   btn.disabled=true; btn.textContent='Sending...';
-  fetch('https://formspree.io/f/xbdwjvvq',{
+  fetch('https://formspree.io/f/YOUR_FORMSPREE_ID',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify({
