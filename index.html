@@ -2030,6 +2030,7 @@ function setLang(lang){
   var u=new URL(location.href);if(lang==='en')u.searchParams.delete('lang');else u.searchParams.set('lang',lang);history.replaceState(null,'',u);
 }
 (function(){var p=new URLSearchParams(location.search).get('lang');setLang(['en','es','fr','zh'].includes(p)?p:(localStorage.getItem('portfolio_lang')||'en'));})();
+document.addEventListener('DOMContentLoaded',function(){setLang(localStorage.getItem('portfolio_lang')||'en');});
 calcRetirement();
 
 // ── HAMBURGER ────────────────────────────────────────────────────────
