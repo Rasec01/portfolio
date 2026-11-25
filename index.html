@@ -972,7 +972,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <h2 data-i18n="projects_title">Projects & Case Studies</h2>
   <div style="display:flex;align-items:flex-start;gap:.75rem;background:#f8fafc;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:.9rem 1.1rem;margin-bottom:1.5rem">
     <span style="font-size:1rem;flex-shrink:0;margin-top:.05rem">🔒</span>
-    <p style="font-size:.82rem;color:var(--muted);line-height:1.6;margin:0" data-i18n="projects_disclosure">Due to confidentiality constraints, the full code for some projects cannot be shared publicly. However, technical approaches and methodologies are described below.</p>
+    <p style="font-size:.82rem;color:var(--muted);line-height:1.6;margin:0" data-i18n="projects_disclosure">Code written for client work is confidential and is not shared; those projects are described by their approach and results. Open-source projects are linked under Highlighted Projects above, and course projects are summarised without code.</p>
   </div>
   <div class="filter-tabs">
     <button class="filter-btn active" onclick="filterProjects('all')" data-i18n="filter_all">All Projects</button>
@@ -1108,6 +1108,20 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         </div>
       </div>
 
+
+      <div class="project-card" data-cat="technical">
+        <div class="project-icon">🎵</div>
+        <h3 data-i18n="acad6_title">Music Recommendation System (Capstone)</h3>
+        <p data-i18n="acad6_desc">Capstone project: song recommendations from listening history, comparing popularity-based, user-user, item-item and matrix-factorisation recommenders on the Million Song Dataset.</p>
+        <div class="project-result" data-i18n="acad6_result">🎵 Best model: tuned user-user filtering, F1 0.525</div>
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Surprise</span><span class="tag">Collaborative Filtering</span><span class="tag">Matrix Factorization</span></div>
+        <button class="detail-toggle" onclick="toggleDetail(this)">▶ <span data-i18n="view_details">View Case Details</span></button>
+        <div class="detail-panel">
+          <div class="detail-section"><h4 data-i18n="d_challenge">The Challenge</h4><p data-i18n="acad6_challenge">A music platform holds far more songs than any listener can explore. The goal was to recommend the songs each user is most likely to play, using only past play counts.</p></div>
+          <div class="detail-section"><h4 data-i18n="d_approach">Data & Approach</h4><p data-i18n="acad6_approach">Used the Million Song Dataset (song details and user play counts). Compared a popularity ranking, user-user and item-item similarity models and SVD matrix factorisation, tuned each one, and scored them with RMSE and with precision, recall and F1 at k.</p></div>
+          <div class="detail-section"><h4 data-i18n="d_impact">Insight & Impact</h4><p data-i18n="acad6_impact">The tuned user-user model gave the best F1 (0.525, recall 0.72), ahead of tuned matrix factorisation (0.502), and was proposed as the final design. A course capstone; the code is not published.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1624,7 +1638,7 @@ en:{
   edu_nyif_prog:"Machine Learning for Trading",edu_yale_prog:"Financial Markets — Robert Shiller",
   edu_geneva_prog:"Investment Management",edu_hec_prog:"Investment Mgmt in a Volatile World",
   edu_melb_prog:"Business Finance",edu_rice_prog:"Investment & Portfolio Management",edu_umich_prog:"Successful Negotiation",
-  projects_disclosure:"Due to confidentiality constraints, the full code for some projects cannot be shared publicly. However, technical approaches and methodologies are described below.",
+  projects_disclosure:"Code written for client work is confidential and is not shared; those projects are described by their approach and results. Open-source projects are linked under Highlighted Projects above, and course projects are summarised without code.",
   now_label:"What I'm Up To",now_title:"Now",now_sub:"A snapshot of what I'm currently focused on — updated periodically.",
   now_working_title:"Currently Working On",now_reading_title:"Currently Reading",
   now_w1:"PhD research: predicting delay and cost overrun in EU-funded public works",now_w1_sub:"Python · CatBoost · SHAP · Out-of-time validation",
@@ -1686,6 +1700,7 @@ en:{
   acad4_challenge:"Build a user-friendly location tool demonstrating geospatial querying capabilities — finding the nearest point of interest from any given location input.",
   acad4_approach:"Loaded Starbucks location data into MongoDB, leveraging its native geospatial indexing. Implemented classification and filtering logic to accept GPS coordinates or zip code and return the nearest location.",
   acad4_impact:"Demonstrated practical NoSQL geospatial querying — skills transferable to retail site analysis, supply chain optimization, and customer proximity modeling in business contexts.",
+  acad6_title:"Music Recommendation System (Capstone)",acad6_desc:"Capstone project: song recommendations from listening history, comparing popularity-based, user-user, item-item and matrix-factorisation recommenders on the Million Song Dataset.",acad6_result:"🎵 Best model: tuned user-user filtering, F1 0.525",acad6_challenge:"A music platform holds far more songs than any listener can explore. The goal was to recommend the songs each user is most likely to play, using only past play counts.",acad6_approach:"Used the Million Song Dataset (song details and user play counts). Compared a popularity ranking, user-user and item-item similarity models and SVD matrix factorisation, tuned each one, and scored them with RMSE and with precision, recall and F1 at k.",acad6_impact:"The tuned user-user model gave the best F1 (0.525, recall 0.72), ahead of tuned matrix factorisation (0.502), and was proposed as the final design. A course capstone; the code is not published.",
   calc_label:"Interactive Tool",calc_title:"Retirement Savings Calculator",calc_h3:"Estimate Your Retirement Nest Egg",
   calc_p:"Adjust the inputs to see how your savings can grow over time with compound interest.",
   calc_initial:"Initial Amount ($)",calc_monthly:"Monthly Contribution ($)",calc_return:"Annual Return (%)",calc_years:"Years to Grow",
@@ -1718,7 +1733,7 @@ es:{
   edu_nyif_prog:"Machine Learning para Trading",edu_yale_prog:"Mercados Financieros — Robert Shiller",
   edu_geneva_prog:"Gestión de Inversiones",edu_hec_prog:"Gestión de Inversiones en un Mundo Volátil",
   edu_melb_prog:"Finanzas Empresariales",edu_rice_prog:"Gestión de Inversiones y Carteras",edu_umich_prog:"Negociación Exitosa",
-  projects_disclosure:"Por restricciones de confidencialidad, el código completo de algunos proyectos no puede compartirse públicamente. Sin embargo, los enfoques técnicos y metodologías se describen a continuación.",
+  projects_disclosure:"El código desarrollado para clientes es confidencial y no se comparte; esos proyectos se describen por su enfoque y sus resultados. Los proyectos de código abierto están enlazados arriba, en Proyectos Destacados, y los proyectos académicos se resumen sin código.",
   now_label:"En qué estoy trabajando",now_title:"Ahora",now_sub:"Un vistazo a lo que me mantengo enfocado actualmente — actualizado periódicamente.",
   now_working_title:"Actualmente trabajando en",now_reading_title:"Actualmente leyendo",
   now_w1:"Doctorado: predicción de retrasos y sobrecostes en obra pública financiada por la UE",now_w1_sub:"Python · CatBoost · SHAP · Validación fuera de muestra",
@@ -1779,6 +1794,7 @@ es:{
   acad4_challenge:"Construir una herramienta de localización que demuestre capacidades de consulta geoespacial — encontrando el punto de interés más cercano desde cualquier entrada de ubicación.",
   acad4_approach:"Datos de ubicaciones Starbucks en MongoDB con indexación geoespacial nativa. Lógica de clasificación y filtrado para coordenadas GPS o código postal.",
   acad4_impact:"Demostración práctica de consultas geoespaciales NoSQL — transferibles a análisis de ubicación retail, optimización de cadena de suministro y modelado de proximidad al cliente.",
+  acad6_title:"Sistema de Recomendación Musical (Proyecto Final)",acad6_desc:"Proyecto final del programa: recomendación de canciones a partir del historial de escucha, comparando recomendadores por popularidad, usuario-usuario, ítem-ítem y factorización matricial con el Million Song Dataset.",acad6_result:"🎵 Mejor modelo: filtrado usuario-usuario ajustado, F1 de 0,525",acad6_challenge:"Una plataforma musical ofrece muchas más canciones de las que un oyente puede explorar. El objetivo era recomendar a cada usuario las canciones que con más probabilidad escuchará, usando solo su historial de reproducciones.",acad6_approach:"Million Song Dataset (datos de canciones y reproducciones por usuario). Se compararon un ranking por popularidad, modelos de similitud usuario-usuario e ítem-ítem y factorización matricial SVD, se ajustó cada uno y se evaluaron con RMSE y con precisión, recall y F1 en k.",acad6_impact:"El modelo usuario-usuario ajustado obtuvo el mejor F1 (0,525, con un recall de 0,72), por delante de la factorización matricial ajustada (0,502), y se propuso como diseño final. Proyecto final de un curso; el código no se publica.",
   calc_label:"Herramienta Interactiva",calc_title:"Calculadora de Ahorro para la Jubilación",calc_h3:"Estima tu Fondo de Jubilación",
   calc_p:"Ajusta los valores para ver cómo pueden crecer tus ahorros con el interés compuesto.",
   calc_initial:"Monto inicial ($)",calc_monthly:"Aportación mensual ($)",calc_return:"Rentabilidad anual (%)",calc_years:"Años de crecimiento",
@@ -1811,7 +1827,7 @@ fr:{
   edu_nyif_prog:"Machine Learning pour le Trading",edu_yale_prog:"Marchés Financiers — Robert Shiller",
   edu_geneva_prog:"Gestion de Patrimoine",edu_hec_prog:"Gestion d'Investissements dans un Monde Volatile",
   edu_melb_prog:"Finance d'Entreprise",edu_rice_prog:"Gestion de Portefeuille",edu_umich_prog:"Négociation Réussie",
-  projects_disclosure:"En raison de contraintes de confidentialité, le code complet de certains projets ne peut être partagé publiquement. Cependant, les approches techniques et méthodologies sont décrites ci-dessous.",
+  projects_disclosure:"Le code développé pour des clients est confidentiel et n'est pas partagé ; ces projets sont présentés par leur approche et leurs résultats. Les projets open source sont accessibles plus haut, dans Projets Mis en Avant, et les projets académiques sont résumés sans code.",
   now_label:"Ce sur quoi je travaille",now_title:"Maintenant",now_sub:"Un aperçu de ce sur quoi je me concentre actuellement — mis à jour régulièrement.",
   now_working_title:"En cours de travail",now_reading_title:"En cours de lecture",
   now_w1:"Thèse : prédiction des retards et dépassements de coûts dans les travaux publics financés par l'UE",now_w1_sub:"Python · CatBoost · SHAP · Validation hors échantillon",
@@ -1872,6 +1888,7 @@ fr:{
   acad4_challenge:"Démontrer les capacités de requête géospatiale NoSQL pour trouver le point d'intérêt le plus proche.",
   acad4_approach:"Données Starbucks dans MongoDB avec indexation géospatiale native, filtrage par coordonnées GPS ou code postal.",
   acad4_impact:"Compétences transférables à l'analyse de localisation retail, l'optimisation de chaîne logistique et la modélisation de proximité client.",
+  acad6_title:"Système de Recommandation Musicale (Projet de Fin de Programme)",acad6_desc:"Projet de fin de programme : recommandation de morceaux à partir de l'historique d'écoute, en comparant des approches par popularité, utilisateur-utilisateur, item-item et factorisation matricielle sur le Million Song Dataset.",acad6_result:"🎵 Meilleur modèle : filtrage utilisateur-utilisateur optimisé, F1 de 0,525",acad6_challenge:"Une plateforme musicale propose bien plus de morceaux qu'un auditeur ne peut en découvrir. L'objectif était de recommander à chaque utilisateur les morceaux qu'il a le plus de chances d'écouter, à partir de son seul historique d'écoute.",acad6_approach:"Million Song Dataset (informations sur les morceaux et nombre d'écoutes par utilisateur). Comparaison d'un classement par popularité, de modèles de similarité utilisateur-utilisateur et item-item et d'une factorisation matricielle SVD, chacun optimisé, puis évalués par RMSE et par précision, rappel et F1 à k.",acad6_impact:"Le modèle utilisateur-utilisateur optimisé obtient le meilleur F1 (0,525, rappel de 0,72), devant la factorisation matricielle optimisée (0,502), et a été retenu comme solution finale. Projet de fin de cours ; le code n'est pas publié.",
   calc_label:"Outil Interactif",calc_title:"Calculateur d'Épargne Retraite",calc_h3:"Estimez votre capital retraite",
   calc_p:"Ajustez les paramètres pour voir comment votre épargne peut croître grâce aux intérêts composés.",
   calc_initial:"Montant initial ($)",calc_monthly:"Contribution mensuelle ($)",calc_return:"Rendement annuel (%)",calc_years:"Années de croissance",
@@ -1884,6 +1901,7 @@ fr:{
   
   
   
+  contact_email_btn:"Envoyer un message",modal_title:"Prenons contact",modal_sub:"Envoyez un message, je vous répondrai sous 24 heures.",modal_send:"Envoyer",modal_cancel:"Annuler",
   contact_label:"Contact",contact_title:"Prenons Contact",contact_sub:"Ouvert aux postes en data science, modélisation des risques, validation de modèles et analyse d'investissement en Espagne, au Luxembourg, en France, en Irlande et en Suisse, ainsi qu'aux missions de conseil.",
   footer_disclaimer:"Les informations présentées sont à titre éducatif uniquement et ne constituent pas un conseil financier."
 },
@@ -1904,7 +1922,7 @@ zh:{
   edu_nyif_prog:"交易机器学习",edu_yale_prog:"金融市场 — 罗伯特·席勒",
   edu_geneva_prog:"投资管理",edu_hec_prog:"波动世界中的投资管理",
   edu_melb_prog:"商业金融",edu_rice_prog:"投资与组合管理",edu_umich_prog:"成功谈判",
-  projects_disclosure:"由于保密限制，部分项目的完整代码无法公开分享。但技术方法和研究路径已在下方详细描述。",
+  projects_disclosure:"为客户开发的代码属于保密内容，不对外公开；这些项目仅介绍方法与成果。开源项目见上方“精选项目”，课程项目仅作概述，不附代码。",
   now_label:"近期动态",now_title:"近况",now_sub:"当前专注内容快照 — 定期更新。",
   now_working_title:"目前正在进行",now_reading_title:"目前正在阅读",
   now_w1:"博士研究：预测欧盟资助公共工程的延误与超支",now_w1_sub:"Python · CatBoost · SHAP · 样本外验证",
@@ -1965,6 +1983,7 @@ zh:{
   acad4_challenge:"构建一个位置查找工具，展示地理空间查询能力——从任意位置输入找到最近的兴趣点。",
   acad4_approach:"将星巴克位置数据加载到MongoDB，利用其原生地理空间索引，实现GPS坐标或邮政编码输入的分类过滤逻辑。",
   acad4_impact:"展示了实用的NoSQL地理空间查询技能，可迁移至零售选址分析、供应链优化和商业客户邻近度建模等场景。",
+  acad6_title:"音乐推荐系统（结业项目）",acad6_desc:"课程结业项目：基于 Million Song Dataset 的收听记录推荐歌曲，比较了基于流行度、用户-用户、物品-物品和矩阵分解四类推荐方法。",acad6_result:"🎵 最佳模型：调参后的用户-用户协同过滤，F1 为 0.525",acad6_challenge:"音乐平台的曲库远超任何听众能探索的范围。目标是仅凭历史播放次数，为每位用户推荐最可能收听的歌曲。",acad6_approach:"使用 Million Song Dataset（歌曲信息和用户播放次数）。比较了流行度排序、用户-用户和物品-物品相似度模型以及 SVD 矩阵分解，逐一调参，并用 RMSE 及 k 位置的精确率、召回率和 F1 进行评估。",acad6_impact:"调参后的用户-用户模型 F1 最高（0.525，召回率 0.72），优于调参后的矩阵分解（0.502），被提议为最终方案。此为课程结业项目，代码不公开。",
   calc_label:"互动工具",calc_title:"退休储蓄计算器",calc_h3:"估算您的退休资产",
   calc_p:"调整参数，看看您的储蓄在复利作用下如何随时间增长。",
   calc_initial:"初始金额 ($)",calc_monthly:"每月储蓄 ($)",calc_return:"年化收益率 (%)",calc_years:"增长年数",
@@ -1977,6 +1996,7 @@ zh:{
   
   
   
+  contact_email_btn:"发送消息",modal_title:"联系我",modal_sub:"留言后我会在 24 小时内回复。",modal_send:"发送",modal_cancel:"取消",
   contact_label:"联系方式",contact_title:"取得联系",contact_sub:"正在寻找西班牙、卢森堡、法国、爱尔兰和瑞士的数据科学、风险建模、模型验证及投资分析职位，也承接咨询项目。",
   footer_disclaimer:"所呈现信息仅供教育目的，不构成财务建议。"
 }};
