@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- seo:start -->
+<title>GLEZ Strategic Finance & Data Science | Financiación · Optimización de carteras · Sistemas de decisión</title>
+<meta name="description" content="GLEZ Strategic Finance & Data Science: asesoría independiente en financiación, estrategia financiera, optimización de carteras y sistemas de decisión para pymes e inversores privados."/>
+<meta name="author" content="César A. González"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://cesarglez.com/glez/es"/>
+<link rel="alternate" hreflang="en" href="https://cesarglez.com/glez"/>
+<link rel="alternate" hreflang="es" href="https://cesarglez.com/glez/es"/>
+<link rel="alternate" hreflang="x-default" href="https://cesarglez.com/glez"/>
+<meta property="og:title" content="GLEZ Strategic Finance & Data Science | Financiación · Optimización de carteras · Sistemas de decisión"/>
+<meta property="og:description" content="Asesoría boutique enfocada en asignación de capital, estrategia financiera y sistemas de decisión en mercados internacionales."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://cesarglez.com/glez/es"/>
+<meta property="og:image" content="https://cesarglez.com/og-glez.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="GLEZ Strategic Finance &amp; Data Science"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:locale:alternate" content="en_GB"/>
+<meta property="og:locale:alternate" content="fr_FR"/>
+<meta property="og:locale:alternate" content="zh_CN"/>
+<meta name="twitter:image" content="https://cesarglez.com/og-glez.jpg"/>
+<meta name="theme-color" content="#07162A"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/favicon-180.png"/>
+<meta property="og:site_name" content="GLEZ Strategic Finance & Data Science"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="GLEZ Strategic Finance & Data Science"/>
+<meta name="twitter:description" content="Asesoría independiente: financiación, optimización de carteras y sistemas de decisión financiera."/>
+<!-- seo:end -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "GLEZ Strategic Finance & Data Science",
+  "description": "Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.",
+  "url": "https://cesarglez.com/glez",
+  "logo": "https://cesarglez.com/1000049634.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Cesar A. Gonzalez",
+    "url": "https://cesarglez.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/cesar-gonzalez-01/",
+      "https://www.linkedin.com/company/glez-strategic-finance-data-science",
+      "https://github.com/Rasec01"
+    ]
+  },
+  "serviceType": ["M&A Advisory", "Portfolio Optimization", "Financial Modeling", "Decision Systems", "Risk Management"],
+  "areaServed": "Worldwide",
+  "knowsLanguage": ["en", "es", "fr", "zh"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1F3A;--navy-deep:#07162A;--navy-mid:#152B4E;
+  --gold:#BE9F56;--gold-light:#D4B878;--gold-pale:#F5EDDB;
+  --gray:#43474A;--light:#F8F5EF;--white:#FFFFFF;
+  --border:rgba(190,159,86,.2);--radius:4px;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Jost',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--light);color:var(--navy);line-height:1.6;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--light)}::-webkit-scrollbar-thumb{background:var(--gold)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}.delay3{transition-delay:.36s}.delay4{transition-delay:.48s}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:68px;background:rgba(7,22,42,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:all .3s}
+.nav-brand{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.nav-logo-img{height:36px;width:auto}
+.nav-wordmark{font-family:var(--font-display);font-size:1.4rem;font-weight:600;letter-spacing:4px;color:var(--white);text-transform:uppercase;line-height:1}
+.nav-wordmark span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{text-decoration:none;font-size:.68rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-right{display:flex;align-items:center;gap:1.5rem}
+.btn-nav{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:.4rem 1.1rem;font-size:.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .2s;white-space:nowrap}
+.btn-nav:hover{background:var(--gold);color:var(--navy)}
+.nav-back{font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:var(--gold)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:20px;height:1.5px;background:var(--gold);transition:all .3s}
+.mob-menu{display:none;position:fixed;top:68px;left:0;right:0;background:var(--navy-deep);border-bottom:1px solid var(--border);z-index:99;padding:1.5rem 2rem;flex-direction:column;gap:1.2rem}
+.mob-menu.open{display:flex}
+.mob-menu a{text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);transition:color .2s}
+.mob-menu a:hover{color:var(--gold)}
+@media(max-width:900px){.nav-links,.nav-back{display:none}.hamburger{display:flex}nav{padding:0 1.5rem}}
+
+/* HERO */
+#hero{min-height:100vh;background:var(--navy-deep);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;padding:130px 3rem 5rem}
+.hero-bg{position:absolute;inset:0;background:url("/1000049635.png") center center/cover no-repeat;pointer-events:none}.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(7,22,42,.88) 0%,rgba(7,22,42,.6) 60%,rgba(7,22,42,.3) 100%)}
+
+.hero-body{position:relative;z-index:1;max-width:860px}
+.eyebrow-row{display:flex;align-items:center;gap:.8rem;margin-bottom:2.2rem}
+.eyebrow-line{width:36px;height:1px;background:var(--gold)}
+.eyebrow-txt{font-size:.62rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+h1.hero-firm{font-family:var(--font-display);font-size:clamp(3rem,7vw,6rem);font-weight:300;letter-spacing:5px;text-transform:uppercase;color:var(--white);line-height:1;margin-bottom:.3rem}
+h1.hero-firm strong{font-weight:600;color:var(--gold)}
+.hero-sub-title{font-family:var(--font-display);font-size:clamp(.85rem,1.4vw,1rem);font-weight:300;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:2.2rem}
+.hero-rule{width:56px;height:1px;background:var(--gold);margin-bottom:2rem}
+.hero-pitch{font-size:clamp(.95rem,1.5vw,1.1rem);color:rgba(255,255,255,.7);line-height:1.85;max-width:560px;margin-bottom:3rem;font-weight:300}
+.hero-pitch strong{color:var(--gold-light);font-weight:500}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary-gold{background:var(--gold);color:var(--navy);padding:.75rem 2rem;font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .2s;display:inline-block}
+.btn-primary-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(190,159,86,.3)}
+.btn-ghost{background:transparent;color:rgba(255,255,255,.75);padding:.75rem 2rem;font-size:.7rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,.2);transition:all .2s;display:inline-block}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:2.5rem;left:3rem;display:flex;align-items:center;gap:.7rem;font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.2)}
+.hero-scroll-line{width:36px;height:1px;background:rgba(255,255,255,.15)}
+@media(max-width:640px){#hero{padding:100px 1.5rem 4rem}.hero-scroll{left:1.5rem}}
+
+/* SECTIONS */
+section{padding:6rem 3rem}
+.inner{max-width:1060px;margin:0 auto}
+.sec-eyebrow{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
+h2.sec-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:400;letter-spacing:.5px;color:var(--navy);line-height:1.15;margin-bottom:.9rem}
+h2.sec-title em{font-style:italic;color:var(--gold)}
+.sec-sub{font-size:.92rem;color:var(--gray);line-height:1.78;max-width:520px;margin-bottom:3rem;font-weight:300}
+@media(max-width:640px){section{padding:4rem 1.5rem}}
+
+/* PILLARS */
+#what{background:var(--white)}
+.pillars{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:3rem;border:1px solid rgba(11,31,58,.1)}
+.pillar{padding:2.5rem 2rem;border-right:1px solid rgba(11,31,58,.1);position:relative;overflow:hidden;transition:background .25s}
+.pillar:last-child{border-right:none}
+.pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.pillar:hover::before{transform:scaleX(1)}
+.pillar:hover{background:rgba(190,159,86,.025)}
+.pillar-n{font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:rgba(11,31,58,.07);line-height:1;margin-bottom:1.2rem}
+.pillar-icon{font-size:1.4rem;margin-bottom:.8rem}
+.pillar-title{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--navy);margin-bottom:.7rem}
+.pillar-desc{font-size:.82rem;color:var(--gray);line-height:1.7;font-weight:300;margin-bottom:1rem}
+.pillar-list{list-style:none}
+.pillar-list li{font-size:.76rem;color:var(--gray);padding:.25rem 0;border-bottom:1px solid rgba(11,31,58,.05);display:flex;align-items:center;gap:.5rem;font-weight:300}
+.pillar-list li::before{content:'—';color:var(--gold);font-size:.58rem;flex-shrink:0}
+@media(max-width:800px){.pillars{grid-template-columns:1fr}.pillar{border-right:none;border-bottom:1px solid rgba(11,31,58,.1)}.pillar:last-child{border-bottom:none}}
+
+/* PROOF */
+#proof{background:var(--navy);position:relative;overflow:hidden}
+#proof::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(190,159,86,.055) 0%,transparent 70%);pointer-events:none}
+#proof .sec-title{color:var(--white)}
+#proof .sec-title em{color:var(--gold)}
+#proof .sec-sub{color:rgba(255,255,255,.45)}
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:2.5rem}
+.metric-card{background:var(--navy);padding:3rem 2rem;text-align:center;transition:background .25s}
+.metric-card:hover{background:rgba(190,159,86,.05)}
+.metric-n{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--gold);line-height:1;margin-bottom:.5rem;letter-spacing:-1px}
+.metric-n small{font-size:55%;opacity:.7}
+.metric-lbl{font-size:.75rem;color:rgba(255,255,255,.45);letter-spacing:.4px;line-height:1.55;font-weight:300}
+@media(max-width:800px){.metrics-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.metrics-grid{grid-template-columns:1fr}}
+
+/* WORK */
+#work{background:var(--light)}
+.cases{border:1px solid rgba(11,31,58,.1);margin-top:3rem}
+.case-item{background:var(--white);border-bottom:1px solid rgba(11,31,58,.07);cursor:pointer;transition:background .2s}
+.case-item:last-child{border-bottom:none}
+.case-item:hover{background:var(--light)}
+.case-header{padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.case-left{display:flex;align-items:flex-start;gap:1.5rem;flex:1}
+.case-n{font-family:var(--font-display);font-size:2.8rem;font-weight:300;color:rgba(11,31,58,.08);line-height:1;flex-shrink:0;width:48px}
+.case-info .case-cat{font-size:.6rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem}
+.case-info .case-name{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--navy);margin-bottom:.3rem}
+.case-info .case-res{font-size:.75rem;font-weight:500;color:var(--gold);background:rgba(190,159,86,.1);padding:.18rem .55rem;display:inline-block}
+.case-toggle{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.case-toggle-txt{font-size:.62rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
+.case-toggle-btn{width:26px;height:26px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--gold);transition:transform .3s;flex-shrink:0}
+.case-item.open .case-toggle-btn{transform:rotate(45deg)}
+.case-body{display:none;padding:0 2.5rem 2rem;grid-template-columns:1fr 1fr 1fr;gap:2rem}
+.case-item.open .case-body{display:grid}
+.case-section h4{font-size:.58rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.case-section p{font-size:.82rem;color:var(--gray);line-height:1.7;font-weight:300}
+.tech-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.8rem}
+.tech-tag{font-size:.62rem;background:rgba(11,31,58,.06);color:var(--gray);padding:.15rem .5rem;font-weight:400}
+@media(max-width:700px){.case-body{grid-template-columns:1fr}.case-header{padding:1.5rem}}
+
+/* SERVICES */
+#services{background:var(--white)}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(11,31,58,.08);border:1px solid rgba(11,31,58,.08);margin-top:3rem}
+.svc-lane{background:var(--white);padding:3rem;position:relative}
+.svc-lane::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
+.svc-tag{font-size:.58rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.svc-title{font-family:var(--font-display);font-size:1.55rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.svc-sub{font-size:.82rem;color:var(--gray);line-height:1.7;margin-bottom:1.8rem;font-weight:300}
+.svc-list{list-style:none}
+.svc-list li{font-size:.82rem;color:var(--gray);padding:.55rem 0;border-bottom:1px solid rgba(11,31,58,.06);display:flex;align-items:flex-start;gap:.7rem;font-weight:300}
+.svc-list li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:.6rem}
+@media(max-width:700px){.svc-grid{grid-template-columns:1fr}}
+
+/* ABOUT */
+#about{background:var(--light)}
+.about-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start}
+.about-photo-frame{position:relative;margin-top:.8rem}
+.about-photo-border{position:absolute;top:-10px;left:-10px;right:10px;bottom:10px;border:1px solid var(--gold);pointer-events:none;z-index:0}
+.about-photo-frame img{position:relative;z-index:1;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 15%;display:block}
+.about-badge{position:absolute;bottom:0;right:0;z-index:2;background:var(--navy);padding:.7rem 1.1rem}
+.about-badge-name{font-family:var(--font-display);font-size:.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--white);line-height:1.2}
+.about-badge-role{font-size:.58rem;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-top:.15rem}
+.about-bio{font-size:.92rem;color:var(--gray);line-height:1.85;font-weight:300;margin-bottom:1.3rem}
+.cred-label{font-size:.58rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin:2rem 0 .8rem}
+.cred-list{list-style:none}
+.cred-list li{font-size:.8rem;color:var(--gray);padding:.42rem 0;border-bottom:1px solid rgba(11,31,58,.07);display:flex;align-items:center;justify-content:space-between;font-weight:300}
+.cred-list li span{font-size:.65rem;color:var(--gold);flex-shrink:0;margin-left:.5rem}
+@media(max-width:800px){.about-layout{grid-template-columns:1fr;gap:3rem}}
+
+/* NOW */
+#now{background:var(--navy)}
+#now .sec-title{color:var(--white)}
+#now .sec-title em{color:var(--gold)}
+#now .sec-sub{color:rgba(255,255,255,.4)}
+.now-cards{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2.5rem}
+.now-card{background:rgba(255,255,255,.04);border:1px solid var(--border);padding:2rem}
+.now-card-hdr{font-size:.6rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.now-row{padding:.65rem 0;border-bottom:1px solid rgba(190,159,86,.08);display:flex;align-items:flex-start;gap:.75rem}
+.now-row:last-child{border-bottom:none}
+.now-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:.62rem}
+.now-txt{font-size:.83rem;color:rgba(255,255,255,.62);line-height:1.5;font-weight:300}
+.now-meta{font-size:.7rem;color:rgba(255,255,255,.28);margin-top:.12rem}
+.now-ts{font-size:.62rem;color:rgba(255,255,255,.22);text-align:right;margin-top:1.2rem;letter-spacing:.5px}
+@media(max-width:700px){.now-cards{grid-template-columns:1fr}}
+
+/* CONTACT */
+#contact{background:var(--light)}
+.contact-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:6rem;align-items:start}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:1px;margin-top:.5rem}
+.contact-row{background:var(--white);padding:1.15rem 1.4rem}
+.contact-row a{text-decoration:none;font-size:.83rem;color:var(--navy);display:flex;align-items:center;justify-content:space-between;transition:color .2s}
+.contact-row:hover{background:var(--gold-pale)}
+.contact-row a:hover{color:var(--gold)}
+.contact-row-label{font-size:.58rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);flex-shrink:0}
+.contact-cta{background:var(--navy);padding:2.5rem;border-top:2px solid var(--gold)}
+.cta-title{font-family:var(--font-display);font-size:1.55rem;font-weight:400;color:var(--white);margin-bottom:.7rem;line-height:1.35}
+.cta-sub{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.7;margin-bottom:1.8rem;font-weight:300}
+.cta-btn{background:var(--gold);color:var(--navy);padding:.8rem 2rem;font-size:.68rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;transition:all .2s}
+.cta-btn:hover{background:var(--gold-light);transform:translateY(-2px)}
+@media(max-width:800px){.contact-layout{grid-template-columns:1fr;gap:3rem}}
+
+/* FOOTER */
+footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);flex-wrap:wrap;gap:1rem}
+.footer-wordmark{font-family:var(--font-display);font-size:1.1rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--white)}
+.footer-wordmark span{color:var(--gold)}
+.footer-links{display:flex;align-items:center;gap:2rem}
+.footer-links a{font-size:.6rem;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-fine{width:100%;text-align:center;font-size:.68rem;color:rgba(255,255,255,.18);margin-top:.5rem}
+@media(max-width:640px){footer{padding:2rem 1.5rem}}
+
+/* TICKER */
+.ticker-strip{position:fixed;top:68px;left:0;right:0;height:30px;background:#07162A;border-bottom:1px solid rgba(190,159,86,.2);display:flex;align-items:center;overflow:hidden;font-family:'Jost',system-ui,sans-serif;z-index:99;flex-shrink:0}
+.ticker-label{flex-shrink:0;padding:0 1rem;font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border-right:1px solid rgba(190,159,86,.25);height:100%;display:flex;align-items:center;background:#07162A;z-index:2}
+.ticker-wrap{flex:1;overflow:hidden}
+.ticker-track{display:flex;white-space:nowrap;animation:tickerScroll 2.25s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{display:inline-flex;align-items:center;gap:.4rem;padding:0 1.2rem;height:32px;border-right:1px solid rgba(190,159,86,.1);flex-shrink:0;font-size:.68rem}
+.ticker-sym{font-weight:700;color:#f5f0e8;letter-spacing:.4px}
+.ticker-price{color:rgba(245,240,232,.55)}
+.ticker-chg.up{color:#22c55e;font-weight:600}
+.ticker-chg.down{color:#ef4444;font-weight:600}
+.ticker-chg.flat{color:rgba(245,240,232,.4)}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* EMAIL MODAL */
+.email-modal-bg{display:none;position:fixed;inset:0;background:rgba(7,22,42,.85);z-index:999;align-items:center;justify-content:center}
+.email-modal-bg.open{display:flex}
+.email-modal{background:#fff;padding:2.5rem;max-width:480px;width:90%;border-top:3px solid var(--gold);position:relative}
+.email-modal h3{font-family:var(--font-display);font-size:1.4rem;color:var(--navy);margin-bottom:.5rem}
+.email-modal p{font-size:.85rem;color:var(--gray);margin-bottom:1.5rem;line-height:1.6}
+.email-modal input,.email-modal textarea{width:100%;border:1px solid rgba(11,31,58,.15);padding:.7rem 1rem;font-family:var(--font-body);font-size:.85rem;color:var(--navy);margin-bottom:.8rem;outline:none;transition:border-color .2s}
+.email-modal input:focus,.email-modal textarea:focus{border-color:var(--gold)}
+.email-modal textarea{height:120px;resize:vertical}
+.email-modal-btns{display:flex;gap:.75rem}
+.email-modal-send{background:var(--gold);color:var(--navy);padding:.65rem 1.5rem;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;transition:all .2s}
+.email-modal-send:hover{background:var(--gold-light)}
+.email-modal-cancel{background:transparent;color:var(--gray);padding:.65rem 1rem;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;border:1px solid rgba(11,31,58,.15);cursor:pointer}
+.email-modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--gray)}
+/* PILLAR IMAGES */
+.pillar-img-wrap{width:100%;height:auto;overflow:hidden;margin-bottom:1.2rem;flex-shrink:0}
+.pillar-img-wrap img{width:100%;height:auto;display:block;filter:brightness(.9);transition:filter .3s;aspect-ratio:16/10;object-fit:cover;object-position:center center}
+.pillar:hover .pillar-img-wrap img{filter:brightness(1)}
+@media(max-width:800px){.pillar-img-wrap img{aspect-ratio:16/9}}
+
+/* LANG SWITCHER */
+.lang-switcher{display:flex;gap:.3rem}
+.lang-btn{background:none;border:1px solid rgba(190,159,86,.4);border-radius:3px;padding:.18rem .42rem;font-size:.65rem;cursor:pointer;color:rgba(255,255,255,.6);transition:all .15s;font-weight:600;font-family:var(--font-body)}
+.lang-btn:hover,.lang-btn.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a class="nav-brand" href="/glez" data-xlink="glez">
+    <span style="display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(190,159,86,0.35);border-radius:8px;padding:.3rem .55rem">
+      <img src="/1000049634.png" alt="GLEZ Strategic Finance & Data Science" class="nav-logo-img" style="height:34px;width:auto" onerror="this.src='/1000049635.png'">
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#what" data-i18n="nav_what">What We Do</a></li>
+    <li><a href="#work" data-i18n="nav_work">Selected Work</a></li>
+    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+    <li><a href="#clients" data-i18n="nav_clients">Who We Work With</a></li>
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher"><button class="lang-btn active" onclick="setLang('en')">EN</button><button class="lang-btn" onclick="setLang('es')">ES</button><button class="lang-btn" onclick="setLang('fr')">FR</button><button class="lang-btn" onclick="setLang('zh')">中文</button></div>
+    <a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank" rel="noopener noreferrer" class="btn-nav" style="border-color:rgba(255,255,255,.25);color:rgba(255,255,255,.6)" data-i18n="nav_linkedin">LinkedIn</a>
+    <a href="https://calendly.com/cesar-glezpro" target="_blank" rel="noopener noreferrer" class="btn-nav" data-i18n="nav_schedule">Schedule a Call</a>
+    <a href="/" data-xlink="home" class="nav-back">← Portfolio</a>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<!-- TICKER STRIP -->
+<div class="ticker-strip" id="glezTicker">
+  <div class="ticker-label" id="glezTickerLabel">Markets</div>
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="glezTickerTrack">
+      <div class="ticker-item"><span class="ticker-sym">Loading…</span></div>
+    </div>
+  </div>
+</div>
+<div class="mob-menu" id="mobNav">
+  <a href="#what" onclick="closeMob()" data-i18n="nav_what">What We Do</a>
+  <a href="#work" onclick="closeMob()" data-i18n="nav_work">Selected Work</a>
+  <a href="#services" onclick="closeMob()" data-i18n="nav_services">Services</a>
+  <a href="#clients" onclick="closeMob()" data-i18n="nav_clients">Who We Work With</a>
+  <a href="#about" onclick="closeMob()" data-i18n="nav_about">About</a>
+  <a href="#contact" onclick="closeMob()" data-i18n="nav_contact">Contact</a>
+  <a href="https://calendly.com/cesar-glezpro" target="_blank" rel="noopener noreferrer" onclick="closeMob()" data-i18n="nav_schedule">Schedule a Call →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-body">
+    <div class="eyebrow-row reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="hero_eyebrow">Strategic Finance & Data Science</div></div>
+    <div class="reveal delay1" style="margin-bottom:1.5rem;display:inline-block;background:rgba(255,255,255,0.10);backdrop-filter:blur(8px);border:1px solid rgba(190,159,86,0.3);border-radius:12px;padding:.6rem 1.2rem"><h1 style="margin:0;line-height:0"><img src="/1000049634.png" alt="GLEZ Strategic Finance &amp; Data Science" style="height:clamp(52px,7vw,80px);width:auto;display:block"></h1></div>
+    <p class="hero-sub-title reveal delay2" data-i18n="hero_tagline">Financing · Portfolio Optimization · Financial Modeling · Decision Systems</p>
+    <p class="reveal delay2" style="font-size:.82rem;color:rgba(255,255,255,.4);letter-spacing:.5px;font-weight:300;margin-bottom:2rem;line-height:1.7;max-width:520px;font-family:var(--font-display);font-style:italic" data-i18n="hero_position">Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.</p>
+    <div class="hero-rule reveal delay2"></div>
+    <p class="hero-pitch reveal delay3" data-i18n="hero_pitch">We design and implement <strong>financial decision systems</strong> that improve capital allocation, risk management and operational performance — from financing and valuation to portfolio construction and automated analytics.</p>
+    <div class="hero-btns reveal delay4">
+      <a href="#work" class="btn-primary-gold" data-i18n="hero_cta1">View Selected Work</a>
+      <a href="https://calendly.com/cesar-glezpro" target="_blank" rel="noopener noreferrer" class="btn-ghost" data-i18n="hero_cta2">Schedule a Call</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="hero-scroll-line"></div>Scroll to explore</div>
+</section>
+
+<!-- WHAT WE DO -->
+<section id="what">
+  <div class="inner">
+    <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="what_eyebrow">Capabilities</div></div>
+    <h2 class="sec-title reveal" data-i18n="what_title">Three Pillars of <em>Strategic Finance</em></h2>
+    <p class="sec-sub reveal" data-i18n="what_sub">Rigorous financial thinking combined with quantitative methods and data engineering — applied to the problems that move capital and grow firms.</p>
+    <div class="pillars reveal">
+      <div class="pillar">
+        <div class="pillar-img-wrap"><img src="/pillar1.png" alt="Financing and strategic finance" loading="lazy"></div>
+        <div class="pillar-n">01</div>
+        <div class="pillar-title" data-i18n="pillar1_title">Financing &amp; Strategic Finance</div>
+        <div class="pillar-desc" data-i18n="pillar1_desc">Financing, valuation, financial strategy and restructuring for SMEs and private investors.</div>
+        <ul class="pillar-list">
+          <li data-i18n="p1_li1">Financing strategy for SMEs</li>
+          <li data-i18n="p1_li2">Valuation &amp; financial modeling</li>
+          <li data-i18n="p1_li3">Restructuring &amp; turnaround plans</li>
+          <li data-i18n="p1_li4">Acquisition analysis &amp; deal support</li>
+          <li data-i18n="p1_li5">Process redesign</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <div class="pillar-img-wrap"><img src="/pillar2.jpg" alt="Portfolio Optimization Risk Modeling" loading="lazy"></div>
+        <div class="pillar-n">02</div>
+        <div class="pillar-title" data-i18n="pillar2_title">Portfolio Optimization &amp; Risk Modeling</div>
+        <div class="pillar-desc" data-i18n="pillar2_desc">Portfolio optimization, risk modeling, and investment strategy built on quantitative methods and factor frameworks.</div>
+        <ul class="pillar-list">
+          <li data-i18n="p2_li1">Fama-French factor modeling</li>
+          <li data-i18n="p2_li2">Mean-variance optimization</li>
+          <li data-i18n="p2_li3">Downside risk &amp; drawdown control</li>
+          <li data-i18n="p2_li4">Backtesting &amp; performance attribution</li>
+          <li data-i18n="p2_li5">Credit-risk (PD) modelling</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <div class="pillar-img-wrap"><img src="/pillar3.jpg" alt="Data Science Decision Systems" loading="lazy"></div>
+        <div class="pillar-n">03</div>
+        <div class="pillar-title" data-i18n="pillar3_title">Data Science, Automation &amp; Decision Systems</div>
+        <div class="pillar-desc" data-i18n="pillar3_desc">Financial forecasting, machine learning models, and process automation that transform operational workflows into decision advantage.</div>
+        <ul class="pillar-list">
+          <li data-i18n="p3_li3">ML model development &amp; deployment</li>
+          <li data-i18n="p3_li1">Automated financial reporting</li>
+          <li data-i18n="p3_li2">BI dashboards (Power BI, Tableau)</li>
+          <li data-i18n="p3_li4">Predictive analytics &amp; forecasting</li>
+          <li data-i18n="p3_li5">NLP &amp; market signal extraction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="inner">
+    <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="proof_eyebrow">Selected Impact</div></div>
+    <h2 class="sec-title reveal" data-i18n="proof_title">Selected <em>results</em></h2>
+    <p class="sec-sub reveal" data-i18n="proof_sub">Results from the founder's work before and alongside GLEZ: wealth management at St. James International, branch management at Tu Casa Express, and PhD research at UNAM.</p>
+    <div class="metrics-grid reveal">
+      <div class="metric-card"><div class="metric-n">48<small>%</small></div><div class="metric-lbl" data-i18n="m1_lbl">Of the projects my PhD model flagged as riskiest were delayed or over budget, vs 35% overall (out-of-time test)</div></div>
+      <div class="metric-card"><div class="metric-n">4h→30<small>m</small></div><div class="metric-lbl" data-i18n="m2_lbl">Portfolio preparation per client with my risk and allocation models</div></div>
+      <div class="metric-card"><div class="metric-n">#1<small> / 20</small></div><div class="metric-lbl" data-i18n="m3_lbl">Most profitable portfolios at St. James International, 2016–18 (out of 20 advisers)</div></div>
+      <div class="metric-card"><div class="metric-n">11.5<small>M USD</small></div><div class="metric-lbl" data-i18n="m4_lbl">Acquisition I proposed and led for a client, closed USD 1.5M under budget</div></div>
+      <div class="metric-card"><div class="metric-n">+250<small>%</small></div><div class="metric-lbl" data-i18n="m5_lbl">Branch sales in year one at Tu Casa Express, from last place to first nationally</div></div>
+      <div class="metric-card"><div class="metric-n">45<small>M USD</small></div><div class="metric-lbl" data-i18n="m6_lbl">Client assets across about 60 private clients in the Americas, Asia and Europe</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section id="work">
+  <div class="inner">
+    <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="work_eyebrow">Case Studies</div></div>
+    <h2 class="sec-title reveal" data-i18n="work_title">Selected <em>Work</em></h2>
+    <p class="sec-sub reveal" data-i18n="work_sub">Five pieces of the founder's work: two from St. James International, two open-source projects and one academic project.</p>
+    <div class="cases reveal">
+
+      <div class="case-item" onclick="toggleCase(this)">
+        <div class="case-header">
+          <div class="case-left"><div class="case-n">01</div><div class="case-info"><div class="case-cat" data-i18n="cat1">Portfolio Optimization · St. James International</div><div class="case-name" data-i18n="cn1">Portfolio Management Software</div><div class="case-res" data-i18n="cr1">⏱ 4h → 30min per client · Used by my team</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
+        </div>
+        <div class="case-body">
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p data-i18n="cs1_c">Preparing an optimal allocation took more than four hours per client, which limited how many clients each adviser could serve.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p data-i18n="cs1_a">Applied Bloomberg Terminal data with Fama-French 5-factor model and Efficient Portfolio Theory. Automated selection using graph theory and log regression — first in R, then refactored to Python for performance.</p><div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">R</span><span class="tech-tag">Bloomberg</span><span class="tech-tag">Fama-French</span><span class="tech-tag">Graph Theory</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p data-i18n="cs1_i">Cut preparation from more than four hours per client to under 30 minutes. Used by the founder and his team at St. James International, so they could serve more clients with the same people.</p></div>
+        </div>
+      </div>
+
+      <div class="case-item" onclick="toggleCase(this)">
+        <div class="case-header">
+          <div class="case-left"><div class="case-n">02</div><div class="case-info"><div class="case-cat" data-i18n="cat2">Credit Risk · Open-source project</div><div class="case-name" data-i18n="cn2">Credit Risk PD Model</div><div class="case-res" data-i18n="cr2">🎯 Scorecard, challenger and bank-style validation report</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
+        </div>
+        <div class="case-body">
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p data-i18n="cs2_c">Banks need probability-of-default models that rank borrowers well, give the right level of risk, stay stable over time and can be explained to a model-validation team.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p data-i18n="cs2_a">Weight-of-evidence binning and information-value selection feed a logistic-regression scorecard scaled to points. A gradient-boosting challenger, explained with SHAP, is compared against it. Everything is fitted on the development sample only.</p><div class="tech-tags"><span class="tech-tag">scikit-learn</span><span class="tech-tag">Python</span><span class="tech-tag">Financial Ratios</span><span class="tech-tag">WoE Scorecard</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p data-i18n="cs2_i">An automatic validation report covers discrimination (Gini, KS), calibration (Hosmer-Lemeshow), stability (PSI) and default rates by rating grade, with plain-language findings and limitations.</p></div>
+        </div>
+      </div>
+
+      <div class="case-item" onclick="toggleCase(this)">
+        <div class="case-header">
+          <div class="case-left"><div class="case-n">03</div><div class="case-info"><div class="case-cat" data-i18n="cat3">Quantitative Trading · Open-source project</div><div class="case-name" data-i18n="cn3">Market Prediction &amp; Backtesting System</div><div class="case-res" data-i18n="cr3">📈 Walk-forward backtest with transaction costs</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
+        </div>
+        <div class="case-body">
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p data-i18n="cs3_c">Testing whether simple price features carry a usable short-term signal, without look-ahead bias.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p data-i18n="cs3_a">Random-forest forecasts of five-day returns from momentum and volatility features, turned into long/flat signals and tested walk-forward with a five-day embargo and transaction costs.</p><div class="tech-tags"><span class="tech-tag">Random Forest</span><span class="tech-tag">Python</span><span class="tech-tag">Backtesting</span><span class="tech-tag">Signal Generation</span><span class="tech-tag">Time Series</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p data-i18n="cs3_i">A reproducible research pipeline that reports results after costs, including when the signal does not beat buy-and-hold.</p></div>
+        </div>
+      </div>
+
+      <div class="case-item" onclick="toggleCase(this)">
+        <div class="case-header">
+          <div class="case-left"><div class="case-n">04</div><div class="case-info"><div class="case-cat" data-i18n="cat4">Real Estate · Academic project</div><div class="case-name" data-i18n="cn4">Apartment-Mix Optimisation</div><div class="case-res" data-i18n="cr4">🎓 Log-linear regression on comparable sales</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
+        </div>
+        <div class="case-body">
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p data-i18n="cs4_c">Case study: find the mix of luxury and standard apartments that maximises a development's profit, without reliable local demand data.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p data-i18n="cs4_a">Scraped and analyzed comparable sales data using MySQL. Applied EDA and Log-Linear Regression in R to quantify price drivers and predict demand elasticity by unit type.</p><div class="tech-tags"><span class="tech-tag">R Studio</span><span class="tech-tag">MySQL</span><span class="tech-tag">Log-Linear Regression</span><span class="tech-tag">EDA</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p data-i18n="cs4_i">The model ranked candidate unit mixes by expected profit and showed the main price drivers. An academic exercise, not a client engagement.</p></div>
+        </div>
+      </div>
+
+      <div class="case-item" onclick="toggleCase(this)">
+        <div class="case-header">
+          <div class="case-left"><div class="case-n">05</div><div class="case-info"><div class="case-cat" data-i18n="cat5">Wealth Management · St. James International</div><div class="case-name" data-i18n="cn5">Client Portfolio Advisory</div><div class="case-res" data-i18n="cr5">📊 Most profitable portfolios in the firm, 2016–18 · first of 20 advisers</div></div></div>
+          <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
+        </div>
+        <div class="case-body">
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p data-i18n="cs5_c">Individual clients required personalized investment strategies balancing risk tolerance, liquidity needs, and return expectations — while remaining competitive against market benchmarks across volatile periods.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p data-i18n="cs5_a">Deployed proprietary portfolio software alongside Excel and Power BI. Applied Fama-French 3 and 5-factor models combined with behavioral finance principles to tailor each portfolio to the client's unique risk-return profile.</p><div class="tech-tags"><span class="tech-tag">Fama-French</span><span class="tech-tag">Power BI</span><span class="tech-tag">Excel</span><span class="tech-tag">Behavioral Finance</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p data-i18n="cs5_i">Ran the firm's most profitable portfolios in 2016–18, first of 20 advisers, for about 60 clients with USD 45M in assets.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="inner">
+    <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="svc_eyebrow">How We Engage</div></div>
+    <h2 class="sec-title reveal" data-i18n="svc_title">Two Lanes, <em>One Standard</em></h2>
+    <p class="sec-sub reveal" data-i18n="svc_sub">Two ways to work with GLEZ: advisory for investors and businesses, and analytical work for teams that need quantitative capability.</p>
+    <div class="svc-grid reveal">
+      <div class="svc-lane">
+        <div class="svc-tag" data-i18n="svc1_tag">Lane 01</div>
+        <div class="svc-title" data-i18n="svc1_title">For Capital Partners &amp; Clients</div>
+        <div class="svc-sub" data-i18n="svc1_sub">Advisory for SMEs and private investors who want better capital allocation and risk management, backed by quantitative analysis.</div>
+        <ul class="svc-list">
+          <li data-i18n="svc1_1">Acquisition analysis &amp; valuation</li>
+          <li data-i18n="svc1_2">Investment portfolio design &amp; optimization</li>
+          <li data-i18n="svc1_3">Risk analysis &amp; scenario planning</li>
+          <li data-i18n="svc1_4">Real estate development feasibility</li>
+          <li data-i18n="svc1_5">Market research &amp; competitive intelligence</li>
+          <li data-i18n="svc1_6">Financing &amp; capital structure advice</li>
+        </ul>
+      </div>
+      <div class="svc-lane">
+        <div class="svc-tag" data-i18n="svc2_tag">Lane 02</div>
+        <div class="svc-title" data-i18n="svc2_title">For Firms, Teams &amp; Employers</div>
+        <div class="svc-sub" data-i18n="svc2_sub">Technical expertise and strategic thinking for organizations that need to build or upgrade their quantitative and data infrastructure.</div>
+        <ul class="svc-list">
+          <li data-i18n="svc2_1">Financial decision system design &amp; build</li>
+          <li data-i18n="svc2_2">ML model development &amp; deployment</li>
+          <li data-i18n="svc2_3">Data pipeline architecture &amp; automation</li>
+          <li data-i18n="svc2_4">BI dashboard creation (Power BI, Tableau)</li>
+          <li data-i18n="svc2_5">Predictive analytics &amp; forecasting</li>
+          <li data-i18n="svc2_6">NLP &amp; alternative data integration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE WORK WITH -->
+<style>
+#clients{padding:5rem 3rem;background:var(--navy)}
+#clients .sec-title{color:var(--white)}
+#clients .sec-title em{color:var(--gold)}
+#clients .sec-sub{color:rgba(255,255,255,.45)}
+.clients-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);margin-top:2.5rem}
+.client-type{background:var(--navy);padding:2.2rem 1.8rem;text-align:center;transition:background .25s;position:relative}
+.client-type:hover{background:rgba(190,159,86,.06)}
+.client-type::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:0;height:2px;background:var(--gold);transition:width .4s}
+.client-type:hover::before{width:80%}
+.client-icon{font-size:2rem;margin-bottom:1rem}
+.client-name{font-family:var(--font-display);font-size:1.15rem;font-weight:600;color:var(--white);margin-bottom:.4rem}
+.client-desc{font-size:.76rem;color:rgba(255,255,255,.4);line-height:1.55;font-weight:300}
+.engage-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-top:3rem}
+.engage-card{background:rgba(255,255,255,.04);border:1px solid var(--border);padding:1.8rem;position:relative}
+.engage-num{font-family:var(--font-display);font-size:3rem;font-weight:300;color:rgba(190,159,86,.2);line-height:1;margin-bottom:.8rem}
+.engage-title{font-size:.82rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.engage-desc{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.65;font-weight:300}
+.positioning-bar{margin-top:3rem;padding:2rem;border:1px solid rgba(190,159,86,.25);display:flex;align-items:center;gap:1.5rem}
+.pos-rule{width:40px;height:1px;background:var(--gold);flex-shrink:0}
+.pos-text{font-family:var(--font-display);font-size:1.1rem;font-weight:400;color:rgba(255,255,255,.7);font-style:italic;line-height:1.6}
+@media(max-width:800px){.clients-grid{grid-template-columns:1fr 1fr}.engage-row{grid-template-columns:1fr}.positioning-bar{flex-direction:column;text-align:center}}
+</style>
+
+<section id="clients">
+  <div class="inner">
+    <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="cli_eyebrow">Who GLEZ Is For</div></div>
+    <h2 class="sec-title reveal" data-i18n="cli_title">Built for those who <em>move capital</em></h2>
+    <p class="sec-sub reveal" data-i18n="cli_sub">GLEZ works selectively with a small number of engagements at a time — ensuring focused, senior-level attention on every mandate.</p>
+
+    <div class="clients-grid reveal">
+      <div class="client-type">
+        <div class="client-icon">🏛️</div>
+        <div class="client-name" data-i18n="cli1_name">Corporates</div>
+        <div class="client-desc" data-i18n="cli1_desc">Financing advice, financial modeling and decision support for growth</div>
+      </div>
+      <div class="client-type">
+        <div class="client-icon">📈</div>
+        <div class="client-name" data-i18n="cli2_name">Investors</div>
+        <div class="client-desc" data-i18n="cli2_desc">Portfolio optimization, risk modeling, and quantitative strategy for individual and institutional investors</div>
+      </div>
+      <div class="client-type">
+        <div class="client-icon">⚡</div>
+        <div class="client-name" data-i18n="cli3_name">Funds</div>
+        <div class="client-desc" data-i18n="cli3_desc">Systematic strategy development, backtesting infrastructure, and factor-based allocation frameworks</div>
+      </div>
+      <div class="client-type">
+        <div class="client-icon">🌐</div>
+        <div class="client-name" data-i18n="cli4_name">Institutions</div>
+        <div class="client-desc" data-i18n="cli4_desc">Data infrastructure, decision systems, and analytics platforms that scale across teams and operations</div>
+      </div>
+    </div>
+
+    <div class="engage-row reveal">
+      <div class="engage-card">
+        <div class="engage-num">01</div>
+        <div class="engage-title" data-i18n="eng1_title">Selective Mandates</div>
+        <div class="engage-desc" data-i18n="eng1_desc">We take on a limited number of engagements to ensure each client receives focused, senior-level attention rather than delegated work.</div>
+      </div>
+      <div class="engage-card">
+        <div class="engage-num">02</div>
+        <div class="engage-title" data-i18n="eng2_title">Project-Based Advisory</div>
+        <div class="engage-desc" data-i18n="eng2_desc">Defined scope, clear deliverables, and measurable outcomes — from single-model builds to full decision system implementations.</div>
+      </div>
+      <div class="engage-card">
+        <div class="engage-num">03</div>
+        <div class="engage-title" data-i18n="eng3_title">Strategic Engagements</div>
+        <div class="engage-desc" data-i18n="eng3_desc">For longer-horizon partnerships, we operate as a senior quantitative and strategic resource embedded within your team or process.</div>
+      </div>
+    </div>
+
+    <div class="positioning-bar reveal">
+      <div class="pos-rule"></div>
+      <div class="pos-text" data-i18n="cli_position">Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="inner">
+    <div class="about-layout">
+      <div class="reveal">
+        <div class="about-photo-frame">
+          <div class="about-photo-border"></div>
+          <img src="/IMG_9994.JPG" alt="Cesar A. Gonzalez" onerror="this.parentElement.style.minHeight='400px';this.parentElement.style.background='#e8eef5';this.style.display='none'">
+          <div class="about-badge">
+            <div class="about-badge-name">Cesar A. Gonzalez</div>
+            <div class="about-badge-role" data-i18n="about_badge_role">Founder · GLEZ</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal delay2">
+        <div class="sec-eyebrow" style="margin-bottom:1rem"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="about_eyebrow">Founder</div></div>
+        <h2 class="sec-title" style="margin-bottom:1.5rem" data-i18n="about_title">Strategic finance <em>meets execution</em></h2>
+        <p class="about-bio" data-i18n="about_p1">Financial data scientist with ten years in financial advisory and wealth management. I build machine-learning and risk models in Python for investment decisions, and I test them on data they have never seen.</p>
+        <p class="about-bio" data-i18n="about_p2">Ten years in financial advisory and wealth management in Mexico City, with clients across the Americas, Asia and Europe. Now based in Gijón, Spain. Works in Spanish, English, French and Chinese.</p>
+        <p class="about-bio" data-i18n="about_p3">PhD candidate in Economics (UNAM). Online programmes from MIT, Wharton, Columbia, EDHEC, Yale and HEC Paris.</p>
+        <div class="cred-label" data-i18n="about_cred_label">Online Programmes</div>
+        <ul class="cred-list">
+          <li>MIT — Data Science &amp; Machine Learning <span>2022</span></li>
+          <li>The Wharton School — AI for Business, Financial Modeling <span>2019–2023</span></li>
+          <li>Columbia University — Financial Engineering &amp; Risk Mgmt <span>2018–2020</span></li>
+          <li>EDHEC Business School — Investment Mgmt with Python &amp; ML <span>2023</span></li>
+          <li>Yale University — Financial Markets (Robert Shiller) <span>2016</span></li>
+          <li>HEC Paris · AXA — Investment Management <span>2016, Honors</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOW -->
+<section id="now">
+  <div class="inner">
+    <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="now_eyebrow">Current Focus</div></div>
+    <h2 class="sec-title reveal" data-i18n="now_title">Now</h2>
+    <p class="sec-sub reveal" data-i18n="now_sub">A snapshot of what we are currently working on and researching — updated regularly.</p>
+    <div class="now-cards reveal">
+      <div class="now-card">
+        <div class="now-card-hdr" data-i18n="now_working">⚙️ Currently Working On</div>
+        <div class="now-row"><div class="now-dot"></div><div><div class="now-txt" data-i18n="now_w1">PhD research: predicting delay and cost overrun in EU-funded public works</div><div class="now-meta" data-i18n="now_w1_sub">Python · CatBoost · SHAP · Out-of-time validation</div></div></div>
+        <div class="now-row"><div class="now-dot"></div><div><div class="now-txt" data-i18n="now_w2">Business optimization and automation tools</div><div class="now-meta" data-i18n="now_w2_sub">Operational efficiency · Automated pipelines</div></div></div>
+        <div class="now-row"><div class="now-dot"></div><div><div class="now-txt" data-i18n="now_w3">Analytics projects in investment management</div><div class="now-meta" data-i18n="now_w3_sub">Portfolio analysis · Risk modeling · BI dashboards</div></div></div>
+        <div class="now-ts" data-i18n="now_ts">Last updated: November 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="inner">
+    <div class="contact-layout">
+      <div>
+        <div class="sec-eyebrow reveal"><div class="eyebrow-line"></div><div class="eyebrow-txt" data-i18n="contact_eyebrow">Get In Touch</div></div>
+        <h2 class="sec-title reveal" data-i18n="contact_title">Let's discuss <em>your challenge</em></h2>
+        <p class="sec-sub reveal" style="margin-bottom:1.5rem" data-i18n="contact_sub">Open to advisory engagements, full-time roles, and strategic partnerships. We respond within 24 hours.</p>
+        <ul class="contact-list reveal">
+          <li class="contact-row" id="glezEmailRow" style="cursor:pointer"><a href="javascript:void(0)" onclick="showEmailModal()"><span data-i18n="contact_send_btn">Send a message →</span><span class="contact-row-label">Email</span></a></li>
+          <li class="contact-row"><a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank" rel="noopener noreferrer"><span>GLEZ Strategic Finance & Data Science</span><span class="contact-row-label">LinkedIn</span></a></li>
+          <li class="contact-row"><a href="/" data-xlink="home"><span>Personal Portfolio →</span><span class="contact-row-label">Portfolio</span></a></li>
+        </ul>
+      </div>
+      <div class="reveal delay2">
+        <div class="contact-cta">
+          <div class="cta-title" data-i18n="cta_title">Ready to start a conversation?</div>
+          <div class="cta-sub" data-i18n="cta_sub">Schedule a 30-minute discovery call to discuss your goals, challenges, and how GLEZ can help drive better financial decisions.</div>
+          <a href="https://calendly.com/cesar-glezpro" target="_blank" rel="noopener noreferrer" class="cta-btn" data-i18n="cta_btn">Schedule a Call →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wordmark">GLEZ<span>.</span></div>
+  <div class="footer-links">
+    <a href="#what" data-i18n="nav_what">What We Do</a>
+    <a href="#work" data-i18n="nav_work">Selected Work</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+    <a href="/" data-xlink="home" data-i18n="ft_portfolio">← Portfolio</a>
+  </div>
+  <div class="footer-fine" data-i18n="ft_fine">© 2026 GLEZ Strategic Finance & Data Science · Information presented is for educational purposes only and does not constitute financial advice.</div>
+</footer>
+
+<script>
+function toggleNav(){document.getElementById('mobNav').classList.toggle('open')}
+function closeMob(){document.getElementById('mobNav').classList.remove('open')}
+function toggleCase(el){
+  const isOpen=el.classList.contains('open');
+  document.querySelectorAll('.case-item').forEach(c=>c.classList.remove('open'));
+  if(!isOpen) el.classList.add('open');
+}
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{
+  const n=document.getElementById('mainNav');
+  n.style.background=window.scrollY>60?'rgba(7,22,42,0.99)':'rgba(7,22,42,0.97)';
+});
+</script>
+
+<script>
+(function(){
+  // Stock quotes come through /api/quote, which keeps the Finnhub key on the server.
+  var FINNHUB = [
+    {sym:'S&P 500',fh:'SPY'},{sym:'NASDAQ',fh:'QQQ'},{sym:'DOW',fh:'DIA'},
+    {sym:'AAPL',fh:'AAPL'},{sym:'MSFT',fh:'MSFT'},{sym:'NVDA',fh:'NVDA'},
+    {sym:'AMZN',fh:'AMZN'},{sym:'TSLA',fh:'TSLA'},{sym:'Gold',fh:'GLD'},
+    {sym:'Oil WTI',fh:'USO'},{sym:'10Y UST',fh:'IEF'},{sym:'VIX',fh:'VIXY'}
+  ];
+  var FOREX=[{sym:'EUR/USD',to:'EUR',invert:true},{sym:'USD/MXN',to:'MXN',invert:false}];
+  var CRYPTO=[{sym:'BTC',id:'bitcoin'},{sym:'ETH',id:'ethereum'}];
+  var results={};
+
+  function fmt(n){if(n===null||n===undefined||isNaN(n))return '—';if(Math.abs(n)>=1000)return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});if(Math.abs(n)>=1)return n.toFixed(2);return n.toFixed(4);}
+
+  function buildTrack(){
+    var ORDER=FINNHUB.concat(FOREX).concat(CRYPTO);
+    var track=document.getElementById('glezTickerTrack');
+    if(!track)return;
+    var items='';
+    for(var pass=0;pass<2;pass++){
+      ORDER.forEach(function(t){
+        var d=results[t.sym]||{};var chg=d.chgPct||0;
+        var cls=chg>0.05?'up':chg<-0.05?'down':'flat';
+        var arr=chg>0.05?'▲':chg<-0.05?'▼':'–';var sign=chg>=0?'+':'';
+        items+='<div class="ticker-item"><span class="ticker-sym">'+t.sym+'</span><span class="ticker-price">'+fmt(d.price)+'</span><span class="ticker-chg '+cls+'">'+arr+' '+sign+chg.toFixed(2)+'%</span></div>';
+      });
+    }
+    track.innerHTML=items;
+    var totalPx=track.scrollWidth/2;
+    track.style.animationDuration=Math.max(2.25,totalPx/176)+'s';
+  }
+
+  function fetchFinnhub(){
+    var promises=FINNHUB.map(function(t){
+      return fetch('/api/quote?symbol='+t.fh)
+        .then(function(r){return r.json();})
+        .then(function(d){if(d&&d.c>0){var chg=d.pc>0?((d.c-d.pc)/d.pc)*100:0;results[t.sym]={price:d.c,chgPct:+chg.toFixed(3)};}})
+        .catch(function(){});
+    });
+    return Promise.all(promises);
+  }
+
+  function fetchCrypto(){
+    var ids=CRYPTO.map(function(c){return c.id;}).join(',');
+    return fetch('https://api.coingecko.com/api/v3/simple/price?ids='+ids+'&vs_currencies=usd&include_24hr_change=true')
+      .then(function(r){return r.json();})
+      .then(function(data){CRYPTO.forEach(function(c){var d=data[c.id];if(d)results[c.sym]={price:d.usd,chgPct:+(d.usd_24h_change||0)};});})
+      .catch(function(){});
+  }
+
+  function fetchForex(){
+    return fetch('https://open.er-api.com/v6/latest/USD')
+      .then(function(r){return r.json();})
+      .then(function(data){if(!data||!data.rates)return;FOREX.forEach(function(f){var rate=data.rates[f.to];if(!rate)return;results[f.sym]={price:f.invert?+(1/rate).toFixed(5):+rate.toFixed(4),chgPct:0};});})
+      .catch(function(){});
+  }
+
+  function fetchAll(){Promise.all([fetchFinnhub(),fetchCrypto(),fetchForex()]).then(buildTrack).catch(buildTrack);}
+  setTimeout(fetchAll,600);
+  setInterval(fetchAll,120000);
+})();
+</script>
+
+
+<!-- EMAIL MODAL -->
+<div class="email-modal-bg" id="emailModal">
+  <div class="email-modal">
+    <button class="email-modal-close" onclick="hideEmailModal()">✕</button>
+    <h3 data-i18n="modal_title">Get in Touch</h3>
+    <p data-i18n="modal_sub">Send a message and we'll respond within 24 hours.</p>
+    <div id="emailFormWrap">
+      <input type="text" id="emailName" data-i18n-ph="ph_name" placeholder="Your name" autocomplete="name">
+      <input type="email" id="emailEmail" data-i18n-ph="ph_email" placeholder="Your email address" autocomplete="email">
+      <input type="text" id="emailOrg" data-i18n-ph="ph_org" placeholder="Company / Organization (optional)">
+      <textarea id="emailMsg" data-i18n-ph="ph_msg" placeholder="Tell us about your inquiry or challenge..."></textarea>
+      <div class="email-modal-btns">
+        <button class="email-modal-send" onclick="sendEmail()" data-i18n="send_btn">Send Message</button>
+        <button class="email-modal-cancel" onclick="hideEmailModal()" data-i18n="modal_cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="emailSuccess" style="display:none;text-align:center;padding:2rem 0">
+      <div style="font-size:2rem;margin-bottom:.8rem">✓</div>
+      <div style="font-weight:600;color:var(--navy);margin-bottom:.4rem" data-i18n="modal_sent">Message sent</div>
+      <div style="font-size:.84rem;color:var(--gray)" data-i18n="modal_sent_sub">We'll get back to you within 24 hours.</div>
+    </div>
+    <div id="emailError" style="display:none;color:#dc2626;font-size:.82rem;margin-top:.5rem;padding:.5rem;background:#fef2f2;border-radius:4px"></div>
+  </div>
+</div>
+
+<script>
+// ── GLEZ TRANSLATIONS ─────────────────────────────────────────────
+const GT={
+en:{
+  nav_what:"What We Do",nav_work:"Selected Work",nav_services:"Services",
+  nav_clients:"Who We Work With",nav_about:"About",nav_contact:"Contact",
+  nav_linkedin:"LinkedIn",nav_schedule:"Schedule a Call",
+  hero_eyebrow:"Strategic Finance & Data Science",
+  hero_tagline:"Financing · Portfolio Optimization · Financial Modeling · Decision Systems",
+  hero_position:"Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.",
+  hero_pitch:"We design and implement <strong>financial decision systems</strong> that improve capital allocation, risk management and operational performance — from financing and valuation to portfolio construction and automated analytics.",
+  hero_cta1:"View Selected Work",hero_cta2:"Schedule a Call",
+  what_eyebrow:"Capabilities",
+  what_title:"Three Pillars of <em>Strategic Finance</em>",
+  what_sub:"Rigorous financial thinking combined with quantitative methods and data engineering — applied to the problems that move capital and grow firms.",
+  pillar1_title:"Financing &amp; Strategic Finance",
+  pillar1_desc:"Financing, valuation, financial strategy and restructuring for SMEs and private investors.",
+  pillar2_title:"Portfolio Optimization & Risk Modeling",
+  pillar2_desc:"Portfolio optimization, risk modeling, and investment strategy built on quantitative methods and factor frameworks.",
+  pillar3_title:"Data Science, Automation & Decision Systems",
+  pillar3_desc:"Financial forecasting, machine learning models, and process automation that transform operational workflows into decision advantage.",
+  proof_eyebrow:"Selected Impact",
+  proof_title:"Selected <em>results</em>",
+  proof_sub:"Results from the founder's work before and alongside GLEZ: wealth management at St. James International, branch management at Tu Casa Express, and PhD research at UNAM.",
+  contact_eyebrow:"Get In Touch",
+  contact_title:"Let's discuss <em>your challenge</em>",
+  contact_sub:"Open to advisory engagements, full-time roles, and strategic partnerships. We respond within 24 hours.",
+  cta_title:"Ready to start a conversation?",
+  cta_sub:"Schedule a 30-minute discovery call to discuss your goals, challenges, and how GLEZ can help drive better financial decisions.",
+  cta_btn:"Schedule a Call →",
+  now_working:"⚙️ Currently Working On",
+  svc_eyebrow:"How We Engage",
+  svc_title:"Two Lanes, <em>One Standard</em>",
+  svc_sub:"Two ways to work with GLEZ: advisory for investors and businesses, and analytical work for teams that need quantitative capability.",
+  svc1_tag:"Lane 01",
+  svc1_title:"For Capital Partners & Clients",
+  svc1_sub:"Advisory for SMEs and private investors who want better capital allocation and risk management, backed by quantitative analysis.",
+  svc1_1:"Acquisition analysis &amp; valuation",
+  svc1_2:"Investment portfolio design & optimization",
+  svc1_3:"Risk analysis & scenario planning",
+  svc1_4:"Real estate development feasibility",
+  svc1_5:"Market research & competitive intelligence",
+  svc1_6:"Financing &amp; capital structure advice",
+  svc2_tag:"Lane 02",
+  svc2_title:"For Firms, Teams & Employers",
+  svc2_sub:"Technical expertise and strategic thinking for organizations that need to build or upgrade their quantitative and data infrastructure.",
+  svc2_1:"Financial decision system design & build",
+  svc2_2:"ML model development & deployment",
+  svc2_3:"Data pipeline architecture & automation",
+  svc2_4:"BI dashboard creation (Power BI, Tableau)",
+  svc2_5:"Predictive analytics & forecasting",
+  svc2_6:"NLP & alternative data integration",
+  cli_eyebrow:"Who GLEZ Is For",
+  cli_title:"Built for those who <em>move capital</em>",
+  cli_sub:"GLEZ works selectively with a small number of engagements at a time — ensuring focused, senior-level attention on every mandate.",
+  cli1_name:"Corporates",
+  cli1_desc:"Financing advice, financial modeling and decision support for growth",
+  cli2_name:"Investors",
+  cli2_desc:"Portfolio optimization, risk modeling, and quantitative strategy for individual and institutional investors",
+  cli3_name:"Funds",
+  cli3_desc:"Systematic strategy development, backtesting infrastructure, and factor-based allocation frameworks",
+  cli4_name:"Institutions",
+  cli4_desc:"Data infrastructure, decision systems, and analytics platforms that scale across teams and operations",
+  eng1_title:"Selective Mandates",
+  eng1_desc:"We take on a limited number of engagements to ensure each client receives focused, senior-level attention rather than delegated work.",
+  eng2_title:"Project-Based Advisory",
+  eng2_desc:"Defined scope, clear deliverables, and measurable outcomes — from single-model builds to full decision system implementations.",
+  eng3_title:"Strategic Engagements",
+  eng3_desc:"For longer-horizon partnerships, we operate as a senior quantitative and strategic resource embedded within your team or process.",
+  cli_position:"Boutique advisory focused on capital allocation, financial strategy, and decision systems across international markets.",
+  about_eyebrow:"Founder",
+  about_title:"Strategic finance <em>meets execution</em>",
+  about_p1:"Financial data scientist with ten years in financial advisory and wealth management. I build machine-learning and risk models in Python for investment decisions, and I test them on data they have never seen.",
+  about_p2:"Ten years in financial advisory and wealth management in Mexico City, with clients across the Americas, Asia and Europe. Now based in Gijón, Spain. Works in Spanish, English, French and Chinese.",
+  about_p3:"PhD candidate in Economics (UNAM). Online programmes from MIT, Wharton, Columbia, EDHEC, Yale and HEC Paris.",
+  about_cred_label:"Online Programmes",
+  now_eyebrow:"Current Focus",
+  now_title:"Now",
+  now_sub:"A snapshot of what we are currently working on — updated regularly.",
+  now_w1:"PhD research: predicting delay and cost overrun in EU-funded public works",
+  now_w1_sub:"Python · CatBoost · SHAP · Out-of-time validation",
+  now_w2:"Business optimization and automation tools",
+  now_w2_sub:"Operational efficiency · Automated pipelines",
+  now_w3:"Analytics projects in investment management",
+  now_w3_sub:"Portfolio analysis · Risk modeling · BI dashboards",
+  now_ts:"Last updated: November 2026",
+  work_eyebrow:"Case Studies",
+  work_title:"Selected <em>Work</em>",
+  work_sub:"Five pieces of the founder's work: two from St. James International, two open-source projects and one academic project.",
+  p1_li1:"Financing strategy for SMEs",
+  p1_li2:"Valuation &amp; financial modeling",
+  p1_li3:"Restructuring &amp; turnaround plans",
+  p1_li4:"Acquisition analysis &amp; deal support",
+  p1_li5:"Process redesign",
+  p2_li1:"Fama-French factor modeling",
+  p2_li2:"Mean-variance optimization",
+  p2_li3:"Downside risk & drawdown control",
+  p2_li4:"Backtesting & performance attribution",
+  p2_li5:"Credit-risk (PD) modelling",
+  p3_li1:"Automated financial reporting",
+  p3_li2:"BI dashboards (Power BI, Tableau)",
+  p3_li3:"ML model development & deployment",
+  p3_li4:"Predictive analytics & forecasting",
+  p3_li5:"NLP & market signal extraction",
+  m1_lbl:"Of the projects my PhD model flagged as riskiest were delayed or over budget, vs 35% overall (out-of-time test)",
+  m2_lbl:"Portfolio preparation per client with my risk and allocation models",
+  m3_lbl:"Most profitable portfolios at St. James International, 2016–18 (out of 20 advisers)",
+  m4_lbl:"Acquisition I proposed and led for a client, closed USD 1.5M under budget",
+  m5_lbl:"Branch sales in year one at Tu Casa Express, from last place to first nationally",
+  m6_lbl:"Client assets across about 60 private clients in the Americas, Asia and Europe",
+  cs_challenge:"Challenge",
+  cs_approach:"Approach",
+  cs_impact:"Impact",
+  cs_details:"Details",
+  cat1:"Portfolio Optimization · St. James International",
+  cat2:"Credit Risk · Open-source project",
+  cat3:"Quantitative Trading · Open-source project",
+  cat4:"Real Estate · Academic project",
+  cat5:"Wealth Management · St. James International",
+  cn1:"Portfolio Management Software",
+  cn2:"Credit Risk PD Model",
+  cn3:"Market Prediction & Backtesting System",
+  cn4:"Apartment-Mix Optimisation",
+  cn5:"Client Portfolio Advisory",
+  cr1:"⏱ 4h → 30min per client · Used by my team",
+  cr2:"🎯 Scorecard, challenger and bank-style validation report",
+  cr3:"📈 Walk-forward backtest with transaction costs",
+  cr4:"🎓 Log-linear regression on comparable sales",
+  cr5:"📊 Most profitable portfolios in the firm, 2016–18 · first of 20 advisers",
+  modal_cancel:"Cancel",modal_sent:"Message sent",modal_sent_sub:"We'll get back to you within 24 hours.",ph_name:"Your name",ph_email:"Your email address",ph_org:"Company / Organization (optional)",ph_msg:"Tell us about your inquiry or challenge...",send_btn:"Send Message",err_fill:"Please fill in your name, email, and message.",err_email:"Please enter a valid email address.",sending:"Sending...",err_generic:"Something went wrong. Please try again.",err_network:"Network error. Please try again or email us directly.",ft_portfolio:"← Portfolio",ft_fine:"© 2026 GLEZ Strategic Finance &amp; Data Science · Information presented is for educational purposes only and does not constitute financial advice.",cs1_c:"Preparing an optimal allocation took more than four hours per client, which limited how many clients each adviser could serve.",cs1_a:"Applied Bloomberg Terminal data with Fama-French 5-factor model and Efficient Portfolio Theory. Automated selection using graph theory and log regression — first in R, then refactored to Python for performance.",cs1_i:"Cut preparation from more than four hours per client to under 30 minutes. Used by the founder and his team at St. James International, so they could serve more clients with the same people.",cs2_c:"Banks need probability-of-default models that rank borrowers well, give the right level of risk, stay stable over time and can be explained to a model-validation team.",cs2_a:"Weight-of-evidence binning and information-value selection feed a logistic-regression scorecard scaled to points. A gradient-boosting challenger, explained with SHAP, is compared against it. Everything is fitted on the development sample only.",cs2_i:"An automatic validation report covers discrimination (Gini, KS), calibration (Hosmer-Lemeshow), stability (PSI) and default rates by rating grade, with plain-language findings and limitations.",cs3_c:"Testing whether simple price features carry a usable short-term signal, without look-ahead bias.",cs3_a:"Random-forest forecasts of five-day returns from momentum and volatility features, turned into long/flat signals and tested walk-forward with a five-day embargo and transaction costs.",cs3_i:"A reproducible research pipeline that reports results after costs, including when the signal does not beat buy-and-hold.",cs4_c:"Case study: find the mix of luxury and standard apartments that maximises a development's profit, without reliable local demand data.",cs4_a:"Scraped and analyzed comparable sales data using MySQL. Applied EDA and Log-Linear Regression in R to quantify price drivers and predict demand elasticity by unit type.",cs4_i:"The model ranked candidate unit mixes by expected profit and showed the main price drivers. An academic exercise, not a client engagement.",cs5_c:"Individual clients required personalized investment strategies balancing risk tolerance, liquidity needs, and return expectations — while remaining competitive against market benchmarks across volatile periods.",cs5_a:"Deployed proprietary portfolio software alongside Excel and Power BI. Applied Fama-French 3 and 5-factor models combined with behavioral finance principles to tailor each portfolio to the client's unique risk-return profile.",cs5_i:"Ran the firm's most profitable portfolios in 2016–18, first of 20 advisers, for about 60 clients with USD 45M in assets.",
+  modal_title:"Get in Touch",
+  modal_sub:"Send a message and we'll respond within 24 hours.",
+  contact_send_btn:"Send a message →",
+  about_badge_role:"Founder · GLEZ",
+  ticker_label:"Markets"
+},
+es:{
+  nav_what:"Qué Hacemos",nav_work:"Proyectos Seleccionados",nav_services:"Servicios",
+  nav_clients:"Con Quién Trabajamos",nav_about:"Acerca de",nav_contact:"Contacto",
+  nav_linkedin:"LinkedIn",nav_schedule:"Agendar una Llamada",
+  hero_eyebrow:"Finanzas Estratégicas y Ciencia de Datos",
+  hero_tagline:"Financiación · Optimización de carteras · Modelización financiera · Sistemas de decisión",
+  hero_position:"Asesoría boutique enfocada en asignación de capital, estrategia financiera y sistemas de decisión en mercados internacionales.",
+  hero_pitch:"Diseñamos e implantamos <strong>sistemas de decisión financiera</strong> que mejoran la asignación de capital, la gestión del riesgo y el desempeño operativo: de la financiación y la valoración a la construcción de carteras y la analítica automatizada.",
+  hero_cta1:"Ver Proyectos Seleccionados",hero_cta2:"Agendar una Llamada",
+  what_eyebrow:"Capacidades",
+  what_title:"Tres Pilares de la <em>Finanza Estratégica</em>",
+  what_sub:"Pensamiento financiero riguroso combinado con métodos cuantitativos e ingeniería de datos — aplicado a los problemas que mueven capital y hacen crecer empresas.",
+  pillar1_title:"Financiación y finanzas estratégicas",
+  pillar1_desc:"Financiación, valoración, estrategia financiera y reestructuración para pymes e inversores privados.",
+  pillar2_title:"Optimización de Cartera y Gestión de Riesgo",
+  pillar2_desc:"Optimización de carteras, modelado de riesgo y estrategia de inversión basados en métodos cuantitativos y marcos de factores.",
+  pillar3_title:"Ciencia de Datos, Automatización y Sistemas de Decisión",
+  pillar3_desc:"Pronóstico financiero, modelos de machine learning y automatización de procesos que convierten flujos operativos en ventajas de decisión.",
+  proof_eyebrow:"Impacto Seleccionado",
+  proof_title:"Resultados <em>seleccionados</em>",
+  proof_sub:"Resultados del trabajo del fundador antes de GLEZ y en paralelo: gestión patrimonial en St. James International, dirección de sucursal en Tu Casa Express e investigación doctoral en la UNAM.",
+  contact_eyebrow:"Ponte en Contacto",
+  contact_title:"Hablemos de <em>tu desafío</em>",
+  contact_sub:"Abiertos a proyectos de asesoría, roles a tiempo completo y alianzas estratégicas. Respondemos en 24 horas.",
+  cta_title:"¿Listo para iniciar una conversación?",
+  cta_sub:"Agenda una llamada de 30 minutos para hablar sobre tus objetivos, desafíos y cómo GLEZ puede ayudarte a tomar mejores decisiones financieras.",
+  cta_btn:"Agendar una Llamada →",
+  now_working:"⚙️ Actualmente Trabajando En",
+  svc_eyebrow:"Cómo Trabajamos",
+  svc_title:"Dos Líneas, <em>Un Estándar</em>",
+  svc_sub:"Dos formas de trabajar con GLEZ: asesoría para inversores y empresas, y trabajo analítico para equipos que necesitan capacidad cuantitativa.",
+  svc1_tag:"Línea 01",
+  svc1_title:"Para Socios de Capital y Clientes",
+  svc1_sub:"Asesoría para pymes e inversores privados que buscan mejorar la asignación de capital y la gestión del riesgo con análisis cuantitativo.",
+  svc1_1:"Análisis de adquisiciones y valoración",
+  svc1_2:"Diseño y optimización de carteras de inversión",
+  svc1_3:"Análisis de riesgos y planificación de escenarios",
+  svc1_4:"Viabilidad de proyectos inmobiliarios",
+  svc1_5:"Investigación de mercado e inteligencia competitiva",
+  svc1_6:"Asesoría en financiación y estructura de capital",
+  svc2_tag:"Línea 02",
+  svc2_title:"Para Empresas, Equipos y Empleadores",
+  svc2_sub:"Experiencia técnica y pensamiento estratégico para organizaciones que necesitan construir o mejorar su infraestructura cuantitativa y de datos.",
+  svc2_1:"Diseño y desarrollo de sistemas de decisión financiera",
+  svc2_2:"Desarrollo y despliegue de modelos ML",
+  svc2_3:"Arquitectura de pipelines de datos y automatización",
+  svc2_4:"Dashboards BI (Power BI, Tableau)",
+  svc2_5:"Analítica predictiva y pronósticos",
+  svc2_6:"PLN e integración de datos alternativos",
+  cli_eyebrow:"Para quién es GLEZ",
+  cli_title:"Para quienes <em>mueven capital</em>",
+  cli_sub:"GLEZ trabaja selectivamente con un número reducido de mandatos a la vez — garantizando atención senior y enfocada en cada compromiso.",
+  cli1_name:"Corporativos",
+  cli1_desc:"Asesoría en financiación, modelización financiera y apoyo a la toma de decisiones para crecer",
+  cli2_name:"Inversores",
+  cli2_desc:"Optimización de carteras, modelado de riesgos y estrategia cuantitativa para inversores individuales e institucionales",
+  cli3_name:"Fondos",
+  cli3_desc:"Desarrollo de estrategias sistemáticas, infraestructura de backtesting y marcos de asignación basados en factores",
+  cli4_name:"Instituciones",
+  cli4_desc:"Infraestructura de datos, sistemas de decisión y plataformas analíticas que escalan en equipos y operaciones",
+  eng1_title:"Mandatos Selectivos",
+  eng1_desc:"Aceptamos un número limitado de compromisos para asegurar que cada cliente reciba atención senior y enfocada.",
+  eng2_title:"Asesoría por Proyecto",
+  eng2_desc:"Alcance definido, entregables claros y resultados medibles — desde modelos individuales hasta implementaciones completas de sistemas de decisión.",
+  eng3_title:"Compromisos Estratégicos",
+  eng3_desc:"Para asociaciones a largo plazo, operamos como recurso cuantitativo y estratégico senior integrado en su equipo o proceso.",
+  cli_position:"Asesoría boutique enfocada en asignación de capital, estrategia financiera y sistemas de decisión en mercados internacionales.",
+  about_eyebrow:"Fundador",
+  about_title:"Finanzas estratégicas <em>y ejecución</em>",
+  about_p1:"Científico de datos financieros con diez años en asesoramiento financiero y gestión patrimonial. Desarrollo en Python modelos de machine learning y de riesgo para decisiones de inversión, y los valido con datos que el modelo no ha visto.",
+  about_p2:"Diez años en asesoramiento financiero y gestión patrimonial en Ciudad de México, con clientes en América, Asia y Europa. Hoy reside en Gijón. Trabaja en español, inglés, francés y chino.",
+  about_p3:"Doctorando en Economía (UNAM). Programas en línea de MIT, Wharton, Columbia, EDHEC, Yale y HEC Paris.",
+  about_cred_label:"Programas en línea",
+  now_eyebrow:"Enfoque Actual",
+  now_title:"Ahora",
+  now_sub:"Un resumen de en qué estamos trabajando actualmente — actualizado regularmente.",
+  now_w1:"Doctorado: predicción de retrasos y sobrecostes en obra pública financiada por la UE",
+  now_w1_sub:"Python · CatBoost · SHAP · Validación fuera de muestra",
+  now_w2:"Herramientas de optimización y automatización empresarial",
+  now_w2_sub:"Eficiencia operativa · Pipelines automatizados",
+  now_w3:"Proyectos de analítica en gestión de inversiones",
+  now_w3_sub:"Análisis de carteras · Modelado de riesgos · Dashboards BI",
+  now_ts:"Última actualización: noviembre de 2026",
+  work_eyebrow:"Estudios de Caso",
+  work_title:"Trabajo <em>seleccionado</em>",
+  work_sub:"Cinco trabajos del fundador: dos de St. James International, dos proyectos de código abierto y un proyecto académico.",
+  p1_li1:"Estrategia de financiación para pymes",
+  p1_li2:"Valoración y modelización financiera",
+  p1_li3:"Planes de reestructuración y reflotamiento",
+  p1_li4:"Análisis de adquisiciones y apoyo en operaciones",
+  p1_li5:"Rediseño de procesos",
+  p2_li1:"Modelado de factores Fama-French",
+  p2_li2:"Optimización media-varianza",
+  p2_li3:"Control de riesgo a la baja y drawdown",
+  p2_li4:"Backtesting y atribución de rendimiento",
+  p2_li5:"Modelos de riesgo de crédito (PD)",
+  p3_li1:"Reportes financieros automatizados",
+  p3_li2:"Dashboards BI (Power BI, Tableau)",
+  p3_li3:"Desarrollo y despliegue de modelos ML",
+  p3_li4:"Analítica predictiva y pronósticos",
+  p3_li5:"PLN y extracción de señales de mercado",
+  m1_lbl:"De los proyectos que mi modelo doctoral marcó como más riesgosos sufrieron retrasos o sobrecostes, frente al 35 % del total (prueba fuera de muestra)",
+  m2_lbl:"Preparación de cartera por cliente con mis modelos de riesgo y asignación",
+  m3_lbl:"Carteras más rentables de St. James International, 2016–18 (entre 20 asesores)",
+  m4_lbl:"Adquisición que propuse y dirigí para un cliente, cerrada USD 1,5M por debajo del presupuesto",
+  m5_lbl:"Ventas de la sucursal en el primer año en Tu Casa Express: del último al primer puesto nacional",
+  m6_lbl:"En activos de unos 60 clientes privados en América, Asia y Europa",
+  cs_challenge:"Desafío",
+  cs_approach:"Enfoque",
+  cs_impact:"Impacto",
+  cs_details:"Detalles",
+  cat1:"Optimización de carteras · St. James International",
+  cat2:"Riesgo de crédito · Proyecto de código abierto",
+  cat3:"Trading cuantitativo · Proyecto de código abierto",
+  cat4:"Inmobiliario · Proyecto académico",
+  cat5:"Gestión patrimonial · St. James International",
+  cn1:"Software de Gestión de Carteras",
+  cn2:"Modelo de PD de riesgo de crédito",
+  cn3:"Sistema de Predicción de Mercados y Backtesting",
+  cn4:"Optimización del mix de viviendas",
+  cn5:"Asesoría de carteras para clientes",
+  cr1:"⏱ De 4 h a 30 min por cliente · Usada por mi equipo",
+  cr2:"🎯 Scorecard, modelo challenger e informe de validación al estilo bancario",
+  cr3:"📈 Backtest en ventana móvil con costes de transacción",
+  cr4:"🎓 Regresión log-lineal sobre ventas comparables",
+  cr5:"📊 Carteras más rentables de la firma, 2016–18 · primero de 20 asesores",
+  modal_cancel:"Cancelar",modal_sent:"Mensaje enviado",modal_sent_sub:"Te responderemos en 24 horas.",ph_name:"Tu nombre",ph_email:"Tu correo electrónico",ph_org:"Empresa / organización (opcional)",ph_msg:"Cuéntanos tu consulta o tu reto...",send_btn:"Enviar mensaje",err_fill:"Escribe tu nombre, tu correo y tu mensaje.",err_email:"Introduce un correo electrónico válido.",sending:"Enviando...",err_generic:"Algo ha fallado. Inténtalo de nuevo.",err_network:"Error de conexión. Inténtalo de nuevo o escríbenos directamente.",ft_portfolio:"← Portafolio",ft_fine:"© 2026 GLEZ Strategic Finance &amp; Data Science · La información presentada tiene fines exclusivamente educativos y no constituye asesoramiento financiero.",cs1_c:"Preparar una asignación óptima llevaba más de cuatro horas por cliente, lo que limitaba cuántos clientes podía atender cada asesor.",cs1_a:"Datos de Bloomberg Terminal con el modelo de cinco factores de Fama-French y la teoría de carteras eficientes. Selección automatizada con teoría de grafos y regresión, primero en R y después migrada a Python para ganar rendimiento.",cs1_i:"Redujo la preparación de más de cuatro horas por cliente a menos de 30 minutos. La usaban el fundador y su equipo en St. James International, lo que les permitió atender a más clientes con las mismas personas.",cs2_c:"Los bancos necesitan modelos de probabilidad de impago que ordenen bien a los acreditados, den el nivel de riesgo correcto, se mantengan estables en el tiempo y puedan explicarse a un equipo de validación de modelos.",cs2_a:"La agrupación por weight of evidence y la selección por information value alimentan un scorecard de regresión logística expresado en puntos. Se compara con un modelo challenger de gradient boosting, explicado con SHAP. Todo se ajusta únicamente con la muestra de desarrollo.",cs2_i:"Un informe de validación automático cubre discriminación (Gini, KS), calibración (Hosmer-Lemeshow), estabilidad (PSI) y tasas de impago por categoría de rating, con conclusiones y limitaciones en lenguaje claro.",cs3_c:"Comprobar si variables de precio sencillas contienen una señal aprovechable a corto plazo, sin sesgo de anticipación (look-ahead).",cs3_a:"Previsiones de rentabilidad a cinco días con random forest a partir de variables de momentum y volatilidad, convertidas en señales long/flat y evaluadas walk-forward con un embargo de cinco días y costes de transacción.",cs3_i:"Un proceso de investigación reproducible que informa los resultados después de costes, también cuando la señal no supera a comprar y mantener.",cs4_c:"Caso de estudio: encontrar la combinación de viviendas de lujo y estándar que maximiza el beneficio de una promoción, sin datos fiables sobre la demanda local.",cs4_a:"Recopilación y análisis de ventas comparables con MySQL. EDA y regresión log-lineal en R para cuantificar los factores de precio y estimar la elasticidad de la demanda por tipo de vivienda.",cs4_i:"El modelo ordenó las combinaciones posibles por beneficio esperado y mostró los principales factores de precio. Ejercicio académico, no un encargo de cliente.",cs5_c:"Cada cliente necesitaba una estrategia de inversión personalizada que equilibrara tolerancia al riesgo, necesidades de liquidez y expectativas de rentabilidad, sin perder competitividad frente a los índices de referencia en periodos de volatilidad.",cs5_a:"Software propio de gestión de carteras junto con Excel y Power BI. Modelos de tres y cinco factores de Fama-French, combinados con principios de finanzas conductuales, para adaptar cada cartera al perfil de riesgo y rentabilidad del cliente.",cs5_i:"Las carteras más rentables de la firma en 2016–18, primero de 20 asesores, para unos 60 clientes con USD 45M en activos.",
+  modal_title:"Ponerse en Contacto",
+  modal_sub:"Envía un mensaje y responderemos en 24 horas.",
+  contact_send_btn:"Enviar un mensaje →",
+  about_badge_role:"Fundador · GLEZ",
+  ticker_label:"Mercados"
+},
+fr:{
+  nav_what:"Ce que nous faisons",nav_work:"Travaux Sélectionnés",nav_services:"Services",
+  nav_clients:"Avec qui nous travaillons",nav_about:"À propos",nav_contact:"Contact",
+  nav_linkedin:"LinkedIn",nav_schedule:"Planifier un appel",
+  hero_eyebrow:"Finance Stratégique & Science des Données",
+  hero_tagline:"Financement · Optimisation de portefeuille · Modélisation financière · Systèmes de décision",
+  hero_position:"Conseil boutique axé sur l'allocation du capital, la stratégie financière et les systèmes de décision sur les marchés internationaux.",
+  hero_pitch:"Nous concevons et mettons en place des <strong>systèmes de décision financière</strong> qui améliorent l'allocation du capital, la gestion des risques et la performance opérationnelle : du financement et de la valorisation à la construction de portefeuille et à l'analytique automatisée.",
+  hero_cta1:"Voir les Travaux Sélectionnés",hero_cta2:"Planifier un appel",
+  what_eyebrow:"Capacités",
+  what_title:"Trois Piliers de la <em>Finance Stratégique</em>",
+  what_sub:"Réflexion financière rigoureuse combinée à des méthodes quantitatives et à l'ingénierie des données — appliquées aux problèmes qui font circuler le capital et font croître les entreprises.",
+  pillar1_title:"Financement et finance stratégique",
+  pillar1_desc:"Financement, valorisation, stratégie financière et restructuration pour PME et investisseurs privés.",
+  pillar2_title:"Optimisation de Portefeuille & Gestion des Risques",
+  pillar2_desc:"Optimisation de portefeuille, modélisation des risques et stratégie d'investissement fondées sur des méthodes quantitatives et des cadres factoriels.",
+  pillar3_title:"Science des Données, Automatisation & Systèmes de Décision",
+  pillar3_desc:"Prévision financière, modèles de machine learning et automatisation des processus qui transforment les flux opérationnels en avantage décisionnel.",
+  proof_eyebrow:"Impact Sélectionné",
+  proof_title:"Quelques <em>résultats</em>",
+  proof_sub:"Résultats obtenus par le fondateur avant GLEZ et en parallèle : gestion de patrimoine chez St. James International, direction d'agence chez Tu Casa Express et recherche doctorale à l'UNAM.",
+  contact_eyebrow:"Nous Contacter",
+  contact_title:"Discutons de <em>votre défi</em>",
+  contact_sub:"Ouvert aux missions de conseil, aux postes à temps plein et aux partenariats stratégiques. Nous répondons dans les 24 heures.",
+  cta_title:"Prêt à démarrer une conversation ?",
+  cta_sub:"Planifiez un appel de 30 minutes pour discuter de vos objectifs, défis et de la façon dont GLEZ peut vous aider à prendre de meilleures décisions financières.",
+  cta_btn:"Planifier un appel →",
+  now_working:"⚙️ En cours de travail",
+  svc_eyebrow:"Notre Approche",
+  svc_title:"Deux Voies, <em>Un Standard</em>",
+  svc_sub:"Deux façons de travailler avec GLEZ : le conseil pour investisseurs et entreprises, et l'analyse pour les équipes qui ont besoin de compétences quantitatives.",
+  svc1_tag:"Voie 01",
+  svc1_title:"Pour les Partenaires en Capital & Clients",
+  svc1_sub:"Conseil aux PME et investisseurs privés qui souhaitent mieux allouer leur capital et gérer leurs risques, sur la base d'analyses quantitatives.",
+  svc1_1:"Analyse d'acquisitions et valorisation",
+  svc1_2:"Conception & optimisation de portefeuille",
+  svc1_3:"Analyse des risques & planification de scénarios",
+  svc1_4:"Faisabilité de développement immobilier",
+  svc1_5:"Étude de marché & intelligence concurrentielle",
+  svc1_6:"Conseil en financement et structure du capital",
+  svc2_tag:"Voie 02",
+  svc2_title:"Pour les Entreprises, Équipes & Employeurs",
+  svc2_sub:"Expertise technique et réflexion stratégique pour les organisations qui ont besoin de construire ou améliorer leur infrastructure quantitative et de données.",
+  svc2_1:"Conception & développement de systèmes de décision",
+  svc2_2:"Développement & déploiement de modèles ML",
+  svc2_3:"Architecture de pipelines de données & automatisation",
+  svc2_4:"Tableaux de bord BI (Power BI, Tableau)",
+  svc2_5:"Analytique prédictive & prévisions",
+  svc2_6:"NLP & intégration de données alternatives",
+  cli_eyebrow:"À qui s'adresse GLEZ",
+  cli_title:"Pour ceux qui <em>font bouger le capital</em>",
+  cli_sub:"GLEZ travaille sélectivement avec un nombre restreint de mandats à la fois — garantissant une attention senior et ciblée sur chaque mission.",
+  cli1_name:"Entreprises",
+  cli1_desc:"Conseil en financement, modélisation financière et aide à la décision pour la croissance",
+  cli2_name:"Investisseurs",
+  cli2_desc:"Optimisation de portefeuille, modélisation des risques et stratégie quantitative pour investisseurs individuels et institutionnels",
+  cli3_name:"Fonds",
+  cli3_desc:"Développement de stratégies systématiques, infrastructure de backtesting et cadres d'allocation factorielle",
+  cli4_name:"Institutions",
+  cli4_desc:"Infrastructure de données, systèmes de décision et plateformes analytiques évolutives pour équipes et opérations",
+  eng1_title:"Mandats Sélectifs",
+  eng1_desc:"Nous prenons un nombre limité de missions pour garantir que chaque client bénéficie d'une attention senior et ciblée.",
+  eng2_title:"Conseil par Projet",
+  eng2_desc:"Périmètre défini, livrables clairs et résultats mesurables — de la construction d'un modèle unique à l'implémentation complète de systèmes de décision.",
+  eng3_title:"Engagements Stratégiques",
+  eng3_desc:"Pour les partenariats à long terme, nous opérons en tant que ressource quantitative et stratégique senior au sein de votre équipe ou processus.",
+  cli_position:"Conseil boutique axé sur l'allocation du capital, la stratégie financière et les systèmes de décision sur les marchés internationaux.",
+  about_eyebrow:"Fondateur",
+  about_title:"Finance stratégique <em>et exécution</em>",
+  about_p1:"Data scientist en finance, fort de dix ans en conseil financier et en gestion de patrimoine. Je conçois sous Python des modèles de machine learning et de risque pour la décision d'investissement, et je les valide sur des données qu'ils n'ont jamais vues.",
+  about_p2:"Dix ans en conseil financier et gestion de patrimoine à Mexico, avec des clients en Amérique, en Asie et en Europe. Aujourd'hui basé à Gijón (Espagne). Travaille en espagnol, anglais, français et chinois.",
+  about_p3:"Doctorant en économie (UNAM). Programmes en ligne du MIT, de Wharton, de Columbia, de l'EDHEC, de Yale et d'HEC Paris.",
+  about_cred_label:"Programmes en ligne",
+  now_eyebrow:"Focus Actuel",
+  now_title:"Maintenant",
+  now_sub:"Un aperçu de ce sur quoi nous travaillons actuellement — mis à jour régulièrement.",
+  now_w1:"Thèse : prédiction des retards et dépassements de coûts dans les travaux publics financés par l'UE",
+  now_w1_sub:"Python · CatBoost · SHAP · Validation hors échantillon",
+  now_w2:"Outils d'optimisation et d'automatisation des activités",
+  now_w2_sub:"Efficacité opérationnelle · Pipelines automatisés",
+  now_w3:"Projets analytiques en gestion d'investissements",
+  now_w3_sub:"Analyse de portefeuille · Modélisation des risques · Dashboards BI",
+  now_ts:"Dernière mise à jour : novembre 2026",
+  work_eyebrow:"Études de Cas",
+  work_title:"Travaux <em>choisis</em>",
+  work_sub:"Cinq travaux du fondateur : deux chez St. James International, deux projets open source et un projet académique.",
+  p1_li1:"Stratégie de financement pour PME",
+  p1_li2:"Valorisation et modélisation financière",
+  p1_li3:"Plans de restructuration et de redressement",
+  p1_li4:"Analyse d'acquisitions et accompagnement des opérations",
+  p1_li5:"Refonte des processus",
+  p2_li1:"Modélisation factorielle Fama-French",
+  p2_li2:"Optimisation moyenne-variance",
+  p2_li3:"Contrôle du risque baissier et du drawdown",
+  p2_li4:"Backtesting et attribution de performance",
+  p2_li5:"Modélisation du risque de crédit (PD)",
+  p3_li1:"Reporting financier automatisé",
+  p3_li2:"Tableaux de bord BI (Power BI, Tableau)",
+  p3_li3:"Développement et déploiement de modèles ML",
+  p3_li4:"Analytique prédictive et prévisions",
+  p3_li5:"NLP et extraction de signaux de marché",
+  m1_lbl:"Des projets jugés les plus risqués par mon modèle de thèse ont connu retard ou dépassement, contre 35 % au total (test hors échantillon)",
+  m2_lbl:"Préparation de portefeuille par client grâce à mes modèles de risque et d'allocation",
+  m3_lbl:"Portefeuilles les plus rentables de St. James International, 2016–18 (sur 20 conseillers)",
+  m4_lbl:"Rachat proposé et piloté pour un client, finalisé 1,5 M USD sous le budget",
+  m5_lbl:"Ventes de l'agence la première année chez Tu Casa Express : de la dernière à la première place nationale",
+  m6_lbl:"D'actifs pour environ 60 clients privés en Amérique, en Asie et en Europe",
+  cs_challenge:"Défi",
+  cs_approach:"Approche",
+  cs_impact:"Impact",
+  cs_details:"Détails",
+  cat1:"Optimisation de portefeuille · St. James International",
+  cat2:"Risque de crédit · Projet open source",
+  cat3:"Trading quantitatif · Projet open source",
+  cat4:"Immobilier · Projet académique",
+  cat5:"Gestion de patrimoine · St. James International",
+  cn1:"Logiciel de Gestion de Portefeuille",
+  cn2:"Modèle de PD (risque de crédit)",
+  cn3:"Système de Prédiction de Marché et Backtesting",
+  cn4:"Optimisation d'un programme immobilier",
+  cn5:"Conseil en portefeuille pour clients",
+  cr1:"⏱ De 4 h à 30 min par client · Utilisé par mon équipe",
+  cr2:"🎯 Scorecard, challenger et rapport de validation de type bancaire",
+  cr3:"📈 Backtest walk-forward avec coûts de transaction",
+  cr4:"🎓 Régression log-linéaire sur des ventes comparables",
+  cr5:"📊 Portefeuilles les plus rentables de la société, 2016–18 · premier sur 20 conseillers",
+  modal_cancel:"Annuler",modal_sent:"Message envoyé",modal_sent_sub:"Nous vous répondrons sous 24 heures.",ph_name:"Votre nom",ph_email:"Votre adresse e-mail",ph_org:"Entreprise / organisation (facultatif)",ph_msg:"Parlez-nous de votre demande ou de votre enjeu…",send_btn:"Envoyer le message",err_fill:"Merci d'indiquer votre nom, votre e-mail et votre message.",err_email:"Merci de saisir une adresse e-mail valide.",sending:"Envoi en cours…",err_generic:"Une erreur s'est produite. Veuillez réessayer.",err_network:"Erreur réseau. Veuillez réessayer ou nous écrire directement.",ft_portfolio:"← Portfolio",ft_fine:"© 2026 GLEZ Strategic Finance &amp; Data Science · Les informations présentées sont fournies à titre éducatif uniquement et ne constituent pas un conseil financier.",cs1_c:"Préparer une allocation optimale prenait plus de quatre heures par client, ce qui limitait le nombre de clients que chaque conseiller pouvait suivre.",cs1_a:"Données Bloomberg Terminal, modèle Fama-French à cinq facteurs et théorie du portefeuille efficient. Sélection automatisée par théorie des graphes et régression, d'abord sous R, puis réécrite en Python pour la performance.",cs1_i:"Préparation ramenée de plus de quatre heures par client à moins de 30 minutes. Utilisé par le fondateur et son équipe chez St. James International, qui ont ainsi pu suivre davantage de clients avec le même effectif.",cs2_c:"Les banques ont besoin de modèles de probabilité de défaut qui classent bien les emprunteurs, donnent le bon niveau de risque, restent stables dans le temps et puissent être expliqués à une équipe de validation des modèles.",cs2_a:"Un découpage par weight of evidence et une sélection par information value alimentent une scorecard de régression logistique exprimée en points. Elle est comparée à un challenger en gradient boosting, expliqué avec SHAP. Tout est estimé sur le seul échantillon de développement.",cs2_i:"Un rapport de validation automatique couvre le pouvoir discriminant (Gini, KS), le calibrage (Hosmer-Lemeshow), la stabilité (PSI) et les taux de défaut par classe de notation, avec des constats et des limites exposés clairement.",cs3_c:"Vérifier si de simples variables de prix contiennent un signal exploitable à court terme, sans biais d'anticipation (look-ahead).",cs3_a:"Prévisions de rendement à cinq jours par random forest, à partir de variables de momentum et de volatilité, converties en signaux long/flat et testées en walk-forward avec un embargo de cinq jours et des coûts de transaction.",cs3_i:"Une chaîne de recherche reproductible qui présente les résultats après coûts, y compris lorsque le signal ne bat pas une stratégie d'achat-conservation.",cs4_c:"Cas d'étude : trouver la répartition entre logements haut de gamme et standard qui maximise la marge d'un programme immobilier, sans données fiables sur la demande locale.",cs4_a:"Collecte et analyse de ventes comparables avec MySQL. EDA et régression log-linéaire sous R pour quantifier les facteurs de prix et estimer l'élasticité de la demande par type de logement.",cs4_i:"Le modèle a classé les répartitions possibles selon la marge attendue et fait ressortir les principaux facteurs de prix. Exercice académique, pas une mission client.",cs5_c:"Chaque client avait besoin d'une stratégie d'investissement personnalisée, équilibrant tolérance au risque, besoins de liquidité et attentes de rendement, tout en restant compétitive face aux indices de référence en période de volatilité.",cs5_a:"Logiciel propriétaire de gestion de portefeuille, avec Excel et Power BI. Modèles Fama-French à trois et cinq facteurs, combinés à la finance comportementale, pour adapter chaque portefeuille au profil rendement-risque du client.",cs5_i:"Portefeuilles les plus rentables de la société en 2016–18, premier sur 20 conseillers, pour environ 60 clients et 45 M USD d'actifs.",
+  modal_title:"Nous Contacter",
+  modal_sub:"Envoyez un message et nous répondrons dans les 24 heures.",
+  contact_send_btn:"Envoyer un message →",
+  about_badge_role:"Fondateur · GLEZ",
+  ticker_label:"Marchés"
+},
+zh:{
+  nav_what:"我们的服务",nav_work:"精选项目",nav_services:"服务",
+  nav_clients:"服务对象",nav_about:"关于我们",nav_contact:"联系",
+  nav_linkedin:"领英",nav_schedule:"预约通话",
+  hero_eyebrow:"战略金融与数据科学",
+  hero_tagline:"融资 · 组合优化 · 财务建模 · 决策系统",
+  hero_position:"精品顾问服务，专注于国际市场的资本配置、金融战略和决策系统。",
+  hero_pitch:"我们设计并落地<strong>财务决策系统</strong>，改善资本配置、风险管理和运营表现：从融资与估值，到组合构建和自动化分析。",
+  hero_cta1:"查看精选项目",hero_cta2:"预约通话",
+  what_eyebrow:"核心能力",
+  what_title:"战略金融的<em>三大支柱</em>",
+  what_sub:"将严格的金融思维与量化方法和数据工程相结合——应用于推动资本流动和企业增长的核心问题。",
+  pillar1_title:"融资与战略财务",
+  pillar1_desc:"为中小企业和私人投资者提供融资、估值、财务战略与重组服务。",
+  pillar2_title:"投资组合优化与风险建模",
+  pillar2_desc:"基于量化方法和因子框架的投资组合优化、风险建模和投资策略。",
+  pillar3_title:"数据科学、自动化与决策系统",
+  pillar3_desc:"金融预测、机器学习模型和流程自动化，将运营工作流转化为决策优势。",
+  proof_eyebrow:"精选成果",
+  proof_title:"部分<em>成果</em>",
+  proof_sub:"创始人在创立 GLEZ 之前及同期取得的成果：St. James International 的财富管理、Tu Casa Express 的分店管理，以及 UNAM 的博士研究。",
+  contact_eyebrow:"联系我们",
+  contact_title:"让我们讨论<em>您的挑战</em>",
+  contact_sub:"开放顾问委托、全职职位和战略合作。我们在24小时内回复。",
+  cta_title:"准备好开始对话了吗？",
+  cta_sub:"预约30分钟探索通话，讨论您的目标、挑战以及GLEZ如何帮助您做出更好的财务决策。",
+  cta_btn:"预约通话 →",
+  now_working:"⚙️ 目前正在进行",
+  svc_eyebrow:"服务方式",
+  svc_title:"两条路线，<em>同一标准</em>",
+  svc_sub:"与 GLEZ 合作的两种方式：为投资者和企业提供咨询，为需要量化能力的团队提供分析服务。",
+  svc1_tag:"路线 01",
+  svc1_title:"为资本合作伙伴与客户",
+  svc1_sub:"为希望借助量化分析改善资本配置与风险管理的中小企业和私人投资者提供咨询。",
+  svc1_1:"收购分析与估值",
+  svc1_2:"投资组合设计与优化",
+  svc1_3:"风险分析与情景规划",
+  svc1_4:"房地产开发可行性分析",
+  svc1_5:"市场研究与竞争情报",
+  svc1_6:"融资与资本结构咨询",
+  svc2_tag:"路线 02",
+  svc2_title:"为企业、团队与雇主",
+  svc2_sub:"为需要构建或升级量化和数据基础设施的组织提供技术专业知识和战略思维。",
+  svc2_1:"金融决策系统设计与构建",
+  svc2_2:"机器学习模型开发与部署",
+  svc2_3:"数据管道架构与自动化",
+  svc2_4:"商业智能仪表盘（Power BI、Tableau）",
+  svc2_5:"预测分析与预报",
+  svc2_6:"NLP与替代数据整合",
+  cli_eyebrow:"GLEZ 的服务对象",
+  cli_title:"专为<em>资本运营者</em>而设",
+  cli_sub:"GLEZ每次选择性地承接少量任务——确保每个委托都获得专注的高级关注。",
+  cli1_name:"企业",
+  cli1_desc:"为企业成长提供融资建议、财务建模与决策支持",
+  cli2_name:"投资者",
+  cli2_desc:"为个人和机构投资者提供投资组合优化、风险建模和量化策略",
+  cli3_name:"基金",
+  cli3_desc:"系统化策略开发、回测基础设施和基于因子的配置框架",
+  cli4_name:"机构",
+  cli4_desc:"在团队和运营中扩展的数据基础设施、决策系统和分析平台",
+  eng1_title:"选择性委托",
+  eng1_desc:"我们承接有限数量的项目，确保每位客户都能获得专注的高级别关注，而非委托性工作。",
+  eng2_title:"基于项目的顾问",
+  eng2_desc:"明确的范围、清晰的交付物和可量化的成果——从单一模型构建到完整决策系统实施。",
+  eng3_title:"战略合作",
+  eng3_desc:"对于长期合作，我们作为嵌入您团队或流程中的高级量化和战略资源运作。",
+  cli_position:"精品顾问服务，专注于国际市场的资本配置、金融战略和决策系统。",
+  about_eyebrow:"创始人",
+  about_title:"战略金融<em>与执行</em>",
+  about_p1:"金融数据科学家，在金融咨询和财富管理领域工作十年。我用 Python 搭建服务于投资决策的机器学习和风险模型，并坚持用模型从未见过的数据来检验效果。",
+  about_p2:"在墨西哥城从事金融咨询与财富管理十年，客户分布在美洲、亚洲和欧洲。现居西班牙希洪，可使用西班牙语、英语、法语和中文工作。",
+  about_p3:"UNAM 经济学博士研究生。修读过 MIT、沃顿商学院、哥伦比亚大学、EDHEC、耶鲁大学和 HEC Paris 的在线课程。",
+  about_cred_label:"在线课程",
+  now_eyebrow:"当前关注",
+  now_title:"近况",
+  now_sub:"当前工作重点快照——定期更新。",
+  now_w1:"博士研究：预测欧盟资助公共工程的延误与超支",
+  now_w1_sub:"Python · CatBoost · SHAP · 样本外验证",
+  now_w2:"业务优化和自动化工具",
+  now_w2_sub:"运营效率 · 自动化管道",
+  now_w3:"投资管理分析项目",
+  now_w3_sub:"投资组合分析 · 风险建模 · BI仪表盘",
+  now_ts:"最近更新：2026 年 11 月",
+  work_eyebrow:"案例研究",
+  work_title:"精选<em>项目</em>",
+  work_sub:"创始人的五项工作：两项来自 St. James International，两项开源项目，一项学术项目。",
+  p1_li1:"中小企业融资策略",
+  p1_li2:"估值与财务建模",
+  p1_li3:"重组与扭亏方案",
+  p1_li4:"收购分析与交易支持",
+  p1_li5:"流程优化",
+  p2_li1:"Fama-French因子建模",
+  p2_li2:"均值-方差优化",
+  p2_li3:"下行风险与回撤控制",
+  p2_li4:"回测与绩效归因",
+  p2_li5:"信用风险（违约概率）建模",
+  p3_li1:"自动化财务报告",
+  p3_li2:"商业智能仪表盘（Power BI、Tableau）",
+  p3_li3:"机器学习模型开发与部署",
+  p3_li4:"预测分析与预报",
+  p3_li5:"自然语言处理与市场信号提取",
+  m1_lbl:"博士模型判定风险最高的项目中出现延误或超支的比例（全部项目为 35%，样本外检验）",
+  m2_lbl:"借助我开发的风险与配置模型，每位客户的组合准备时间",
+  m3_lbl:"2016–18 年 St. James International 收益最高的投资组合（20 名顾问中排名第一）",
+  m4_lbl:"为客户主动提出并主导的收购，最终比预算节省 150 万美元",
+  m5_lbl:"Tu Casa Express 分店首年销售额增幅，从全国垫底升至全国第一",
+  m6_lbl:"约 60 位私人客户的资产，分布在美洲、亚洲和欧洲",
+  cs_challenge:"挑战",
+  cs_approach:"方法",
+  cs_impact:"成果",
+  cs_details:"详情",
+  cat1:"组合优化 · St. James International",
+  cat2:"信用风险 · 开源项目",
+  cat3:"量化交易 · 开源项目",
+  cat4:"房地产 · 学术项目",
+  cat5:"财富管理 · St. James International",
+  cn1:"投资组合管理软件",
+  cn2:"信用风险违约概率（PD）模型",
+  cn3:"市场预测与回测系统",
+  cn4:"住宅产品组合优化",
+  cn5:"客户投资组合咨询",
+  cr1:"⏱ 每位客户从 4 小时缩短到 30 分钟 · 团队使用",
+  cr2:"🎯 评分卡、挑战者模型与银行式验证报告",
+  cr3:"📈 计入交易成本的滚动窗口回测",
+  cr4:"🎓 基于可比销售数据的对数线性回归",
+  cr5:"📊 2016–18 年公司收益最高的投资组合 · 20 名顾问中第一",
+  modal_cancel:"取消",modal_sent:"消息已发送",modal_sent_sub:"我们会在 24 小时内回复您。",ph_name:"您的姓名",ph_email:"您的邮箱地址",ph_org:"公司/机构（选填）",ph_msg:"请介绍您的需求或面临的问题……",send_btn:"发送消息",err_fill:"请填写姓名、邮箱和留言内容。",err_email:"请输入有效的邮箱地址。",sending:"发送中……",err_generic:"发送失败，请重试。",err_network:"网络错误，请重试或直接发邮件给我们。",ft_portfolio:"← 个人主页",ft_fine:"© 2026 GLEZ Strategic Finance &amp; Data Science · 本站信息仅供教育用途，不构成财务建议。",cs1_c:"为每位客户制定最优配置需要四个多小时，限制了每位顾问能够服务的客户数量。",cs1_a:"使用 Bloomberg 终端数据，结合 Fama-French 五因子模型和有效投资组合理论，用图论和对数回归实现自动化选择，先在 R 中开发，后为提升性能迁移至 Python。",cs1_i:"每位客户的准备时间从四小时以上缩短到 30 分钟以内。创始人及其团队在 St. James International 使用这套工具，在人员不变的情况下服务了更多客户。",cs2_c:"银行需要这样的违约概率模型：能准确区分借款人的风险高低，给出恰当的风险水平，随时间保持稳定，并能向模型验证团队解释清楚。",cs2_a:"通过证据权重（WoE）分箱和信息值（IV）筛选变量，构建以分值表示的逻辑回归评分卡，并与用 SHAP 解释的梯度提升挑战者模型进行比较。所有参数仅在开发样本上估计。",cs2_i:"自动生成的验证报告涵盖区分度（Gini、KS）、校准（Hosmer-Lemeshow）、稳定性（PSI）及各评级档位的违约率，并用通俗语言列出结论与局限。",cs3_c:"检验简单的价格特征能否提供可用的短期信号，同时避免前视偏差。",cs3_a:"用随机森林基于动量和波动率特征预测五日收益，转化为做多/空仓信号，并以滚动前推（walk-forward）方式回测，设置五天隔离期并计入交易成本。",cs3_i:"可复现的研究流程，报告扣除成本后的结果，包括信号未能跑赢买入并持有策略的情况。",cs4_c:"案例：在缺乏可靠本地需求数据的情况下，找出使开发项目利润最大化的豪华住宅与普通住宅组合。",cs4_a:"用 MySQL 采集并分析可比销售数据，在 R 中应用 EDA 和对数线性回归，量化价格驱动因素并估计各户型的需求弹性。",cs4_i:"模型按预期利润对各种户型组合排序，并找出影响价格的主要因素。这是学术练习，并非客户项目。",cs5_c:"每位客户都需要个性化的投资策略，在风险承受能力、流动性需求和收益预期之间取得平衡，同时在市场波动时期保持相对基准的竞争力。",cs5_a:"结合自有投资组合软件、Excel 和 Power BI，运用 Fama-French 三因子和五因子模型以及行为金融学原理，为每位客户量身定制风险收益配置。",cs5_i:"2016–18 年管理的投资组合收益为公司最高，在 20 名顾问中排名第一，服务约 60 位客户、资产约 4,500 万美元。",
+  modal_title:"联系我们",
+  modal_sub:"发送消息，我们将在24小时内回复。",
+  contact_send_btn:"发送消息 →",
+  about_badge_role:"创始人 · GLEZ",
+  ticker_label:"市场"
+}
+};
+
+function setLang(lang){
+  document.querySelectorAll('.lang-btn').forEach(b=>{
+    b.classList.toggle('active',
+      b.textContent===lang.toUpperCase()||(lang==='zh'&&b.textContent==='中文'));
+  });
+  const t=GT[lang]||GT.en;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(t[k]!==undefined) el.innerHTML=t[k];
+  });
+  // Update ticker label separately
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{const k=el.getAttribute('data-i18n-ph');if(t[k]!==undefined) el.placeholder=t[k];});
+  const tl=document.getElementById('glezTickerLabel');
+  if(tl && t.ticker_label) tl.textContent=t.ticker_label;
+  document.documentElement.lang=lang;
+  localStorage.setItem('glez_lang',lang);
+  document.querySelectorAll('a[data-xlink]').forEach(function(a){var h=a.dataset.xlink==='glez'?(lang==='es'?'/glez/es':'/glez'):(lang==='es'?'/es/':'/');if(lang==='fr'||lang==='zh')h+='?lang='+lang;a.setAttribute('href',h);});
+  var u=new URL(location.href);u.pathname=lang==='es'?'/glez/es':'/glez';if(lang==='en'||lang==='es')u.searchParams.delete('lang');else u.searchParams.set('lang',lang);history.replaceState(null,'',u);
+}
+// Init
+document.addEventListener('DOMContentLoaded',function(){
+  const p=new URLSearchParams(location.search).get('lang');
+  const saved=['en','es','fr','zh'].includes(p)?p:(location.pathname.indexOf('/glez/es')===0?'es':(localStorage.getItem('glez_lang')||'en'));
+  setLang(saved);
+});
+</script>
+
+
+<script>
+function showEmailModal(){document.getElementById('emailModal').classList.add('open');}
+function hideEmailModal(){
+  document.getElementById('emailModal').classList.remove('open');
+  // Reset form state
+  document.getElementById('emailFormWrap').style.display='';
+  document.getElementById('emailSuccess').style.display='none';
+  document.getElementById('emailError').style.display='none';
+  ['emailName','emailEmail','emailOrg','emailMsg'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var m=document.getElementById('emailModal');
+  if(m) m.addEventListener('click',function(e){if(e.target===this)hideEmailModal();});
+});
+function sendEmail(){
+  var L=GT[document.documentElement.lang]||GT.en;
+  var name=document.getElementById('emailName').value.trim();
+  var email=document.getElementById('emailEmail').value.trim();
+  var msg=document.getElementById('emailMsg').value.trim();
+  var errEl=document.getElementById('emailError');
+  errEl.style.display='none';
+  if(!name||!email||!msg){
+    errEl.textContent=L.err_fill;
+    errEl.style.display='block';
+    return;
+  }
+  if(!/^[^@]+@[^@]+\.[^@]+$/.test(email)){
+    errEl.textContent=L.err_email;
+    errEl.style.display='block';
+    return;
+  }
+  var org=document.getElementById('emailOrg').value||'';
+  var btn=document.querySelector('.email-modal-send');
+  btn.disabled=true; btn.textContent=L.sending;
+  fetch('https://formspree.io/f/xbdwjvvq',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({
+      name:name, email:email,
+      organization:org, message:msg,
+      _subject:'GLEZ Advisory Inquiry from '+name
+    })
+  }).then(function(r){return r.json().then(function(d){return{ok:r.ok,data:d};});})
+  .then(function(res){
+    if(res.ok){
+      document.getElementById('emailFormWrap').style.display='none';
+      document.getElementById('emailSuccess').style.display='block';
+    } else {
+      errEl.textContent=(res.data&&res.data.error)||L.err_generic;
+      errEl.style.display='block';
+      btn.disabled=false; btn.textContent=L.send_btn;
+    }
+  }).catch(function(){
+    errEl.textContent=L.err_network;
+    errEl.style.display='block';
+    btn.disabled=false; btn.textContent=L.send_btn;
+  });
+}
+</script>
+
+</body>
+</html>
