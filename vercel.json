@@ -1,6 +1,8 @@
 {
   "rewrites": [
     {"source": "/glez",
-      "destination": "/glez.html" }
+      "destination": "/glez.html" },
+    {"source": "/glez/es",
+      "destination": "/es/glez.html" }
   ]
 }
