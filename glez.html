@@ -437,13 +437,13 @@ footer{background:var(--navy-deep);padding:2.5rem 3rem;display:flex;align-items:
 
       <div class="case-item" onclick="toggleCase(this)">
         <div class="case-header">
-          <div class="case-left"><div class="case-n">02</div><div class="case-info"><div class="case-cat" data-i18n="cat2">Credit Risk · Open-source project</div><div class="case-name" data-i18n="cn2">Corporate Financial Distress Model</div><div class="case-res" data-i18n="cr2">🎯 Bankruptcy-risk classifier with leakage-free validation</div></div></div>
+          <div class="case-left"><div class="case-n">02</div><div class="case-info"><div class="case-cat" data-i18n="cat2">Credit Risk · Open-source project</div><div class="case-name" data-i18n="cn2">Credit Risk PD Model</div><div class="case-res" data-i18n="cr2">🎯 Scorecard, challenger and bank-style validation report</div></div></div>
           <div class="case-toggle"><span class="case-toggle-txt" data-i18n="cs_details">Details</span><div class="case-toggle-btn">+</div></div>
         </div>
         <div class="case-body">
-          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>Screening a company's financial health from its accounting ratios, quickly and consistently, without leaking test data into the model.</p></div>
-          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Altman Z-score ratios plus random-forest and gradient-boosting classifiers. Imputation, outlier clipping and scaling are fitted on training data only; class imbalance is handled with SMOTE; probabilities are calibrated and explained with SHAP.</p><div class="tech-tags"><span class="tech-tag">scikit-learn</span><span class="tech-tag">Python</span><span class="tech-tag">Financial Ratios</span><span class="tech-tag">Altman Z-Score</span></div></div>
-          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>An open, reproducible screening model with tests; the code and instructions to reproduce the results are on GitHub.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_challenge">Challenge</h4><p>Banks need probability-of-default models that rank borrowers well, give the right level of risk, stay stable over time and can be explained to a model-validation team.</p></div>
+          <div class="case-section"><h4 data-i18n="cs_approach">Approach</h4><p>Weight-of-evidence binning and information-value selection feed a logistic-regression scorecard scaled to points. A gradient-boosting challenger, explained with SHAP, is compared against it. Everything is fitted on the development sample only.</p><div class="tech-tags"><span class="tech-tag">scikit-learn</span><span class="tech-tag">Python</span><span class="tech-tag">Financial Ratios</span><span class="tech-tag">WoE Scorecard</span></div></div>
+          <div class="case-section"><h4 data-i18n="cs_impact">Impact</h4><p>An automatic validation report covers discrimination (Gini, KS), calibration (Hosmer-Lemeshow), stability (PSI) and default rates by rating grade, with plain-language findings and limitations.</p></div>
         </div>
       </div>
 
@@ -918,12 +918,12 @@ en:{
   cat4:"Real Estate · Academic project",
   cat5:"Wealth Management · St. James International",
   cn1:"Portfolio Management Platform",
-  cn2:"Corporate Financial Distress Model",
+  cn2:"Credit Risk PD Model",
   cn3:"Market Prediction & Backtesting System",
   cn4:"Apartment-Mix Optimisation",
   cn5:"Client Portfolio Advisory",
   cr1:"⏱ 4h → 30min per client · Used by my team",
-  cr2:"🎯 Bankruptcy-risk classifier with leakage-free validation",
+  cr2:"🎯 Scorecard, challenger and bank-style validation report",
   cr3:"📈 Walk-forward backtest with transaction costs",
   cr4:"🎓 Log-linear regression on comparable sales",
   cr5:"📊 Most profitable portfolios in the firm, 2016–18 · first of 20 advisers",
@@ -1050,12 +1050,12 @@ es:{
   cat4:"Inmobiliario · Proyecto académico",
   cat5:"Gestión patrimonial · St. James International",
   cn1:"Plataforma de Gestión de Carteras",
-  cn2:"Modelo de Distress Financiero Corporativo",
+  cn2:"Modelo de PD de riesgo de crédito",
   cn3:"Sistema de Predicción de Mercados y Backtesting",
   cn4:"Optimización del mix de viviendas",
   cn5:"Asesoría de carteras para clientes",
   cr1:"⏱ De 4 h a 30 min por cliente · Usada por mi equipo",
-  cr2:"🎯 Clasificador de riesgo de quiebra con validación sin fugas de datos",
+  cr2:"🎯 Scorecard, modelo challenger e informe de validación al estilo bancario",
   cr3:"📈 Backtest en ventana móvil con costes de transacción",
   cr4:"🎓 Regresión log-lineal sobre ventas comparables",
   cr5:"📊 Carteras más rentables de la firma, 2016–18 · primero de 20 asesores",
@@ -1182,12 +1182,12 @@ fr:{
   cat4:"Immobilier · Projet académique",
   cat5:"Gestion de patrimoine · St. James International",
   cn1:"Plateforme de Gestion de Portefeuille",
-  cn2:"Modèle de Détresse Financière Corporate",
+  cn2:"Modèle de PD (risque de crédit)",
   cn3:"Système de Prédiction de Marché et Backtesting",
   cn4:"Optimisation d'un programme immobilier",
   cn5:"Conseil en portefeuille pour clients",
   cr1:"⏱ De 4 h à 30 min par client · Utilisé par mon équipe",
-  cr2:"🎯 Classifieur du risque de faillite, validation sans fuite de données",
+  cr2:"🎯 Scorecard, challenger et rapport de validation de type bancaire",
   cr3:"📈 Backtest walk-forward avec coûts de transaction",
   cr4:"🎓 Régression log-linéaire sur des ventes comparables",
   cr5:"📊 Portefeuilles les plus rentables de la société, 2016–18 · premier sur 20 conseillers",
@@ -1314,12 +1314,12 @@ zh:{
   cat4:"房地产 · 学术项目",
   cat5:"财富管理 · St. James International",
   cn1:"投资组合管理平台",
-  cn2:"企业财务困境模型",
+  cn2:"信用风险违约概率（PD）模型",
   cn3:"市场预测与回测系统",
   cn4:"住宅产品组合优化",
   cn5:"客户投资组合咨询",
   cr1:"⏱ 每位客户从 4 小时缩短到 30 分钟 · 团队使用",
-  cr2:"🎯 破产风险分类模型，验证过程杜绝数据泄漏",
+  cr2:"🎯 评分卡、挑战者模型与银行式验证报告",
   cr3:"📈 计入交易成本的滚动窗口回测",
   cr4:"🎓 基于可比销售数据的对数线性回归",
   cr5:"📊 2016–18 年公司收益最高的投资组合 · 20 名顾问中第一",
