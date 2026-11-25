@@ -12,15 +12,26 @@
 <meta name="author" content="Cesar A. Gonzalez"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://cesarglez.com/"/>
-<link rel="alternate" hreflang="en" href="https://cesarglez.com"/>
-<link rel="alternate" hreflang="es" href="https://cesarglez.com?lang=es"/>
-<link rel="alternate" hreflang="fr" href="https://cesarglez.com?lang=fr"/>
-<link rel="alternate" hreflang="zh" href="https://cesarglez.com?lang=zh"/>
-<link rel="alternate" hreflang="x-default" href="https://cesarglez.com"/>
 <meta property="og:title" content="Cesar A. Gonzalez | Financial Data Scientist · Risk Modeling · Investment Analysis"/>
 <meta property="og:description" content="Financial data scientist: machine learning and risk models in Python, ten years in financial advisory and wealth management, PhD researcher in economics at UNAM."/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="IMG_9994.JPG"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://cesarglez.com/"/>
+<meta property="og:site_name" content="Cesar A. Gonzalez"/>
+<meta property="og:image" content="https://cesarglez.com/og-portfolio.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Cesar A. Gonzalez, financial data scientist"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:locale:alternate" content="es_ES"/>
+<meta property="og:locale:alternate" content="fr_FR"/>
+<meta property="og:locale:alternate" content="zh_CN"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Cesar A. Gonzalez | Financial Data Scientist · Risk Modeling · Investment Analysis"/>
+<meta name="twitter:description" content="Machine-learning and risk models in Python for investment decisions. Ten years in financial advisory and wealth management; PhD researcher in economics at UNAM."/>
+<meta name="twitter:image" content="https://cesarglez.com/og-portfolio.jpg"/>
+<meta name="theme-color" content="#0B1F3A"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="apple-touch-icon" href="/favicon-180.png"/>
 <!-- Structured Data for Google / Recruiter Search -->
 <script type="application/ld+json">
 {
@@ -30,12 +41,12 @@
   "jobTitle":"Financial Data Scientist",
   "description":"Financial data scientist: machine learning and risk models in Python for investment decisions; ten years in financial advisory and wealth management; PhD researcher in economics at UNAM.",
   "url":"https://cesarglez.com/",
-  "image":"IMG_9994.JPG",
+  "image":"https://cesarglez.com/IMG_9994.JPG",
   "sameAs":[
     "https://www.linkedin.com/in/cesar-gonzalez-01/",
     "https://github.com/Rasec01"
   ],
-  "knowsAbout":["Machine Learning","Risk Modeling","Model Validation","Financial Modeling","Portfolio Optimization","Asset Allocation","Factor Investing","Python","R","SQL"],
+  "knowsAbout":["Machine Learning","Risk Modeling","Credit Risk Modeling","Model Validation","Financial Modeling","Portfolio Optimization","Asset Allocation","Factor Investing","Python","R","SQL"],
   "knowsLanguage":["Spanish","English","French","Chinese"],
   "alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad Nacional Autónoma de México"},{"@type":"CollegeOrUniversity","name":"Escuela Bancaria y Comercial"}],
   "workLocation":[
@@ -43,15 +54,6 @@
   ]
 }
 </script>
-<!-- SEO: Static English content for crawlers (hidden visually, readable by bots) -->
-<noscript>
-<div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
-<h1>Cesar A. Gonzalez — Financial Data Scientist: Machine Learning, Risk Modeling, Investment Analysis</h1>
-<p>Financial data scientist with ten years in financial advisory and wealth management in Mexico City, now a PhD researcher in economics at UNAM and based in Gijón, Spain. Builds machine-learning and risk models in Python for investment decisions. Independent advisory through GLEZ Strategic Finance & Data Science.</p>
-<p>Services: Investment portfolio design, financial modeling, valuation, risk analysis, ML model development, data pipeline consulting, BI dashboards, NLP, predictive analytics.</p>
-<p>Languages: Spanish, English, French, Chinese. Core domains: Finance, Data Science, Consulting.</p>
-</div>
-</noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f8f7f4;--surface:#ffffff;--border:#ddd9cf;--text:#0B1F3A;--muted:#43474A;--accent:#0B1F3A;--gold:#BE9F56;--gold-light:#f5eddb;--accent2:#BE9F56;--accent-light:#eee8d8;--green:#166534;--green-light:#f0fdf4;--radius:12px}
@@ -243,7 +245,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 .ticker-strip{position:fixed;top:62px;left:0;width:100%;height:34px;background:#0B1F3A;border-bottom:1px solid rgba(190,159,86,.25);z-index:198;display:flex;align-items:center;overflow:hidden;font-family:'Segoe UI',system-ui,sans-serif}
 .ticker-label{flex-shrink:0;padding:0 1rem;font-size:.65rem;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;border-right:1px solid rgba(190,159,86,.3);height:100%;display:flex;align-items:center;background:#0B1F3A;z-index:2}
 .ticker-track-wrap{flex:1;overflow:hidden;position:relative}
-.ticker-track{display:flex;gap:0;white-space:nowrap;animation:tickerScroll 2.25s linear infinite}
+.ticker-track{display:flex;gap:0;white-space:nowrap;animation:tickerScroll 35s linear infinite}
 .ticker-track:hover{animation-play-state:paused}
 .ticker-item{display:inline-flex;align-items:center;gap:.45rem;padding:0 1.4rem;height:34px;border-right:1px solid rgba(190,159,86,.15);cursor:default;transition:background .15s;flex-shrink:0}
 .ticker-item:hover{background:rgba(190,159,86,.08)}
@@ -255,6 +257,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @media(max-width:640px){
   .ticker-strip{height:28px}
+  .mobile-menu{top:90px}
   .ticker-label{padding:0 .6rem;font-size:.58rem}
   .ticker-item{padding:0 .9rem}
   .ticker-sym,.ticker-price,.ticker-chg{font-size:.62rem}
@@ -278,6 +281,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 .port-email-close{position:absolute;top:.9rem;right:1rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--muted);line-height:1}
 .port-email-close:hover{color:var(--text)}
 </style>
+</head>
 <body>
 
 <nav>
@@ -441,12 +445,12 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-card fade-in">
-    <div class="hero-name" data-i18n="hero_h1">Cesar A. Gonzalez</div>
+    <h1 class="hero-name" data-i18n="hero_h1">Cesar A. Gonzalez</h1>
     <div class="hero-title-line" data-i18n="hero_tagline">Financial Data Science · Risk Modeling · Investment Analysis · Asset Allocation</div>
     <p class="hero-pitch" data-i18n="hero_pitch">I build machine-learning and risk models in Python for investment decisions, and I test them on data they have never seen. Ten years in financial advisory and wealth management; now a PhD researcher in economics at UNAM. Independent advisory through <strong>GLEZ Strategic Finance &amp; Data Science</strong>.</p>
     <div class="hero-btns">
       <a href="#flagship" class="btn btn-primary" data-i18n="hero_cta1">Explore My Work</a>
-      <a href="https://calendly.com/cesar-glezpro" target="_blank" class="btn btn-calendly" data-i18n="hero_cta_cal">📅 Schedule a Call</a>
+      <a href="https://calendly.com/cesar-glezpro" target="_blank" rel="noopener noreferrer" class="btn btn-calendly" data-i18n="hero_cta_cal">📅 Schedule a Call</a>
       <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2">Get in Touch</a>
       <a id="resumeBtn" href="javascript:void(0)" onclick="showPortEmailModal()" class="btn btn-resume" data-i18n="hero_cta_resume">📄 Request CV</a>
     </div>
@@ -482,7 +486,6 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   </div>
 </section>
 
-<hr class="divider"/>
 <hr class="divider"/>
 
 <!-- IMPACT BLOCK -->
@@ -559,6 +562,10 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 .flagship-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#BE9F56,#d4b87a)}
 .flagship-card-title{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.35rem}
 .flagship-card-desc{font-size:.81rem;color:var(--muted);line-height:1.55;margin-bottom:.9rem}
+.flagship-charts{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin-bottom:.45rem}
+.flagship-charts a{display:block;background:#fff;border:1px solid var(--border);border-radius:6px;padding:.2rem}
+.flagship-charts img{display:block;width:100%;height:96px;object-fit:contain}
+.flagship-metrics{font-size:.7rem;color:var(--muted);line-height:1.45;margin-bottom:.9rem}
 .flagship-card-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.9rem}
 @media(max-width:640px){
   .flagship-grid{grid-template-columns:1fr}
@@ -584,7 +591,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         <span class="flagship-tag">Risk Metrics</span>
       </div>
       <div class="flagship-links">
-        <a href="https://github.com/Rasec01/Quant-research-framework" target="_blank" class="flagship-link flagship-link-primary">
+        <a href="https://github.com/Rasec01/Quant-research-framework" target="_blank" rel="noopener noreferrer" class="flagship-link flagship-link-primary">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           <span data-i18n="flag_github">View on GitHub</span>
         </a>
@@ -597,11 +604,16 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
       <div class="flagship-card">
         <div class="flagship-card-title" data-i18n="flag2_title">Credit Risk PD Model</div>
         <div class="flagship-card-desc" data-i18n="flag2_desc">Probability-of-default model for companies: a weight-of-evidence scorecard, a gradient-boosting challenger and an automatic validation report (Gini, KS, calibration, PSI, rating grades).</div>
+        <div class="flagship-charts">
+          <a href="/img/pd-roc.png" target="_blank" rel="noopener"><img src="/img/pd-roc.png" alt="ROC curve on the test sample: scorecard and gradient-boosting challenger" width="750" height="750" loading="lazy"></a>
+          <a href="/img/pd-grades.png" target="_blank" rel="noopener"><img src="/img/pd-grades.png" alt="Default rate by rating grade on the test sample" width="900" height="600" loading="lazy"></a>
+        </div>
+        <div class="flagship-metrics" data-i18n="flag2_metrics">Test sample: Gini 0.86 · KS 0.71 · Hosmer-Lemeshow p = 0.36 · PSI 0.009</div>
         <div class="flagship-card-tags">
           <span class="flagship-tag">Scorecard</span><span class="flagship-tag">Credit Risk</span><span class="flagship-tag">Model Validation</span>
         </div>
         <div class="flagship-links">
-          <a href="https://github.com/Rasec01/credit-risk-pd-model" target="_blank" class="flagship-link flagship-link-outline">
+          <a href="https://github.com/Rasec01/credit-risk-pd-model" target="_blank" rel="noopener noreferrer" class="flagship-link flagship-link-outline">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
@@ -615,7 +627,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
           <span class="flagship-tag">Random Forest</span><span class="flagship-tag">Time Series</span><span class="flagship-tag">Walk-forward</span>
         </div>
         <div class="flagship-links">
-          <a href="https://github.com/Rasec01/Market-prediction-system" target="_blank" class="flagship-link flagship-link-outline">
+          <a href="https://github.com/Rasec01/Market-prediction-system" target="_blank" rel="noopener noreferrer" class="flagship-link flagship-link-outline">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
@@ -629,7 +641,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
           <span class="flagship-tag">Mean-Variance</span><span class="flagship-tag">Sharpe</span><span class="flagship-tag">Efficient Frontier</span>
         </div>
         <div class="flagship-links">
-          <a href="https://github.com/Rasec01/portfolio-optimizer" target="_blank" class="flagship-link flagship-link-outline">
+          <a href="https://github.com/Rasec01/portfolio-optimizer" target="_blank" rel="noopener noreferrer" class="flagship-link flagship-link-outline">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
@@ -975,9 +987,9 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
     <p style="font-size:.82rem;color:var(--muted);line-height:1.6;margin:0" data-i18n="projects_disclosure">Code written for client work is confidential and is not shared; those projects are described by their approach and results. Open-source projects are linked under Highlighted Projects above, and course projects are summarised without code.</p>
   </div>
   <div class="filter-tabs">
-    <button class="filter-btn active" onclick="filterProjects('all')" data-i18n="filter_all">All Projects</button>
-    <button class="filter-btn" onclick="filterProjects('client')" data-i18n="filter_client">💼 Client Outcomes</button>
-    <button class="filter-btn" onclick="filterProjects('technical')" data-i18n="filter_tech">⚙️ Technical Projects</button>
+    <button class="filter-btn active" onclick="filterProjects('all',this)" data-i18n="filter_all">All Projects</button>
+    <button class="filter-btn" onclick="filterProjects('client',this)" data-i18n="filter_client">💼 Client Outcomes</button>
+    <button class="filter-btn" onclick="filterProjects('technical',this)" data-i18n="filter_tech">⚙️ Technical Projects</button>
   </div>
 
   <!-- PROFESSIONAL -->
@@ -1477,7 +1489,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
 <!-- NOW PAGE -->
 <style>
 #now{padding-top:4rem;padding-bottom:4rem}
-.now-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+.now-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:2rem;max-width:720px}
 .now-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem}
 .now-card-title{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem;display:flex;align-items:center;gap:.5rem}
 .now-item{display:flex;align-items:flex-start;gap:.75rem;padding:.55rem 0;border-bottom:1px solid var(--border)}
@@ -1522,9 +1534,8 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
         </div>
       </div>
     </div>
-
-      <div class="now-updated" data-i18n="now_updated" style="color:var(--muted);font-size:.72rem;margin-top:1rem">Last updated: November 2026</div>
   </div>
+  <div class="now-updated" data-i18n="now_updated" style="color:var(--muted);font-size:.72rem;margin-top:1rem">Last updated: November 2026</div>
 </section>
 
 <hr class="divider"/>
@@ -1605,11 +1616,11 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:v
   <p data-i18n="contact_sub">Open to data science, risk modelling, model validation and investment analysis roles in Spain, Luxembourg, France, Ireland and Switzerland, and to advisory work.</p>
   <div class="contact-links">
     <a href="javascript:void(0)" onclick="showPortEmailModal()" class="contact-link">✉️ <span data-i18n="contact_email_btn">Send a Message</span></a>
-    <a href="https://www.linkedin.com/in/cesar-gonzalez-01/" target="_blank" class="contact-link">💼 Personal LinkedIn</a>
-    <a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank" class="contact-link">🏢 GLEZ LinkedIn</a>
+    <a href="https://www.linkedin.com/in/cesar-gonzalez-01/" target="_blank" rel="noopener noreferrer" class="contact-link">💼 Personal LinkedIn</a>
+    <a href="https://www.linkedin.com/company/glez-strategic-finance-data-science" target="_blank" rel="noopener noreferrer" class="contact-link">🏢 GLEZ LinkedIn</a>
   </div>
   <div style="text-align:center;margin-top:1rem">
-    <a href="https://calendly.com/cesar-glezpro" target="_blank" class="btn btn-calendly" data-i18n="hero_cta_cal">📅 Schedule a Call</a>
+    <a href="https://calendly.com/cesar-glezpro" target="_blank" rel="noopener noreferrer" class="btn btn-calendly" data-i18n="hero_cta_cal">📅 Schedule a Call</a>
   </div>
 </section>
 
@@ -1706,13 +1717,14 @@ en:{
   calc_initial:"Initial Amount ($)",calc_monthly:"Monthly Contribution ($)",calc_return:"Annual Return (%)",calc_years:"Years to Grow",
   calc_btn:"Calculate",calc_result_label:"Estimated portfolio value at retirement",
   calc_disclaimer:"For illustrative purposes only. Past performance does not guarantee future results.",
-  nav_optimizer:"Optimizer",opt_label:"Interactive Tool",opt_title:"Portfolio Optimizer (Markowitz)",opt_sub:"Find the optimal asset allocation",opt_p:"Adjust expected returns, volatilities, and correlations for three assets. Then choose to maximize Sharpe ratio or minimize variance.",opt_return:"Return (%)",opt_vol:"Volatility (%)",opt_vol_lbl:"Volatility",opt_corr_title:"Correlations",opt_rf:"Risk-free rate (%)",opt_btn_sharpe:"Max Sharpe",opt_btn_minvar:"Min Variance",opt_exp_ret:"Expected Return",opt_sharpe:"Sharpe Ratio",opt_disclaimer:"Optimization based on historical assumptions. Not financial advice.",
+  nav_optimizer:"Optimizer",opt_label:"Interactive Tool",opt_title:"Portfolio Optimizer (Markowitz)",opt_sub:"Find the optimal asset allocation",opt_p:"Adjust expected returns, volatilities, and correlations for three assets. Then choose to maximize Sharpe ratio or minimize variance.",opt_return:"Return (%)",opt_vol:"Volatility (%)",opt_vol_lbl:"Volatility",opt_corr_title:"Correlations",opt_exp_ret:"Expected Return",opt_sharpe:"Sharpe Ratio",opt_disclaimer:"Optimization based on historical assumptions. Not financial advice.",
   
   
   
   
   
   
+  ph_name:"Your name",ph_email:"Your email address",ph_org:"Company / Organization (optional)",ph_msg:"Tell me about your inquiry...",modal_sent:"Message sent",modal_sent_sub:"I'll get back to you within 24 hours.",err_fill:"Please fill in your name, email, and message.",err_email:"Please enter a valid email address.",sending:"Sending...",err_generic:"Something went wrong. Please try again.",err_network:"Network error. Please try again.",flag2_metrics:"Test sample: Gini 0.86 · KS 0.71 · Hosmer-Lemeshow p = 0.36 · PSI 0.009",
   contact_email_btn:"Send a Message",modal_title:"Get in Touch",modal_sub:"Send a message and I'll respond within 24 hours.",modal_send:"Send Message",modal_cancel:"Cancel",contact_label:"Contact",contact_title:"Get In Touch",contact_sub:"Open to data science, risk modelling, model validation and investment analysis roles in Spain, Luxembourg, France, Ireland and Switzerland, and to advisory work.",
   footer_disclaimer:"Information presented is for educational purposes only and does not constitute financial advice."
 },
@@ -1800,13 +1812,14 @@ es:{
   calc_initial:"Monto inicial ($)",calc_monthly:"Aportación mensual ($)",calc_return:"Rentabilidad anual (%)",calc_years:"Años de crecimiento",
   calc_btn:"Calcular",calc_result_label:"Valor estimado de la cartera al jubilarse",
   calc_disclaimer:"Solo con fines ilustrativos. Los resultados pasados no garantizan resultados futuros.",
-  nav_optimizer:"Optimizador",opt_label:"Herramienta Interactiva",opt_title:"Optimizador de Carteras (Markowitz)",opt_sub:"Encuentra la asignación óptima",opt_p:"Ajusta rendimientos esperados, volatilidades y correlaciones para tres activos. Luego elige maximizar Sharpe o minimizar varianza.",opt_return:"Rendimiento (%)",opt_vol:"Volatilidad (%)",opt_vol_lbl:"Volatilidad",opt_corr_title:"Correlaciones",opt_rf:"Tasa libre de riesgo (%)",opt_btn_sharpe:"Máx Sharpe",opt_btn_minvar:"Mín Varianza",opt_exp_ret:"Rendimiento esperado",opt_sharpe:"Ratio Sharpe",opt_disclaimer:"Optimización basada en supuestos históricos. No es asesoramiento financiero.",
+  nav_optimizer:"Optimizador",opt_label:"Herramienta Interactiva",opt_title:"Optimizador de Carteras (Markowitz)",opt_sub:"Encuentra la asignación óptima",opt_p:"Ajusta rendimientos esperados, volatilidades y correlaciones para tres activos. Luego elige maximizar Sharpe o minimizar varianza.",opt_return:"Rendimiento (%)",opt_vol:"Volatilidad (%)",opt_vol_lbl:"Volatilidad",opt_corr_title:"Correlaciones",opt_exp_ret:"Rendimiento esperado",opt_sharpe:"Ratio Sharpe",opt_disclaimer:"Optimización basada en supuestos históricos. No es asesoramiento financiero.",
   
   
   
   
   
   
+  ph_name:"Tu nombre",ph_email:"Tu correo electrónico",ph_org:"Empresa / organización (opcional)",ph_msg:"Cuéntame sobre tu consulta...",modal_sent:"Mensaje enviado",modal_sent_sub:"Te responderé en 24 horas.",err_fill:"Escribe tu nombre, tu correo y tu mensaje.",err_email:"Introduce un correo electrónico válido.",sending:"Enviando...",err_generic:"Algo ha fallado. Inténtalo de nuevo.",err_network:"Error de conexión. Inténtalo de nuevo.",flag2_metrics:"Muestra de prueba: Gini 0,86 · KS 0,71 · Hosmer-Lemeshow p = 0,36 · PSI 0,009",
   contact_email_btn:"Enviar Mensaje",modal_title:"Contáctame",modal_sub:"Envía un mensaje y responderé en 24 horas.",modal_send:"Enviar",modal_cancel:"Cancelar",contact_label:"Contacto",contact_title:"Ponte en Contacto",contact_sub:"Abierto a puestos de ciencia de datos, modelos de riesgo, validación de modelos y análisis de inversiones en España, Luxemburgo, Francia, Irlanda y Suiza, y a proyectos de asesoría.",
   footer_disclaimer:"La información presentada es solo para fines educativos y no constituye asesoramiento financiero."
 },
@@ -1815,7 +1828,7 @@ fr:{
   glez_m2_lbl:"Et investisseurs privés",
   glez_m1_lbl:"Conseil depuis",
   hero_pitch:"Je conçois sous Python des modèles de machine learning et de risque pour la décision d'investissement, et je les valide sur des données qu'ils n'ont jamais vues. Dix ans en conseil financier et en gestion de patrimoine ; aujourd'hui doctorant en économie à l'UNAM. Conseil indépendant via <strong>GLEZ Strategic Finance &amp; Data Science</strong>.",
-  flagship_label:"Projets Open Source",flagship_title:"Projets Mis en Avant",flagship_sub:"Dépôts open source en finance quantitative et machine learning, chacun avec code, tests et documentation.",flag1_title:"Framework de Recherche Quantitative",flag1_desc:"Recherche sur le modèle à cinq facteurs de Fama-French : portefeuilles à biais factoriel testés en walk-forward face au portefeuille de marché, avec coûts de transaction et indicateurs ajustés du risque.",flag2_title:"Modèle de PD (risque de crédit)",flag2_desc:"Modèle de probabilité de défaut pour entreprises : scorecard fondée sur le weight of evidence, challenger en gradient boosting et rapport de validation automatique (Gini, KS, calibrage, PSI, classes de notation).",flag3_title:"Système de Prédiction de Marché",flag3_desc:"Prévisions de rendement à cinq jours par random forest transformées en signaux long/flat, testées en walk-forward avec un embargo de cinq jours et des coûts de transaction.",flag4_title:"Optimiseur de Portefeuille",flag4_desc:"Optimiseur moyenne-variance : portefeuilles de Sharpe maximal et de variance minimale, frontière efficiente et contrainte sans vente à découvert. Version interactive sur cette page.",flag_github:"Voir sur GitHub",flag_live_demo:"Démo Live ↓",flag_demo:"Démo",nav_flagship:"Projets",ticker_label:"Marchés",global_label:"Présence Mondiale",global_title:"Où j'ai travaillé",global_cities:"Villes",global_countries:"Pays",global_continents:"Continents",global_sub:"L'essentiel de ma carrière s'est déroulé à Mexico, avec des rendez-vous clients à San Diego et un rachat au Panama en 2017. Je vis aujourd'hui à Gijón, en Espagne. Mes clients se trouvaient en Amérique, en Asie et en Europe.",opt_asset_a:"Actif A — Actions",opt_asset_b:"Actif B — Croissance",opt_asset_c:"Actif C — Obligation",opt_asset_a_lbl:"Actif A",opt_asset_b_lbl:"Actif B",opt_asset_c_lbl:"Actif C",opt_rf:"Taux sans risque (%)",opt_btn_sharpe:"⚡ Max Sharpe",opt_btn_minvar:"📉 Min Variance",nav_advisory:"Conseil",glez_tagline:"Finance Stratégique & Science des Données",glez_desc:"Conseil indépendant, à temps partiel depuis 2017 : financement, stratégie financière, restructuration et refonte des processus pour PME et investisseurs privés.",glez_cta:"Visiter GLEZ Advisory →",glez_p1_title:"Financement et finance stratégique",glez_p1_desc:"Conseil en financement, valorisation, stratégie financière et restructuration pour PME et investisseurs privés.",glez_p2_title:"Optimisation de Portefeuille & Risque",glez_p2_desc:"Allocation factorielle, optimisation moyenne-variance et benchmarking ajusté au risque.",glez_p3_title:"Science des Données & Systèmes de Décision",glez_p3_desc:"Plateformes d'aide à la décision personnalisées remplaçant les flux manuels par une infrastructure analytique évolutive.",
+  flagship_label:"Projets Open Source",flagship_title:"Projets Mis en Avant",flagship_sub:"Dépôts open source en finance quantitative et machine learning, chacun avec code, tests et documentation.",flag1_title:"Framework de Recherche Quantitative",flag1_desc:"Recherche sur le modèle à cinq facteurs de Fama-French : portefeuilles à biais factoriel testés en walk-forward face au portefeuille de marché, avec coûts de transaction et indicateurs ajustés du risque.",flag2_title:"Modèle de PD (risque de crédit)",flag2_desc:"Modèle de probabilité de défaut pour entreprises : scorecard fondée sur le weight of evidence, challenger en gradient boosting et rapport de validation automatique (Gini, KS, calibrage, PSI, classes de notation).",flag3_title:"Système de Prédiction de Marché",flag3_desc:"Prévisions de rendement à cinq jours par random forest transformées en signaux long/flat, testées en walk-forward avec un embargo de cinq jours et des coûts de transaction.",flag4_title:"Optimiseur de Portefeuille",flag4_desc:"Optimiseur moyenne-variance : portefeuilles de Sharpe maximal et de variance minimale, frontière efficiente et contrainte sans vente à découvert. Version interactive sur cette page.",flag_github:"Voir sur GitHub",flag_live_demo:"Démo Live ↓",flag_demo:"Démo",nav_flagship:"Projets",ticker_label:"Marchés",global_label:"Présence Mondiale",global_title:"Où j'ai travaillé",global_cities:"Villes",global_countries:"Pays",global_continents:"Continents",global_sub:"L'essentiel de ma carrière s'est déroulé à Mexico, avec des rendez-vous clients à San Diego et un rachat au Panama en 2017. Je vis aujourd'hui à Gijón, en Espagne. Mes clients se trouvaient en Amérique, en Asie et en Europe.",opt_asset_a:"Actif A — Actions",opt_asset_b:"Actif B — Croissance",opt_asset_c:"Actif C — Obligation",opt_asset_a_lbl:"Actif A",opt_asset_b_lbl:"Actif B",opt_asset_c_lbl:"Actif C",opt_rf:"Taux sans risque (%)",opt_btn_sharpe:"⚡ Sharpe maximal",opt_btn_minvar:"📉 Variance minimale",nav_advisory:"Conseil",glez_tagline:"Finance Stratégique & Science des Données",glez_desc:"Conseil indépendant, à temps partiel depuis 2017 : financement, stratégie financière, restructuration et refonte des processus pour PME et investisseurs privés.",glez_cta:"Visiter GLEZ Advisory →",glez_p1_title:"Financement et finance stratégique",glez_p1_desc:"Conseil en financement, valorisation, stratégie financière et restructuration pour PME et investisseurs privés.",glez_p2_title:"Optimisation de Portefeuille & Risque",glez_p2_desc:"Allocation factorielle, optimisation moyenne-variance et benchmarking ajusté au risque.",glez_p3_title:"Science des Données & Systèmes de Décision",glez_p3_desc:"Plateformes d'aide à la décision personnalisées remplaçant les flux manuels par une infrastructure analytique évolutive.",
   impact_label:"Impact Sélectionné",impact_title:"Quelques résultats",impact_1:"Des projets jugés les plus risqués par mon modèle de thèse ont connu retard ou dépassement, contre 35 % au total (test hors échantillon)",impact_2:"Préparation de portefeuille par client grâce à mes modèles de risque et d'allocation",impact_3:"Portefeuilles les plus rentables de St. James International, 2016–18 (sur 20 conseillers)",impact_4:"Rachat proposé et piloté pour un client, finalisé 1,5 M USD sous le budget",impact_5:"Ventes de l'agence la première année chez Tu Casa Express : de la dernière à la première place nationale",impact_6:"D'actifs pour environ 60 clients privés en Amérique, en Asie et en Europe",nav_work:"Travaux Sélectionnés",nav_about:"À propos",nav_edu:"Formation",nav_services:"Services",nav_client:"Projets",nav_tools:"Outils",nav_contact:"Contact",nav_now:"Maintenant",
   edu_label:"Parcours Académique",edu_title:"Formation",edu_formal:"Diplômes Officiels",edu_exec:"Programmes et certificats en ligne",edu_honors:"Avec Mention",
   edu_badge_phd:"Doctorat",edu_badge_msc:"Master",edu_badge_bsc:"Licence",
@@ -1894,13 +1907,14 @@ fr:{
   calc_initial:"Montant initial ($)",calc_monthly:"Contribution mensuelle ($)",calc_return:"Rendement annuel (%)",calc_years:"Années de croissance",
   calc_btn:"Calculer",calc_result_label:"Valeur estimée du portefeuille à la retraite",
   calc_disclaimer:"À titre indicatif uniquement. Les performances passées ne garantissent pas les résultats futurs.",
-  nav_optimizer:"Optimiseur",opt_label:"Outil Interactif",opt_title:"Optimiseur de Portefeuille (Markowitz)",opt_sub:"Trouvez l'allocation optimale",opt_p:"Ajustez les rendements attendus, volatilités et corrélations pour trois actifs. Choisissez ensuite de maximiser le Sharpe ou minimiser la variance.",opt_return:"Rendement (%)",opt_vol:"Volatilité (%)",opt_vol_lbl:"Volatilité",opt_corr_title:"Corrélations",opt_rf:"Taux sans risque (%)",opt_btn_sharpe:"Max Sharpe",opt_btn_minvar:"Min Variance",opt_exp_ret:"Rendement attendu",opt_sharpe:"Ratio Sharpe",opt_disclaimer:"Optimisation basée sur des hypothèses historiques. Pas un conseil financier.",
+  nav_optimizer:"Optimiseur",opt_label:"Outil Interactif",opt_title:"Optimiseur de Portefeuille (Markowitz)",opt_sub:"Trouvez l'allocation optimale",opt_p:"Ajustez les rendements attendus, volatilités et corrélations pour trois actifs. Choisissez ensuite de maximiser le Sharpe ou minimiser la variance.",opt_return:"Rendement (%)",opt_vol:"Volatilité (%)",opt_vol_lbl:"Volatilité",opt_corr_title:"Corrélations",opt_exp_ret:"Rendement attendu",opt_sharpe:"Ratio Sharpe",opt_disclaimer:"Optimisation basée sur des hypothèses historiques. Pas un conseil financier.",
   
   
   
   
   
   
+  ph_name:"Votre nom",ph_email:"Votre adresse e-mail",ph_org:"Entreprise / organisation (facultatif)",ph_msg:"Parlez-moi de votre demande…",modal_sent:"Message envoyé",modal_sent_sub:"Je vous répondrai sous 24 heures.",err_fill:"Merci d'indiquer votre nom, votre e-mail et votre message.",err_email:"Merci de saisir une adresse e-mail valide.",sending:"Envoi en cours…",err_generic:"Une erreur s'est produite. Veuillez réessayer.",err_network:"Erreur réseau. Veuillez réessayer.",flag2_metrics:"Échantillon de test : Gini 0,86 · KS 0,71 · Hosmer-Lemeshow p = 0,36 · PSI 0,009",
   contact_email_btn:"Envoyer un message",modal_title:"Prenons contact",modal_sub:"Envoyez un message, je vous répondrai sous 24 heures.",modal_send:"Envoyer",modal_cancel:"Annuler",
   contact_label:"Contact",contact_title:"Prenons Contact",contact_sub:"Ouvert aux postes en data science, modélisation des risques, validation de modèles et analyse d'investissement en Espagne, au Luxembourg, en France, en Irlande et en Suisse, ainsi qu'aux missions de conseil.",
   footer_disclaimer:"Les informations présentées sont à titre éducatif uniquement et ne constituent pas un conseil financier."
@@ -1989,13 +2003,14 @@ zh:{
   calc_initial:"初始金额 ($)",calc_monthly:"每月储蓄 ($)",calc_return:"年化收益率 (%)",calc_years:"增长年数",
   calc_btn:"计算",calc_result_label:"预计退休时的投资组合价值",
   calc_disclaimer:"仅供参考，过往表现不代表未来结果。",
-  nav_optimizer:"优化器",opt_label:"互动工具",opt_title:"投资组合优化器 (马科维茨)",opt_sub:"找到最优资产配置",opt_p:"调整三种资产的预期收益、波动率和相关性。然后选择最大化夏普比率或最小化方差。",opt_return:"收益率 (%)",opt_vol:"波动率 (%)",opt_vol_lbl:"波动率",opt_corr_title:"相关性",opt_rf:"无风险利率 (%)",opt_btn_sharpe:"最大夏普",opt_btn_minvar:"最小方差",opt_exp_ret:"预期收益",opt_sharpe:"夏普比率",opt_disclaimer:"优化基于历史假设，不构成财务建议。",
+  nav_optimizer:"优化器",opt_label:"互动工具",opt_title:"投资组合优化器 (马科维茨)",opt_sub:"找到最优资产配置",opt_p:"调整三种资产的预期收益、波动率和相关性。然后选择最大化夏普比率或最小化方差。",opt_return:"收益率 (%)",opt_vol:"波动率 (%)",opt_vol_lbl:"波动率",opt_corr_title:"相关性",opt_exp_ret:"预期收益",opt_sharpe:"夏普比率",opt_disclaimer:"优化基于历史假设，不构成财务建议。",
   
   
   
   
   
   
+  ph_name:"您的姓名",ph_email:"您的邮箱地址",ph_org:"公司/机构（选填）",ph_msg:"请简单介绍您的需求……",modal_sent:"消息已发送",modal_sent_sub:"我会在 24 小时内回复您。",err_fill:"请填写姓名、邮箱和留言内容。",err_email:"请输入有效的邮箱地址。",sending:"发送中……",err_generic:"发送失败，请重试。",err_network:"网络错误，请重试。",flag2_metrics:"测试样本：Gini 0.86 · KS 0.71 · Hosmer-Lemeshow p = 0.36 · PSI 0.009",
   contact_email_btn:"发送消息",modal_title:"联系我",modal_sub:"留言后我会在 24 小时内回复。",modal_send:"发送",modal_cancel:"取消",
   contact_label:"联系方式",contact_title:"取得联系",contact_sub:"正在寻找西班牙、卢森堡、法国、爱尔兰和瑞士的数据科学、风险建模、模型验证及投资分析职位，也承接咨询项目。",
   footer_disclaimer:"所呈现信息仅供教育目的，不构成财务建议。"
@@ -2010,6 +2025,7 @@ function setLang(lang){
     const k=el.getAttribute('data-i18n');
     if(t[k]!==undefined) el.innerHTML=t[k];
   });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{const k=el.getAttribute('data-i18n-ph');if(t[k]!==undefined) el.placeholder=t[k];});
   document.documentElement.lang=lang;
   var u=new URL(location.href);if(lang==='en')u.searchParams.delete('lang');else u.searchParams.set('lang',lang);history.replaceState(null,'',u);
 }
@@ -2034,9 +2050,9 @@ function toggleDetail(btn){
 }
 
 // ── PROJECT FILTER ───────────────────────────────────────────────────
-function filterProjects(cat){
+function filterProjects(cat,btn){
   document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  event.target.classList.add('active');
+  (btn||event.target).classList.add('active');
   document.querySelectorAll('.project-card').forEach(card=>{
     if(cat==='all') card.classList.remove('hidden');
     else card.classList.toggle('hidden', card.dataset.cat!==cat);
@@ -2062,68 +2078,13 @@ function calcRetirement(){
   else fv+=m*months;
   document.getElementById('calcNum').textContent='$'+Math.round(fv).toLocaleString();
 }
-calcRetirement();
 
 // ── PORTFOLIO OPTIMIZER ──────────────────────────────────────────────
-function optimize(mode){
-  const retA=parseFloat(document.getElementById('retA').value)/100;
-  const retB=parseFloat(document.getElementById('retB').value)/100;
-  const retC=parseFloat(document.getElementById('retC').value)/100;
-  const volA=parseFloat(document.getElementById('volA').value)/100;
-  const volB=parseFloat(document.getElementById('volB').value)/100;
-  const volC=parseFloat(document.getElementById('volC').value)/100;
-  const corrAB=parseFloat(document.getElementById('corrAB').value);
-  const corrAC=parseFloat(document.getElementById('corrAC').value);
-  const corrBC=parseFloat(document.getElementById('corrBC').value);
-  const rf=parseFloat(document.getElementById('rfRate').value)/100;
-  const varA=volA*volA,varB=volB*volB,varC=volC*volC;
-  const covAB=corrAB*volA*volB,covAC=corrAC*volA*volC,covBC=corrBC*volB*volC;
-  let bestW=null,bestValue=mode==='maxSharpe'?-Infinity:Infinity;
-  for(let w1=0;w1<=1;w1+=0.01){
-    for(let w2=0;w2<=1-w1;w2+=0.01){
-      const w3=1-w1-w2;
-      if(w3<-0.001) continue;
-      const w3c=Math.max(0,w3);
-      const ret=w1*retA+w2*retB+w3c*retC;
-      const varP=w1*w1*varA+w2*w2*varB+w3c*w3c*varC+2*w1*w2*covAB+2*w1*w3c*covAC+2*w2*w3c*covBC;
-      const vol=Math.sqrt(Math.max(0,varP));
-      if(mode==='maxSharpe'){
-        if(vol<0.0001) continue;
-        const sharpe=(ret-rf)/vol;
-        if(sharpe>bestValue){bestValue=sharpe;bestW=[w1,w2,w3c];}
-      } else {
-        if(varP<bestValue){bestValue=varP;bestW=[w1,w2,w3c];}
-      }
-    }
-  }
-  if(bestW){
-    document.getElementById('optW1').textContent=(bestW[0]*100).toFixed(1)+'%';
-    document.getElementById('optW2').textContent=(bestW[1]*100).toFixed(1)+'%';
-    document.getElementById('optW3').textContent=(bestW[2]*100).toFixed(1)+'%';
-    const ret=bestW[0]*retA+bestW[1]*retB+bestW[2]*retC;
-    const varP=bestW[0]*bestW[0]*varA+bestW[1]*bestW[1]*varB+bestW[2]*bestW[2]*varC+2*bestW[0]*bestW[1]*covAB+2*bestW[0]*bestW[2]*covAC+2*bestW[1]*bestW[2]*covBC;
-    const vol=Math.sqrt(Math.max(0,varP));
-    const sharpe=vol>0?(ret-rf)/vol:0;
-    document.getElementById('optRet').textContent=(ret*100).toFixed(2)+'%';
-    document.getElementById('optVol2').textContent=(vol*100).toFixed(2)+'%';
-    document.getElementById('optSharpe').textContent=sharpe.toFixed(2);
-  }
-}
 // ── SCROLL FADE IN ───────────────────────────────────────────────────
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.12});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
 
 // ── PHOTO UPLOAD ──────────────────────────────────────────────────────
-function loadPhoto(input){
-  const file=input.files[0];
-  if(!file) return;
-  const reader=new FileReader();
-  reader.onload=function(e){
-    const img=document.getElementById('profilePhoto');
-    if(img){ img.src=e.target.result; img.style.display='block'; }
-  };
-  reader.readAsDataURL(file);
-}
 </script>
 
 <!-- PORTFOLIO EMAIL MODAL -->
@@ -2133,10 +2094,10 @@ function loadPhoto(input){
     <h3 data-i18n="modal_title">Get in Touch</h3>
     <p data-i18n="modal_sub">Send a message and I'll respond within 24 hours.</p>
     <div id="portEmailFormWrap">
-      <input type="text" id="portEmailName" placeholder="Your name" autocomplete="name">
-      <input type="email" id="portEmailAddr" placeholder="Your email address" autocomplete="email">
-      <input type="text" id="portEmailOrg" placeholder="Company / Organization (optional)">
-      <textarea id="portEmailMsg" placeholder="Tell me about your inquiry..."></textarea>
+      <input type="text" id="portEmailName" data-i18n-ph="ph_name" placeholder="Your name" autocomplete="name">
+      <input type="email" id="portEmailAddr" data-i18n-ph="ph_email" placeholder="Your email address" autocomplete="email">
+      <input type="text" id="portEmailOrg" data-i18n-ph="ph_org" placeholder="Company / Organization (optional)">
+      <textarea id="portEmailMsg" data-i18n-ph="ph_msg" placeholder="Tell me about your inquiry..."></textarea>
       <div class="port-email-modal-btns">
         <button class="port-email-send" onclick="sendPortEmail()" data-i18n="modal_send">Send Message</button>
         <button class="port-email-cancel" onclick="hidePortEmailModal()" data-i18n="modal_cancel">Cancel</button>
@@ -2144,8 +2105,8 @@ function loadPhoto(input){
     </div>
     <div id="portEmailSuccess" style="display:none;text-align:center;padding:2rem 0">
       <div style="font-size:2rem;margin-bottom:.8rem">✓</div>
-      <div style="font-weight:600;color:var(--accent);margin-bottom:.4rem">Message sent</div>
-      <div style="font-size:.84rem;color:var(--muted)">I'll get back to you within 24 hours.</div>
+      <div style="font-weight:600;color:var(--accent);margin-bottom:.4rem" data-i18n="modal_sent">Message sent</div>
+      <div style="font-size:.84rem;color:var(--muted)" data-i18n="modal_sent_sub">I'll get back to you within 24 hours.</div>
     </div>
     <div id="portEmailError" style="display:none;color:#dc2626;font-size:.82rem;margin-top:.5rem;padding:.5rem;background:#fef2f2;border-radius:4px"></div>
   </div>
@@ -2167,22 +2128,23 @@ document.addEventListener('DOMContentLoaded',function(){
   if(m) m.addEventListener('click',function(e){if(e.target===this)hidePortEmailModal();});
 });
 function sendPortEmail(){
+  var L=T[document.documentElement.lang]||T.en;
   var name=document.getElementById('portEmailName').value.trim();
   var email=document.getElementById('portEmailAddr').value.trim();
   var msg=document.getElementById('portEmailMsg').value.trim();
   var errEl=document.getElementById('portEmailError');
   errEl.style.display='none';
   if(!name||!email||!msg){
-    errEl.textContent='Please fill in your name, email, and message.';
+    errEl.textContent=L.err_fill;
     errEl.style.display='block'; return;
   }
   if(!/^[^@]+@[^@]+\.[^@]+$/.test(email)){
-    errEl.textContent='Please enter a valid email address.';
+    errEl.textContent=L.err_email;
     errEl.style.display='block'; return;
   }
   var org=document.getElementById('portEmailOrg').value||'';
   var btn=document.querySelector('.port-email-send');
-  btn.disabled=true; btn.textContent='Sending...';
+  btn.disabled=true; btn.textContent=L.sending;
   fetch('https://formspree.io/f/xbdwjvvq',{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
@@ -2197,14 +2159,14 @@ function sendPortEmail(){
       document.getElementById('portEmailFormWrap').style.display='none';
       document.getElementById('portEmailSuccess').style.display='block';
     } else {
-      errEl.textContent=(res.data&&res.data.error)||'Something went wrong. Please try again.';
+      errEl.textContent=(res.data&&res.data.error)||L.err_generic;
       errEl.style.display='block';
-      btn.disabled=false; btn.textContent='Send Message';
+      btn.disabled=false; btn.textContent=L.modal_send;
     }
   }).catch(function(){
-    errEl.textContent='Network error. Please try again.';
+    errEl.textContent=L.err_network;
     errEl.style.display='block';
-    btn.disabled=false; btn.textContent='Send Message';
+    btn.disabled=false; btn.textContent=L.modal_send;
   });
 }
 </script>
