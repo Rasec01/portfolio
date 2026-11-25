@@ -709,7 +709,7 @@ window.addEventListener('scroll',()=>{
 
 <script>
 (function(){
-  var FINNHUB_KEY = 'd6ri2a9r01qr194mqgngd6ri2a9r01qr194mqgo0';
+  // Stock quotes come through /api/quote, which keeps the Finnhub key on the server.
   var FINNHUB = [
     {sym:'S&P 500',fh:'SPY'},{sym:'NASDAQ',fh:'QQQ'},{sym:'DOW',fh:'DIA'},
     {sym:'AAPL',fh:'AAPL'},{sym:'MSFT',fh:'MSFT'},{sym:'NVDA',fh:'NVDA'},
@@ -741,9 +741,8 @@ window.addEventListener('scroll',()=>{
   }
 
   function fetchFinnhub(){
-    if(FINNHUB_KEY==='YOUR_FINNHUB_KEY')return Promise.resolve();
     var promises=FINNHUB.map(function(t){
-      return fetch('https://finnhub.io/api/v1/quote?symbol='+t.fh+'&token='+FINNHUB_KEY)
+      return fetch('/api/quote?symbol='+t.fh)
         .then(function(r){return r.json();})
         .then(function(d){if(d&&d.c>0){var chg=d.pc>0?((d.c-d.pc)/d.pc)*100:0;results[t.sym]={price:d.c,chgPct:+chg.toFixed(3)};}})
         .catch(function(){});
