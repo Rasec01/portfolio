@@ -2011,8 +2011,9 @@ function setLang(lang){
     if(t[k]!==undefined) el.innerHTML=t[k];
   });
   document.documentElement.lang=lang;
+  var u=new URL(location.href);if(lang==='en')u.searchParams.delete('lang');else u.searchParams.set('lang',lang);history.replaceState(null,'',u);
 }
-(function(){var saved=localStorage.getItem('portfolio_lang')||'en';setLang(saved);})();
+(function(){var p=new URLSearchParams(location.search).get('lang');setLang(['en','es','fr','zh'].includes(p)?p:(localStorage.getItem('portfolio_lang')||'en'));})();
 calcRetirement();
 
 // ── HAMBURGER ────────────────────────────────────────────────────────

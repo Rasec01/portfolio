@@ -1345,10 +1345,12 @@ function setLang(lang){
   if(tl && t.ticker_label) tl.textContent=t.ticker_label;
   document.documentElement.lang=lang;
   localStorage.setItem('glez_lang',lang);
+  var u=new URL(location.href);if(lang==='en')u.searchParams.delete('lang');else u.searchParams.set('lang',lang);history.replaceState(null,'',u);
 }
 // Init
 document.addEventListener('DOMContentLoaded',function(){
-  const saved=localStorage.getItem('glez_lang')||'en';
+  const p=new URLSearchParams(location.search).get('lang');
+  const saved=['en','es','fr','zh'].includes(p)?p:(localStorage.getItem('glez_lang')||'en');
   setLang(saved);
 });
 </script>
